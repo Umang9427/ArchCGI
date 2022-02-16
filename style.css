@@ -150,41 +150,7 @@ td {
   text-align: right;
   margin-right: 30px;
 }
-.background {
-  min-width: 100%;
-  min-height: 100vh;
-  max-height: 100vh;
-  position: relative;
-  margin: 0;
-}
 
-/* Do not input the background image in home page at index.html, but do it here*/
-.background::before {
-  background-image: url('img/i155.jpg'); /*old image url 6.webp */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-animation: mymove 10s linear infinite;
-  max-width: 100%;
-  display: block;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: -2;
-  background-color: rgba(58, 117, 117, 0);
-  opacity: 1;
-}
-.background::after {
-  background-color: rgba(58, 117, 117, 0);
-  content: '';
-  display: block;
-  position: absolute;
-  height: 110%;
-  z-index: -1;
-  opacity: 1;
-}
 
 
 /*------------------------------------------------ Navigation bar ------------------------------------------------------*/
@@ -623,43 +589,43 @@ ul.top li {
   display: none;
 }
 .sslide:first-child {
-  background: url("img/l/12.jpg") no-repeat
+  background: url("img/l/12_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(2) {
-  background: url("img/l/16.jpg") no-repeat
+  background: url("img/l/16_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
-  background: url("img/l/36.jpg") no-repeat
+  background: url("img/l/36_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/l/49.jpg") no-repeat
+  background: url("img/l/49_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/l/7.jpg") no-repeat
+  background: url("img/l/7_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(6) {
-  background: url("img/l/i230.jpg") no-repeat
+  background: url("img/l/i230_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(7) {
-  background: url("img/l/20.jpg") no-repeat
+  background: url("img/l/20_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 } 
 
 .sslide:nth-child(8) {
-  background: url("img/l/1.jpg") no-repeat
+  background: url("img/l/1_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 } 
@@ -827,28 +793,28 @@ ul.top li {
 }
 
 .card1:before{
-  background: url("img/Exterior/i234.jpg");
+  background: url("img/Exterior/i234_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   --bs-clr: rgba(53, 22, 163, 0.507);
 }
 .card2:before{
-  background: url("img/Interior/i217.jpg");
+  background: url("img/Interior/i217_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   --bs-clr: rgba(53, 22, 163, 0.507);
 }
 .card3:before{
-  background: url("img/ResortLandscape/i207.jpg");
+  background: url("img/ResortLandscape/i207_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   --bs-clr: rgba(53, 22, 163, 0.507);
 }
 .card4:before{
-  background: url("img/Interior/i223.jpg");
+  background: url("img/Interior/i223_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -1004,7 +970,7 @@ box-shadow: rgba(58, 117, 117, 0.4) 0px 2.5px, rgba(58, 117, 117, 0.3) 0px 5px,
 
 @media only screen and (max-width: 1000px){
   .section-padding p{
-    font-size: 11px;
+    font-size: 12px;
   }
   .single-testimonial-item:before{
     left: 0px;
@@ -1839,42 +1805,42 @@ footer p {
   display: block;
 }
 .sslide:first-child {
-  background: url("img/p/12\ -\ Copy.jpg") no-repeat
+  background: url("img/p/12_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(2) {
-  background: url("img/p/2.jpg") no-repeat
+  background: url("img/p/2_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
-  background: url("img/p/11.jpg") no-repeat
+  background: url("img/p/11_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/p/41.jpg") no-repeat
+  background: url("img/p/41_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/p/22.jpg") no-repeat
+  background: url("img/p/22_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(6) {
-  background: url("img/p/17.jpg") no-repeat
+  background: url("img/p/17_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(7) {
-  background: url("img/p/i235.jpg") no-repeat
+  background: url("img/p/i235_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(8) {
-  background: url("img/p/18.jpg") no-repeat
+  background: url("img/p/18_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 } 
