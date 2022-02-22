@@ -173,24 +173,37 @@
   </div>
 
 
-  <section id="cd-google-map">
-    <!-- #google-container will contain the map  -->
-    <div id="google-container"></div>
-    <!-- #cd-zoom-in and #zoom-out will be used to create our custom buttons for zooming-in/out -->
-    <div id="cd-zoom-in"></div>
-    <div id="cd-zoom-out"></div>
-    <address>15, Madhuvan Park Street- 2, Lathi Road Amreli</address> 
-  </section>
   
-  
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <a href="#"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-      <path fill="#55c3e3" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-    <path fill="#55c3e3" d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
-    </svg></a>
-  
-  
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNYc2oBtPQ2STq28TqEKKHspwfzIRdlwg"></script>
+<section class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="clearfix" id="form-container">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScsQnw54EP-BdK6disrB5ZIVyfK3tga7OmvKz5xoLdr6rJ5Wg/formResponse" method="post" class="clearfix" id="ctsForm" role="form" name="ctsForm" onsubmit="return validateForm()" autocomplete="on">
+          <div class="form-group clearfix">
+            <label class="label">Name</label>
+            <input class="form-control" type="name" placeholder="Name" name="entry.176325064" required="required"/>
+          </div>
+          <div class="form-group clearfix">
+            <label class="label">Email</label>
+            <input class="form-control" type="email" id="form-email" placeholder="Email" name="entry.628279540" required="required"/>
+          </div>
+          <div class="form-group clearfix form-checker">
+            <label class="label">Info</label>
+            <input class="form-control" placeholder="Info" name="formChecker"/>
+          </div>
+          <div class="form-group clearfix">
+            <label class="label">Message</label>
+            <textarea class="form-control" type="text" placeholder="Message" name="entry.537675619" required="required"></textarea>
+          </div>
+          <div class="col-xs-3 submit-wrap">
+            <button class="formbutton" type="submit" value="submit">Submit</button>
+          </div>
+          <div class="col-xs-9 alert-wrap"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
   
 
 
