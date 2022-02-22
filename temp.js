@@ -40,3 +40,8 @@ function validateForm() {
 
 
 
+document.querySelector("iframe").addEventListener( "load", function(e) {
+	if(submitted) {
+		window.location='http://zerobudget.club/';
+}
+} );
