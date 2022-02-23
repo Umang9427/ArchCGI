@@ -113,30 +113,6 @@ h1, h2, h3, h4 {
 
 
 
-.item a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #666666;
-  margin-top: 10px;
-}
-.item a i {
-  opacity: 0;
-  padding-left: 0px;
-  transition: 0.4s;
-  font-size: 24px;
-  display: inline-block;
-  top: 5px;
-  position: relative;
-}
-.item a:hover {
-  text-decoration: none;
-}
-.item a:hover i {
-  padding-left: 10px;
-  opacity: 1;
-  font-weight: 300;
-}
 
 .item .icon {
   position: absolute;
@@ -302,3 +278,26 @@ h1, h2, h3, h4 {
   
 
 
+
+
+
+
+  /*------------------------------------- Socials --------------------------------------*/
+  .tarangsocials{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .tarangsocials i{
+    color: rgb(34, 34, 34);
+    padding-right: 7px;
+    padding-left: 2px;
+    transition: all 1.2s ease;
+  }
+
+  .tarangsocials i:hover{
+    transform: scale(1.5);
+    transition: all 0.1s ease;
+  }
+
+  
