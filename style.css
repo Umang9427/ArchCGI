@@ -262,6 +262,62 @@ nav {
   transition: color 0.2s ease;
   color: darkorange;
 }
+
+
+
+/* -------------------- Hamburger CSS ---------------------------- */
+
+.hamburger{
+  margin-top: 15px;
+}
+
+.hamburger .line {
+  width: 50px;
+  height: 3px;
+  background-color: rgb(43, 43, 43);
+  display: block;
+  margin: 9px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
+.hamburger:hover .line{
+  background-color: orange;
+}
+
+/* THREE */
+
+#hamburger-3:hover .line:nth-child(1),
+#hamburger-3:hover .line:nth-child(3) {
+  width: 35px;
+}
+
+#hamburger-3:hover .line:nth-child(1) {
+  -webkit-transform: translateX(-10px) rotate(-45deg);
+  -ms-transform: translateX(-10px) rotate(-45deg);
+  -o-transform: translateX(-10px) rotate(-45deg);
+  transform: translateX(-10px) rotate(-45deg);
+}
+
+#hamburger-3:hover .line:nth-child(3) {
+  -webkit-transform: translateX(-10px) rotate(45deg);
+  -ms-transform: translateX(-10px) rotate(45deg);
+  -o-transform: translateX(-10px) rotate(45deg);
+  transform: translateX(-10px) rotate(45deg);
+}
+
+/*------------------------- End of hamburger ---------------------------------*/
+
+
+
 .navporttext {
   padding: 8px;
   text-decoration: none;
@@ -279,7 +335,7 @@ nav {
 
 .overlay .closebtn {
   position: absolute;
-  top: 0px;
+  top: -30px;
   right: 50px;
   font-size: 110px;
 }
