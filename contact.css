@@ -16,6 +16,7 @@
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
+  margin-top: 40px;
 }
 #form-container form .form-checker {
   display: none;
