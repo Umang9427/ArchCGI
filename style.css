@@ -357,6 +357,11 @@ ul.top li {
 }
 #logo {
   margin-top: 10px;
+  transition: all 2s ease-in-out;
+}
+#logo:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
 }
 
 #padnav2 {
@@ -1517,8 +1522,8 @@ box-shadow: rgba(58, 117, 117, 0.4) 0px 2.5px, rgba(58, 117, 117, 0.3) 0px 5px,
 /*------------------------------------------- Page contact CSS -------------------------------------------------*/
 
 .contactheading {
-  padding-top: 200px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .contactpadding {
   padding-top: 20px;
@@ -1540,10 +1545,7 @@ box-shadow: rgba(58, 117, 117, 0.4) 0px 2.5px, rgba(58, 117, 117, 0.3) 0px 5px,
   justify-items: center;
 }
 
-.contactemailus  input{
-  position: relative;
-  margin-bottom: 100px;
-}
+
 
 
 
