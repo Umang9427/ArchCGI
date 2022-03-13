@@ -1,48 +1,25 @@
-
-
-/* -------------------- Hamburger CSS ---------------------------- */
-
-
-
-.hamburger .line {
-  width: 50px;
-  height: 5px;
-  background-color: rgb(27, 27, 27);
-  display: block;
-  margin: 8px;
-  -webkit-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  text-decoration: none;
-}
-
-.hamburger:hover {
-  cursor: pointer;
-}
-
-.hamburger:hover .line{
-  background-color: darkorange;
-}
-
-/* THREE */
-
-#hamburger-3:hover .line:nth-child(1),
-#hamburger-3:hover .line:nth-child(3) {
-  width: 40px;
-}
-
-#hamburger-3:hover .line:nth-child(1) {
-  -webkit-transform: translateX(-10px) rotate(-45deg);
-  -ms-transform: translateX(-10px) rotate(-45deg);
-  -o-transform: translateX(-10px) rotate(-45deg);
-  transform: translateX(-10px) rotate(-45deg);
-}
-
-#hamburger-3:hover .line:nth-child(3) {
-  -webkit-transform: translateX(-10px) rotate(45deg);
-  -ms-transform: translateX(-10px) rotate(45deg);
-  -o-transform: translateX(-10px) rotate(45deg);
-  transform: translateX(-10px) rotate(45deg);
+.gridwrap{
+  display: grid;
+  grid-gap: 15px;
+  justify-items: stretch;
+  align-items: stretch;   /*Row size*/
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 
+.smallsquare{
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.largelandscape{
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+
+.gridwrap > div{
+  background: #eee;
+  padding: 10px;
+}
