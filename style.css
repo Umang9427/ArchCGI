@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300&display=swap');
 
 
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
@@ -716,6 +717,10 @@ ul.top li {
 
 .sslide .content h1 {
   margin-bottom: 10px;
+}
+
+.slider1 .content{
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .sslide.current .content {
