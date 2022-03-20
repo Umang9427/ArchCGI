@@ -112,7 +112,7 @@
 
 
   <div class="aboutheading">
-    <h1 style="text-align: center; color: white;"><a href="./interior.html" class="abouttgb">Portfolio of 3D Exterior
+    <h1 style="text-align: center; "><a href="./interior.html" class="abouttgb">Portfolio of 3D Exterior
         Design</a></h1>
   </div>
 
@@ -573,8 +573,6 @@
 
   <!-- Import jQuery and PhotoSwipe Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
 
   <script>
     'use strict';
@@ -599,7 +597,7 @@
       });
 
       // Define click event on gallery item
-      $('a').click(function(event){
+      $('.gallery-link').click(function(event){
 
         // Prevent location change
         event.preventDefault();
