@@ -20,6 +20,7 @@
 
   <!--   **** Linking css file ****   -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
   <link rel="icon" href="img/ArchCGI_final1 icon.png" type="image/icon type">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
@@ -38,6 +39,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   <!--************************Font************************-->
   <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
+
+  <!--*****************************Photoswipe*****************************************-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css" integrity="sha512-yxWNfGm+7EK+hqP2CMJ13hsUNCQfHmOuCuLmOq2+uv/AVQtFAjlAJO8bHzpYGQnBghULqnPuY8NEr7f5exR3Qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css" integrity="sha512-QwSfZXX2w9SDWSNBKpEos673LXajTJpYKwtG+zJNP9zHsgRrWtNSx1gKVyB6qWUP4wJ0Hfnk9KJzrB6IKrXmEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -122,230 +127,503 @@
 
 
 
-  <div class="row" style="padding-bottom: 30px; margin-left: 10px; margin-right: 10px;">
-    <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js" integrity="sha512-2R4VJGamBudpzC1NTaSkusXP7QkiUYvEKhpJAxeVCqLDsgW4OqtzorZGpulE3eEA7p++U0ZYmqBwO3m+R2hRjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe-ui-default.min.js" integrity="sha512-SxO0cwfxj/QhgX1SgpmUr0U2l5304ezGVhc0AO2YwOQ/C8O67ynyTorMKGjVv1fJnPQgjdxRz6x70MY9r0sKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i269_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Interior designer Amreli" alt="Front Elevation of G+1 Home at Hyderabad">
+
+  
+  <div id="gallery" class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a class='gallery-link' href="img/Exterior/i288_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+      <div class='gallery-image'>
+         
+           <img height='1000' src='img/Exterior/i288_result.webp' itemprop="thumbnail" width='1000'
+           loading="eager" title="Best Interior designer Amreli" alt="Creative Front Elevation of 3 Storey House in Canada | ArchCGI">
+          
       </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i266_result.webp" width="auto" height="auto"
-          loading="eager" title="Best 3D Architect India" alt="Urban Villa Facade Design">
+        </a>
+    </figure>
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a class='gallery-link' href="img/Exterior/i266_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+      <div class='gallery-image'>
+         
+           <img height='1600' src='img/Exterior/i266_result.webp' itemprop="thumbnail" width='1000'
+           loading="eager" title="Best 3D Architect India" alt="Urban 4 storey Villa Facade Design in USA | ArchCGI">
+          
       </div>
-      <br><br>
+        </a>
+      </figure>
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i259_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Interior designer Amreli" alt="G+4 Building Design">
-      </div>
-      <br><br>
+      
 
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a class='gallery-link' href="img/Exterior/i289_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+          <div class='gallery-image'>
+             
+               <img height='1600' src='img/Exterior/i289_result.webp' itemprop="thumbnail" width='1000'
+               loading="eager" title="Best Interior designer Amreli" alt="Close up Apartment Design. Panel and Cladding. | ArchCGI">
+              
+          </div>
+            </a>
+        </figure>
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a class='gallery-link' href="img/Exterior/i290_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+          <div class='gallery-image'>
+             
+               <img height='1600' src='img/Exterior/i290_result.webp' itemprop="thumbnail" width='1000'
+               loading="eager" title="Best 3D Architect India" alt="Side Elevation of Apartment or House | ArchCGI">
+              
+          </div>
+            </a>
+      </figure>
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i250_result.webp" width="auto" height="auto"
-          loading="eager" title="Best 3D Architect India" alt="Best 3D Architect India">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i272_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Interior designer Amreli" alt="Building with landscape and garden">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i255_result.webp" width="auto" height="auto"
-          loading="eager" title="Best 3D Interior Designer India"
-          alt="Our service include 3D architecture Visualization">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i245_result.webp" width="auto" height="auto"
-          loading="eager" title="Best 3D Architect India" alt="3D Architecture rendering studio India">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i257_result.webp" width="auto" height="auto"
-          loading="eager" title="Best 3D Architect India" alt="G+1 Complex Archi Render">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i229_result.webp" width="auto" height="auto"
-          loading="eager" title="3D Real estate design" alt="3D Real estate design">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" src="img/Exterior/i230_result.webp" width="auto" height="auto" loading="lazy"
-          title="Best interior designer" alt="Best interior designer">
-      </div>
-      <br><br>
-
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i81_result.webp" width="auto" height="auto" loading="lazy"
-          title="Best ArchViz" alt="Architecture Visualizer company">
-      </div>
-      <br><br>
-
-
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i91_result.webp" width="auto" height="auto" loading="lazy"
-          title="Top 3D Architect" alt="3D Architect in India">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i85_result.webp" width="auto" height="auto" loading="lazy"
-          title="Most detailed rendering" alt="Most detailed rendering providers">
-      </div>
-      <br><br>
-
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i96_result.webp" width="auto" height="auto" loading="lazy"
-          title="Good taste of objects and models. High Quality." alt="Good taste of objects and models. High Quality.">
-      </div>
-      <br><br>
-
-
-
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i123_result.webp" width="auto" height="auto"
-          loading="lazy" title="Best villa designer" alt="Villa designer">
-      </div>
-      <br><br>
-
-
-
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a class='gallery-link' href="img/Exterior/i265_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+    <div class='gallery-image'>
+       
+         <img height='1600' src='img/Exterior/i265_result.webp' itemprop="thumbnail" width='1000'
+         loading="eager" title="Best 3D Architect India" alt="Angled view of G+4 House">
+        
     </div>
+      </a>
+    </figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="col-md-6" style="text-align: center; padding-bottom: 20px;">
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i271_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Interior designer Amreli" alt="1 Floor house with Swimming pool and landscape">
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a class='gallery-link' href="img/Exterior/i262_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+      <div class='gallery-image'>
+         
+           <img height='1000' src='img/Exterior/i262_result.webp' itemprop="thumbnail" width='1000'
+           loading="eager" title="Best Interior designer Amreli" alt="Close up View of Building with landscape and garden">
+          
       </div>
-      <br><br>
+        </a>
+      </figure>
+    
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i242_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Interior designer Amreli" alt="Best Interior designer Amreli">
-      </div>
-      <br><br>
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a class='gallery-link' href="img/Exterior/i203_result.webp"  data-height="1000" data-width="1600" itemprop="contentUrl">
+        <div class='gallery-image'>
+           
+             <img height='1000' src='img/Exterior/i203_result.webp' itemprop="thumbnail" width='1600'
+             loading="eager" title="Best Interior designer Amreli" alt="Colonial Style Villa Design in USA">
+            
+        </div>
+          </a>
+        </figure>
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i256_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Interior designer Amreli" alt="Modern 4 storey building render">
-      </div>
-      <br><br>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a class='gallery-link' href="img/Exterior/i272_result.webp"  data-height="1000" data-width="1600" itemprop="contentUrl">
+          <div class='gallery-image'>
+             
+               <img height='1000' src='img/Exterior/i272_result.webp' itemprop="thumbnail" width='1600'
+               loading="eager" title="Best Interior designer Amreli" alt="Villa Design with landscape, garden and swimming pool">
+              
+          </div>
+            </a>
+          </figure>
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i270_result.webp" width="auto" height="auto"
-          loading="eager" title="Best 3D Architect India" alt="Mini Villa close up front elevation">
-      </div>
-      <br><br>
+          
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a class='gallery-link' href="img/Exterior/i271_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+          <div class='gallery-image'>
+             
+               <img height='1000' src='img/Exterior/i271_result.webp' itemprop="thumbnail" width='1000'
+               title="Best Interior designer Amreli" alt="Villa Design with landscape and garden">
+              
+          </div>
+            </a>
+          </figure>
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i254_result.webp" width="auto" height="auto"
-          loading="eager" title="Best 3D Architect Gujarat" alt="Best 3D Architect Gujarat">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i252_result.webp" width="auto" height="auto"
-          loading="eager" title="High quality detailed exterior" alt="High quality detailed exterior">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i265_result.webp" width="auto" height="auto"
-          loading="eager" title="High quality detailed exterior" alt="High quality detailed exterior">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i262_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Architecture Designer in India"
-          alt="Designs that are contextual and based on current trend">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i203_result.webp" width="auto" height="auto"
-          loading="eager" title="Best Architecture Designer in India" alt="Architecture Designer in India">
-      </div>
-      <br><br>
-
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" src="img/Exterior/i234_result.webp" width="auto" height="auto" loading="lazy"
-          title="Best 3D interior designer India" alt="3D interior designer India">
-      </div>
-      <br><br>
+          
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a class='gallery-link' href="img/Exterior/i245_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+          <div class='gallery-image'>
+             
+               <img height='1600' src='img/Exterior/i245_result.webp' itemprop="thumbnail" width='1000'
+               title="Best 3D Architect India" alt="G+1 Complex facade Archi Render">
+              
+          </div>
+            </a>
+          </figure>
 
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i228_result.webp" width="auto" height="auto"
-          loading="lazy" title="Rendering Front Elevation of 3d houses" alt="Rendering Front Elevation of 3d houses">
-      </div>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i269_result.webp"  data-height="1000" data-width="1600" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i269_result.webp' itemprop="thumbnail" width='1600'
+                 title="Best 3D Architect India" alt="Creative 1 storey home Archi Render">
+                
+            </div>
+              </a>
+            </figure>
+            
 
-      <br><br>
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i89_result.webp" width="auto" height="auto" loading="lazy"
-          title="Best 3D Building Architecture Rendering" alt="3D Building Architecture Rendering">
-      </div>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i287_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i287_result.webp' itemprop="thumbnail" width='1000'
+                 title="3D Real estate design" alt="3D Architectural Visualzation of 3 Storey House in Grey">
+                
+            </div>
+              </a>
+            </figure>
 
-      <br><br>
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i84_result.webp" width="auto" height="auto" loading="lazy"
-          title="Best Restaurant, shops, big houses architecture designer"
-          alt="Best Restaurant, shops, big houses architecture designer">
-      </div>
-      <br><br>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a class='gallery-link' href="img/Exterior/i270_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+              <div class='gallery-image'>
+                 
+                   <img height='1000' src='img/Exterior/i270_result.webp' itemprop="thumbnail" width='1000'
+                   title="Best ArchViz" alt="Creative 1 storey home Archi Render">
+                  
+              </div>
+                </a>
+              </figure>
+            
 
-      <div class="portfoliocontainer">
-        <img class="img-fluid maxsize" id="maxsize" src="img/Exterior/i111_result.webp" width="auto" height="auto"
-          loading="lazy" title="Best Building Designer" alt="Building cgi Designers">
-      </div>
-      <br><br>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i259_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i259_result.webp' itemprop="thumbnail" width='1000'
+                 title="Top 3D Architecture Service" alt="4 storey apartment image with modern and sophisticated design">
+                
+            </div>
+              </a>
+            </figure>
 
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i251_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i251_result.webp' itemprop="thumbnail" width='1000'
+                 title="Most detailed rendering" alt="4 storey apartment image with modern and simple design">
+                
+            </div>
+              </a>
+            </figure>
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i256_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i256_result.webp' itemprop="thumbnail" width='1000' 
+                 title="Good taste of objects and models. High Quality." alt="Traditional 4 storey house design">
+                
+            </div>
+              </a>
+            </figure>
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i254_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i254_result.webp' itemprop="thumbnail" width='1000'
+                 title="Most detailed rendering" alt="4 floor apartment image with modern and simple design">>
+                
+            </div>
+              </a>
+            </figure>
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i255_result.webp"  data-height="1000" data-width="1100" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i255_result.webp' itemprop="thumbnail" width='1100'
+                 title="High quality detailed exterior" alt="4 storey apartment sketch with modern and simple design">>
+                
+            </div>
+              </a>
+            </figure>
 
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i252_result.webp"  data-height="1000" data-width="1100" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i252_result.webp' itemprop="thumbnail" width='1100'
+                 title="Best Architecture Designer in India" alt="Traditional symmetrical 2 storey houses in India">
+                
+            </div>
+              </a>
+            </figure>
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i257_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i257_result.webp' itemprop="thumbnail" width='1000'
+                 title="Good taste of objects and models. High Quality." alt="Traditional 4 storey house side design">
+                
+            </div>
+              </a>
+            </figure>
 
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a class='gallery-link' href="img/Exterior/i242_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+              <div class='gallery-image'>
+                 
+                   <img height='1000' src='img/Exterior/i242_result.webp' itemprop="thumbnail" width='1000'
+                   title="Rendering Front Elevation of 3d houses" alt="Minimal front elevation of 1 storey home">
+                  
+              </div>
+                </a>
+              </figure>
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i250_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i250_result.webp' itemprop="thumbnail" width='1000'
+                 title="Rendering Front Elevation of 3d houses" alt="sophisticated front elevation of 1 storey home">
+                
+            </div>
+              </a>
+            </figure>
 
-    </div>
+            
+          
 
-    <!-------------------------------Creating Image modal-------------------------------->
-    <div id="myModal" class="modal">
-      <img class="modal-content img-fluid" id="img01">
-      <a href="javascript:void(0)" class="closemodal" style="text-decoration: none;"
-        onclick="closeGallery()">&times;</a>
-      <!--Without javascript void 0, button will not work properly-->
-    </div>
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i230_result.webp"  data-height="1000" data-width="1100" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i230_result.webp' itemprop="thumbnail" width='1100'
+                 title="Best Building Designer" alt="3D Business hub Render">
+                
+            </div>
+              </a>
+            </figure>
+
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i234_result.webp"  data-height="1000" data-width="1100" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i234_result.webp' itemprop="thumbnail" width='1100'
+                 title="Best Building Designer" alt="3D Business hub Render">>
+                
+            </div>
+              </a>
+            </figure>
+
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i228_result.webp"  data-height="1000" data-width="1600" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i228_result.webp' itemprop="thumbnail" width='1600'
+                 title="Best Restaurant, shops, big houses architecture designer"
+                 alt="Front Elevation of 1 storey Villa">
+                
+            </div>
+              </a>
+            </figure>
+
+            
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i229_result.webp"  data-height="1000" data-width="1600" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i229_result.webp' itemprop="thumbnail" width='1600'
+                 title="Best Restaurant, shops, big houses architecture designer"
+                 alt="Night render of Front Elevation of 1 storey Villa">
+                
+            </div>
+              </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i81_result.webp"  data-height="1000" data-width="1600" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i81_result.webp' itemprop="thumbnail" width='1600'
+                 title="Best Restaurant, shops, big houses architecture designer"
+                 alt="Front Elevation of 1 storey Villa in Canada">
+                
+            </div>
+              </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i84_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i84_result.webp' itemprop="thumbnail" width='1000'
+                 title="Best Restaurant, shops, big houses architecture designer"
+                 alt="Front Elevation of 1 storey Villa in Canada">
+                
+            </div>
+              </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i85_result.webp"  data-height="1600" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1600' src='img/Exterior/i85_result.webp' itemprop="thumbnail" width='1000'
+                 title="Best Restaurant, shops, big houses architecture designer"
+                 alt="Front Elevation of 1 storey Villa in Canada">
+                
+            </div>
+              </a>
+          </figure>
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i89_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i89_result.webp' itemprop="thumbnail" width='1000'
+                 title="Best Exterior designer" alt="Modern 1 storey building render">
+                
+            </div>
+              </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i91_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i91_result.webp' itemprop="thumbnail" width='1000'
+                 title="Best Exterior designer Amreli" alt="Modern 1 storey building render">
+                
+            </div>
+              </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i96_result.webp"  data-height="1000" data-width="1600" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i96_result.webp' itemprop="thumbnail" width='1600'
+                 title="Best Exterior designer India" alt="Modern 3 storey Villa render for celebrity">
+                
+            </div>
+              </a>
+          </figure>
+
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a class='gallery-link' href="img/Exterior/i111_result.webp"  data-height="1000" data-width="1000" itemprop="contentUrl">
+            <div class='gallery-image'>
+               
+                 <img height='1000' src='img/Exterior/i111_result.webp' itemprop="thumbnail" width='1000'
+                 title="Best 3D Architect India" alt="Commercial shopping mall 3D render">
+                
+            </div>
+              </a>
+          </figure>
+
   </div>
+
+  
+
+  
+
+
+
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe. 
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+          <!-- Container that holds slides. 
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+          <div class="pswp__container">
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+              <div class="pswp__item"></div>
+          </div>
+          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+          <div class="pswp__ui pswp__ui--hidden">
+              <div class="pswp__top-bar">
+                  <!--  Controls are self-explanatory. Order can be changed. -->
+                  <div class="pswp__counter"></div>
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                  <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                  <!-- element will get class pswp__preloader--active when preloader is running -->
+                  <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div> 
+              </div>
+              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+              </button>
+              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+              </button>
+              <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Import jQuery and PhotoSwipe Scripts -->
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe-ui-default.min.js"></script>
+
+  <script>
+    'use strict';
+
+    /* global jQuery, PhotoSwipe, PhotoSwipeUI_Default, console */
+
+    (function($){
+
+      // Init empty gallery array
+      var container = [];
+
+      // Loop over gallery items and push it to the array
+      $('#gallery').find('figure').each(function(){
+        var $link = $(this).find('a'),
+            item = {
+              src: $link.attr('href'),
+              w: $link.data('width'),
+              h: $link.data('height'),
+              title: $link.data('caption')
+            };
+        container.push(item);
+      });
+
+      // Define click event on gallery item
+      $('a').click(function(event){
+
+        // Prevent location change
+        event.preventDefault();
+
+        // Define object and gallery options
+        var $pswp = $('.pswp')[0],
+            options = {
+              index: $(this).parent('figure').index(),
+              bgOpacity: 0.85,
+              showHideOpacity: true
+            };
+
+        // Initialize PhotoSwipe
+        var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+        gallery.init();
+      });
+
+    }(jQuery));
+  </script>
+
+
+  </section>
+
+
 
 
 
