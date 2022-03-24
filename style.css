@@ -389,36 +389,6 @@ ul.top li {
 
 
 
-.mainbuttons {
-  z-index: 0;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
-}
-.butn {
-  border: 2px solid black;
-  background-color: transparent;
-  color: white;
-  padding: 6px 43px;
-  margin-right: 38px;
-  margin-left: 38px;
-  cursor: pointer;
-}
-
-/* The first 2 buttons in the index (home) page */
-.info {
-  border-color: white;
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 260px;
-}
-
-.info:hover {
-  background-color: rgba(16, 67, 87, 0.4);
-  border-color: rgba(16, 67, 87, 0.4);
-  color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 /*Pay button in the services page*/
 .pay {
   border-color: black;
@@ -436,6 +406,15 @@ ul.top li {
 }
 
 
+main{
+  background-image: url("svg/undraw_building_re_xfcm.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+}
+.background1container{
+  padding-bottom: 1px;
+}
 .authentic {
   padding-top: 100px;
   text-align: center;
@@ -446,11 +425,14 @@ ul.top li {
 .threeimages {
   text-align: center;
   align-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 100px;
   color: black;
   font-size: 45px;
   color: rgb(58, 117, 117);
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.3),
+             0px 2px 3px rgba(0,0,0,0.1),
+             0px 2px 2px rgba(255, 255, 255, 0.1);
 }
 .threeimageanchors {
   color: black;
@@ -964,6 +946,7 @@ ul.top li {
   width: 300px;
   overflow: hidden;
   border-radius: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .portfoliocard {
@@ -983,6 +966,11 @@ ul.top li {
 }
 
 @media only screen and (max-width: 770px) {
+  .portfoliocard{
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 1000px){
   .portfoliocard{
     margin-top: 30px;
   }
