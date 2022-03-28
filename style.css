@@ -1126,6 +1126,37 @@ text-align: center;
   margin-bottom: 80px;
 }
 
+.contentinfaq{
+  padding-left: 15%;
+}
+@media only screen and (max-width: 1000px){
+  .contentinfaq{
+    padding-left: 20%;
+  }
+}
+
+
+
+.checkmark {
+  position: absolute;
+  font-size:32px;
+  font-family: FontAwesome;
+  left: 0;
+  color: rgb(58, 117, 117);
+  padding-left: 10%;
+}
+
+
+.checkmark:before {
+   content:"\f00c";
+}
+
+
+.checkmark:hover:before {
+  color: orange;
+  transition: all 5s ease-in-out;
+}
+
 
 
 
