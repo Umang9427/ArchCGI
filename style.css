@@ -407,11 +407,12 @@ ul.top li {
 
 
 main{
-  background-color: rgb(230, 230, 230);
-  background-image: url("svg/undraw_building_re_xfcm.svg");
+  background-color: rgba(230, 230, 230, 1);
+  background-image: url("svg/undraw_apartment_rent_o-0-ut.svg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-attachment: fixed;
+
 }
 .background1container{
   padding-bottom: 1px;
