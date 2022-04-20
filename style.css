@@ -408,10 +408,11 @@ ul.top li {
 
 main{
   background-color: rgba(250, 250, 250, 1);
-  background-image: url("svg/undraw_urban_design_kpu8.svg");
+  background-image: url("svg/5570863.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
 
 }
 .background1container{
