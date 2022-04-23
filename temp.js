@@ -1,30 +1,17 @@
-/*  clock */
-const hours = document.querySelector(".hours");
-const minutes = document.querySelector(".minutes");
-const seconds = document.querySelector(".seconds");
+// If not iPhone, play first video and setup event handlers for  carousel rotations
+// iPhone will not play videos inline, and will take control of the browser
+if (!/iPhone/i.test(navigator.userAgent)) {
+  $(".active > div > video").get(0).play();
 
+  $("#carousel").bind("slide.bs.carousel", function (e) {
+    $(e.relatedTarget).find("video").get(0).play();
+  });
 
-clock = () => {
-  let today = new Date();
-  let h = (today.getHours() % 12) + today.getMinutes() / 59; // 22 % 12 = 10pm
-  let m = today.getMinutes(); // 0 - 59
-  let s = today.getSeconds(); // 0 - 59
-
-  h *= 30; // 12 * 30 = 360deg
-  m *= 6;
-  s *= 6; // 60 * 6 = 360deg
-
-  rotation(hours, h);
-  rotation(minutes, m);
-  rotation(seconds, s);
-
-  // call every second
-  setTimeout(clock, 500);
-};
-
-rotation = (target, val) => {
-  target.style.transform = `rotate(${val}deg)`;
-};
-
-window.onload = clock();
-
+  $("#carousel").bind("slid.bs.carousel", function (e) {
+    $("video")
+      .not(".active > div > video")
+      .each(function () {
+        $(this).get(0).pause();
+      });
+  });
+}

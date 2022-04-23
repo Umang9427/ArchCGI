@@ -3,107 +3,96 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WBNK6B4');</script>
-  <!-- End Google Tag Manager -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="Best 3d visualization, modelling and rendering website. We provide photorealistic architectural renders in lumion and V-ray.">
-  <title>TGB Architecture Studio</title>
-
+  
   <!--   **** Linking css file ****   -->
   <link rel="stylesheet" href="./temp.css">
-
-  <link rel="icon" href="img/Logo1.png" type="image/icon type" alt="TGB logo">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
-
-  <!-- ************SEO optimization ****************-->
-  <link rel="canonical" href="https://archcgi.com/">
-  <link rel="apple-touch-icon" href="img/Logo1.jpg">
-  <meta name="theme-color" content="#3A7575">
-
-  <!-- *****************   Font Awesome favicons ******************-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
-  <!--******************************** Footer Favicons ***********************************-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-
-  <!--************************Font************************-->
-  <link href='https://fonts.googleapis.com/css?family=Baloo 2' rel='stylesheet'>
-
-<!-- Global site tag (gtag.js) - Google Ads: 831743863 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-831743863"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-831743863');
-</script>
-
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-
-
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.css" integrity="sha512-yxWNfGm+7EK+hqP2CMJ13hsUNCQfHmOuCuLmOq2+uv/AVQtFAjlAJO8bHzpYGQnBghULqnPuY8NEr7f5exR3Qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/default-skin/default-skin.css" integrity="sha512-QwSfZXX2w9SDWSNBKpEos673LXajTJpYKwtG+zJNP9zHsgRrWtNSx1gKVyB6qWUP4wJ0Hfnk9KJzrB6IKrXmEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBNK6B4"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
- 
+<!-- reference examples at https://www.idangero.us/swiper/demos/#.Vl8kD9-rRHc -->
+<section id="lab_video_slider">
+  <div class="container-fluid">
+    <div class="row">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
- 
+      <!-- Link Swiper's CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
 
-  
-<body>
-  
-      
-  <div class="login-box">
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Submit
-      </a>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div id="slide_one" class="swiper-slide">
+            <!-- VIDEO -->
+            <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="//dl.dropbox.com/s/pjopy0mu4klisat/working-with-espresso.jpg">
+              <source src="//dl.dropbox.com/s/931244iox7i0fpk/working-with-espresso.mp4" type="video/mp4">
+                <source src="//dl.dropbox.com/s/g3mo3w34pb8pp2l/working-with-espresso.webm" type="video/webm">
+                  <source src="//dl.dropbox.com/s/p37f0avio0x6bs8/working-with-espresso.ogv" type="video/ogg">
+            </video>
+            <!-- END VIDEO -->
+          </div>
+
+          <div id="slide_two" class="swiper-slide">
+  <div id="lab_video_text_overlay">
+    <div class="container">
+      <h2>Lorum Ipsum Deloras </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie</p>
+      <a href="#" class="btn btn-default">View Our Work</a>
+      <a href="#" class="btn btn-warning">Learn About Us</a>
+
+    </div>
   </div>
-      
+  <!-- end #lab_overlay -->
 
-  
-</body>
+            <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="//dl.dropbox.com/s/ijyaav8qzkdtyt5/lab-coding-screenshot.jpg">
+              
+      <source type="video/mp4" src="//dl.dropbox.com/s/5z4jupv385iboiu/lab-coding.mp4">
+        <source src="//dl.dropbox.com/s/5z4jupv385iboiu/lab-coding.mp4" type="video/mp4">
+          <source src="//dl.dropbox.com/s/79msa1jcni374v8/lab-coding.webm" type="video/webm">
+            <source src="//dl.dropbox.com/s/7bq2tyma5de88bt/lab-coding.ogg" type="video/ogg">
+            </video>
+          
+          </div>
 
+          <div id="slide_three" class="swiper-slide">
+             <!-- VIDEO -->
+            <video class="slider-video" width="100%" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="//dl.dropbox.com/s/5aeyg9ntj1fs8v1/typing-numbers.jpg">
+              <source src="//dl.dropbox.com/s/xmosdvoleruexky/typing-numbers.mp4" type="video/mp4">
+                <source src="//dl.dropbox.com/s/13z1t97pcvka88k/typing-numbers.webm" type="video/webm">
+                  <source src="//dl.dropbox.com/s/5pyuc35wnv5khe1/typing-numbers.ogv" type="video/ogg">
+            </video>
+            <!-- END VIDEO -->
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
 
+      <!-- Swiper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
 
-
-
-
-
-
-
-
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+        });
+      </script>
+    </div>
+    <!-- end .row -->
+  </div>
+  <!-- end .container-->
+  </div>
+  <!-- end #section -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="temp.js"></script>
