@@ -5,7 +5,82 @@ body {
   }
   
 
+.closebutn {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    font-size: 70px;
+    text-decoration: none;
+    color: black;
+  }
 
+  .closebutn:hover{
+      text-decoration: none;
+      color: rgb(58, 117, 117)
+  }
+
+  
+.outer {
+    position: fixed;
+    margin: auto;
+    width: 50px;
+    margin-top: 0px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  .inner {
+    width: inherit;
+    text-align: center;
+  }
+  
+  label { 
+    font-size: 0.8em; 
+    line-height: 2em;
+    text-transform: uppercase;
+    color: black;
+    transition: all .3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .inner:before, .inner:after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: inherit;
+    background: #ffb007;
+    left: 0;
+    transition: all .3s ease-in;
+  }
+  
+  .inner:before {
+    top: 50%; 
+    transform: rotate(45deg);  
+  }
+  
+  .inner:after {  
+    bottom: 50%;
+    transform: rotate(-45deg);  
+  }
+  
+  .outer:hover label {
+    opacity: 1;
+  }
+  
+  .outer:hover .inner:before,
+  .outer:hover .inner:after {
+    transform: rotate(0);
+  }
+  
+  .outer:hover .inner:before {
+    top: 0;
+  }
+  
+  .outer:hover .inner:after {
+    bottom: 0;
+  }
 
   .blog-container {
     background: #fff;
@@ -63,9 +138,9 @@ body {
     width: 80%;
   }
   
-  .blog-author h3::before,
+  .blog-author h5::before,
   .blog-author--no-cover h3::before {
-    background: url("img/ArchCGI_ICON.png");
+    background: url("img/Team/Umang\ Bhalani.jpg");
     background-size: cover;
     border-radius: 50%;
     content: " ";
@@ -75,14 +150,15 @@ body {
     position: relative;
     top: 8px;
     width: 32px;
-  }
-  
-  .blog-author h3 {
-    color: #fff;
     font-weight: 100;
   }
   
-  .blog-author--no-cover h3 {
+  .blog-author h5 {
+    color: rgb(241, 241, 241);
+    font-weight: 100;
+  }
+  
+  .blog-author--no-cover h5 {
     color: #999999;
     font-weight: 100;
   }

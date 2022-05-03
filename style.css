@@ -206,7 +206,7 @@ nav {
 
 .overlay-content {
   position: relative;
-  top: 20%;
+  top: 10%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -214,7 +214,7 @@ nav {
 
 .overlay-content2{
   position: relative;
-  top: 35%;
+  top: 25%;
   text-align: center;
   
 }
@@ -322,14 +322,7 @@ nav {
 
 
 
-.navporttext {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #cacaca;
-  display: block;
-  transition: 0.3s;
-}
+
 
 .overlay a:hover, .overlay a:focus {   /*navtext hover*/
   color: orange;
