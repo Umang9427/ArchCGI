@@ -9,48 +9,58 @@
 
 <url>
   <loc>https://archcgi.com/</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://archcgi.com/index.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://archcgi.com/about.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://archcgi.com/services.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://archcgi.com/contact.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://archcgi.com/blogandfaq.html</loc>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://archcgi.com/Exterior.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://archcgi.com/Interior.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://archcgi.com/ResortLandscape.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://archcgi.com/Walkthrough.html</loc>
-  <lastmod>2022-04-23T06:34:29+00:00</lastmod>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://archcgi.com/10reasonswhy.html</loc>
+  <lastmod>2022-05-03T14:41:48+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 

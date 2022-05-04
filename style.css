@@ -774,17 +774,17 @@ main{
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
-  background: url("img/l/36_result.webp") no-repeat
+  background: url("img/l/19_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/l/49_result.webp") no-repeat
+  background: url("img/l/i316_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/l/7_result.webp") no-repeat
+  background: url("img/l/i296_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
@@ -794,16 +794,11 @@ main{
     background-attachment: fixed;
 }
 .sslide:nth-child(7) {
-  background: url("img/l/i296_result.webp") no-repeat
+  background: url("img/l/i313_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 } 
 
-.sslide:nth-child(8) {
-  background: url("img/l/1_result.webp") no-repeat
-    center bottom/cover;
-    background-attachment: fixed;
-} 
 /*Check mobile view images as well*/
 
 
@@ -2018,15 +2013,16 @@ footer p {
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/p/41_result.webp") no-repeat
+  background: url("img/p/20_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/p/22_result.webp") no-repeat
+  background: url("img/p/41_result.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
+
 .sslide:nth-child(6) {
   background: url("img/p/17_result.webp") no-repeat
     center bottom/cover;
