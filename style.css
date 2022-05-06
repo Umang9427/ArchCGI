@@ -811,36 +811,20 @@ main{
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 8;
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 3px;
-
-}
-
-
-.icon-bar h5{
-  display: block;
-  position: absolute;
-  color: rgb(211, 211, 211);
-  font-size: 13px;
-  padding: 5px;
-  background: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
 }
 
-.icon-bar h5:hover{
-  color: darkorange;
-  cursor: pointer;
-  transform: scale(1.3);
-  background: rgb(58, 117, 117);
-}
+
+
 .rightbar{
   position: fixed;
   writing-mode: vertical-lr;
   top: 40%;
   right: 0%;
   z-index: 8;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   text-decoration: none;
   
@@ -849,7 +833,7 @@ main{
 .rightbar h5{
   display: block;
   position: relative;
-  color: rgb(211, 211, 211);
+  color: black;
   font-size: 13px;
   padding: 5px;
   padding-top: 10px;
@@ -861,7 +845,7 @@ main{
   color: darkorange;
   cursor: pointer;
   transform: scale(1.3);
-  transition: all 0.s ease-in-out;
+  transition: all 0.2s ease-in-out;
   background: rgb(58, 117, 117);
   text-decoration: none;
 }
@@ -871,7 +855,7 @@ main{
   display: block;
   text-align: center;
   padding: 10px;
-  transition: all 0.005s ease;
+  transition: all 0.2s ease;
   font-size: 20px;
   border-radius: 2px;
  
@@ -882,10 +866,10 @@ main{
     display: none;
   }
   .icon-bar{
-    background: rgba(0, 0, 0,0.5);
+    background: rgba(0, 0, 0,0.2);
   }
   .rightbar{
-    background: rgba(0, 0, 0,0.5);
+    background: rgba(0, 0, 0,0.2);
   }
   .icon-bar .socialfixed a{
     padding: 10px 4px 10px 4px;
@@ -894,8 +878,8 @@ main{
   .ffacebook{
     margin-top: 0px ;
   }
-  .yyoutube{
-    margin-bottom: 30px;
+  .ppinterest{
+    margin-bottom: 7px;
   }
 }
 .ffacebook {
@@ -904,7 +888,7 @@ main{
 .ffacebook:hover{
   background: #3B5998;
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.4);
   
 }
 
@@ -915,7 +899,7 @@ main{
 .wwhatsapp:hover{
   background: #075e54;
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.4);
   
 }
 
@@ -925,7 +909,7 @@ main{
 .ttwitter:hover{
   background: #55ACEE;
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.4);
   
 }
 .iinstagram {
@@ -935,7 +919,7 @@ main{
 .iinstagram:hover{
   background: #bc2a8d;
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.4);
   
 }
 .llinkedin {
@@ -945,7 +929,7 @@ main{
 .llinkedin:hover{
   background: #007bb5;
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.4);
   
 }
 .yyoutube {
@@ -956,10 +940,18 @@ main{
 .yyoutube:hover{
   background: #bb0000;
   color: white;
-  transform: scale(1.3);
+  transform: scale(1.4);
   
 }
+.ppinterest{
+ color: #E60023;
+}
 
+.ppinterest:hover{
+  background: #E60023;
+  color: white;
+  transform: scale(1.4);
+}
 
 
 /*----------------------------------------------- Portfolio Cards ----------------------------------------*/
