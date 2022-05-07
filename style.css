@@ -1167,7 +1167,7 @@ main{
 }
 
 .card1:before{
-  background: url("img/Exterior/i234_result.webp");
+  background: url("img/Exterior/i321_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -1188,7 +1188,7 @@ main{
   --bs-clr: rgba(53, 22, 163, 0.507);
 }
 .card4:before{
-  background: url("img/Interior/i223_result.webp");
+  background: url("img/Exterior/i299_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
