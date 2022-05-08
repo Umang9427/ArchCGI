@@ -76,6 +76,10 @@ document.addEventListener('mousewheel', (evt) => {
 $('.loading').hide();
 $('input, textarea').placeholder(); // Placeholder Browser Compatibility Plugin
 
+
+
+/* Validating if the form input is correct or not */
+
 function validateForm() {
 	var form_message_success = "Thank you for your email, we will be in contact with you shortly",
 			form_checker = document.forms["ctsForm"]["formChecker"].value,
