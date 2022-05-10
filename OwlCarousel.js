@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
       items:2,
-     autoplay:12000,
+     autoplay:1200,
       margin:30,
       loop:true,
       dots:true
@@ -22,7 +22,7 @@ $('.owl-carousel1').owlCarousel({
     "<i class='fa fa-caret-right'></i>"
   ],
   autoplay: true,
-  autoplayTimeout: 600,
+  autoplayTimeout: 1500,
   autoplayHoverPause: true,
   responsive: {
     0: {
