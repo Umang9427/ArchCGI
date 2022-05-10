@@ -643,9 +643,9 @@ main{
 /*----------------------------------- Why us Background -------------------------------*/
 
 .backgroundbubbleanimation {
-  background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #50a3a2 0%, rgb(58, 117, 117) 100%);
-  background: linear-gradient(to bottom right, #50a3a2 0%, rgb(58, 117, 117) 100%);
+  background: #2d7e7d;
+  background: -webkit-linear-gradient(top left, #2d7e7d 0%, rgb(58, 117, 117) 100%);
+  background: linear-gradient(to bottom right, #2d7e7d 0%, rgb(58, 117, 117) 100%);
   position: relative;
   min-width: 100%;
   overflow: hidden;
