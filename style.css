@@ -1749,7 +1749,7 @@ text-align: center;
   color: orange;
   letter-spacing: 2px;
   font-weight: 100;
-
+  line-height: 80px;
 }
 .partofcommunity span{
   color: rgb(58, 117, 117);
@@ -1773,6 +1773,11 @@ text-align: center;
 
 }
 
+@media only screen and (max-width: 900px){
+  .boxanimated{
+    margin-top: 0px;
+  }
+}
 /* Chrome, Safari, Opera */
 @-webkit-keyframes drawBorderFromCenter {
   0% {
