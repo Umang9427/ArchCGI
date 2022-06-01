@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
 * {
@@ -687,8 +683,14 @@ main{
   margin-bottom: 10px;
 }
 
+@font-face {
+  font-family: Futura;
+  src: url("./Font/FuturaPTLight.otf");
+}
+
 .slider1 .content{
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: Futura;
+  letter-spacing: 3px;
 }
 
 .sslide.current .content {
@@ -1603,6 +1605,7 @@ text-align: center;
 
 
 /*----------------------------------------------- Motto --------------------------------------------------*/
+
 .motto {
   text-align: center;
   min-height: 100%;
@@ -1610,6 +1613,9 @@ text-align: center;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  font-family: Futura;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 .motto svg{
   float: left;
