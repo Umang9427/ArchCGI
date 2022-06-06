@@ -1,6 +1,7 @@
 
 
 .gallery {
+    image-rendering: pixelated;
     margin: 10px;
     -moz-column-gap: 10px;
          column-gap: 10px;
