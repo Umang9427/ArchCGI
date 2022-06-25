@@ -1,52 +1,52 @@
 /* -----------------------Navigation Bar------------------------------ */
 var preloader = document.getElementById('gooey');
-    function pageloaded() {
-      preloader.style.display = 'none';
-    };
+function pageloaded() {
+  preloader.style.display = 'none';
+};
 
-    function closeNav() {
-      document.getElementById("responsiveSideNav").style.width = "0%";
-      
-    }
-    function openNav() {
-      document.getElementById("responsiveSideNav").style.width = "100%";
-    }
+function closeNav() {
+  document.getElementById("responsiveSideNav").style.width = "0%";
 
-    window.addEventListener("scroll", function () {
-      if (window.pageYOffset > 200) {
-        document.getElementById("logo").style.opacity = '0.8';
-      }
-      else {
-        document.getElementById("logo").style.display = "block";
-        document.getElementById("logo").style.opacity = '1';
-      }
-    })
+}
+function openNav() {
+  document.getElementById("responsiveSideNav").style.width = "100%";
+}
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > 200) {
+    document.getElementById("logo").style.opacity = '0.8';
+  }
+  else {
+    document.getElementById("logo").style.display = "block";
+    document.getElementById("logo").style.opacity = '1';
+  }
+})
 
 
 
-    /* Back to top fixed button in the website (located on the bottom of screen) */
+/* Back to top fixed button in the website (located on the bottom of screen) */
 
-    mybutton = document.getElementById("back-to-top");
+mybutton = document.getElementById("back-to-top");
 
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-    
-    // When the user clicks on the button, scroll to the top of the document
-    function topfunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
 
- /* ----------------------Passive smooth scroll javascript ----------------------------------- */
- document.addEventListener('wheel', (evt) => {
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topfunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+/* ----------------------Passive smooth scroll javascript ----------------------------------- */
+document.addEventListener('wheel', (evt) => {
   // ... do stuff with evt
 }, {
   capture: true,
@@ -150,20 +150,20 @@ pprev.addEventListener('click', e => {
   }
 });
 
-const $arrow= document.getElementById("nnext")
+const $arrow = document.getElementById("nnext")
 $arrow.onclick = () => {
   $arrow.animate([
-    {right: '0'}
-  ],{
+    { right: '0' }
+  ], {
     duration: 150,
     iterations: 1
   });
 }
-const $arrow2= document.getElementById("pprev")
+const $arrow2 = document.getElementById("pprev")
 $arrow2.onclick = () => {
   $arrow2.animate([
-    {left: '0'}
-  ],{
+    { left: '0' }
+  ], {
     duration: 150,
     iterations: 1
   });
@@ -179,27 +179,27 @@ if (auto) {
 
 
 
-    /*-------------------------------- Reveal animation --------------------------------- */
+/*-------------------------------- Reveal animation --------------------------------- */
 
-    window.addEventListener('scroll', reveal);
-    function reveal() {
-      var reveals= document.querySelectorAll('.reveal');
-      for (var i=0; i<reveals.length; i++){
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 0;
-        if(revealtop < windowheight - revealpoint){
-          reveals[i].classList.add('activesection');
-        }
-        else{
-          reveals[i].classList.remove('activesection');
-        }
-      }
+window.addEventListener('scroll', reveal);
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
+  for (var i = 0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 0;
+    if (revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add('activesection');
     }
+    else {
+      reveals[i].classList.remove('activesection');
+    }
+  }
+}
 
 
 
-    
+
 
 
 
