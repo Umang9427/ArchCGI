@@ -525,6 +525,8 @@ main{
   .difftext{
     font-size: 15px;
     width: 96%;
+    display: none;
+    margin-top: 0px;
   }
   .content__container{
     padding: 0px
