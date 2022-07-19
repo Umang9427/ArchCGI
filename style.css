@@ -775,8 +775,8 @@ main{
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/l/i296_result.webp") no-repeat
-    center bottom/cover;
+  background: url("img/l/i332_result.webp") no-repeat
+    center top/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(6) {
