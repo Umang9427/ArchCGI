@@ -373,7 +373,75 @@ ul.top li {
 
 
 
+.wavecontainer {
+  max-height: 100%;
+  position: sticky;
+  overflow: hidden;
+  background: linear-gradient(315deg, rgba(255, 0, 0, 0.08) 3%, rgba(60,132,206,0.08) 38%, rgba(48,238,226,0.08) 68%, rgba(255,165,0,0.08) 98%);
+  animation: gradient 6s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
 
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 1000% 1000% 0 0;
+  position: absolute;
+  width: 200%;
+  height: 300px;
+  animation: wave 4s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 6s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 7s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
 
 
 
@@ -1091,6 +1159,15 @@ main{
 .lastcoltext {
   margin-bottom: 0px;
 }
+
+.wavecontainer2 {
+  max-height: 100%;
+  position: sticky;
+  overflow: hidden;
+  background: white;
+  background-attachment: fixed;
+}
+
 .trust {
   text-align: center;
   align-content: center;
@@ -1704,7 +1781,7 @@ text-align: center;
 #counter-section-container {
   width: 100%;
   text-align: center;
-  background: white;
+  
 }
 
 #counter-box-container {
