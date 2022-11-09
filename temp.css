@@ -1,115 +1,69 @@
-/*------------------------------------ Up Arrow ---------------------------*/ 
-.uparrow  {
-  position: absolute;
-
-}
-.uparrow:before,
-.uparrow:after{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -24px;
-  width: 30px;
-  height: 7px;
-  border-radius: 10px;
-  display: block;
-  background: black;
-  transform:rotate(45deg);
-  -webkit-transform:rotate(45deg); 
+.wavecontainer {
+    height: 100vh;
+    position: sticky;
+    overflow: hidden;
+    background: linear-gradient(315deg, rgba(255, 0, 0, 0.25) 3%, rgba(60,132,206,0.25) 38%, rgba(48,238,226,0.25) 68%, rgba(255,165,0,0.25) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
 }
 
-.uparrow:after{
-  right: inherit;
-  left: -24px;
-  transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg); 
-}
- 
-.uparrowanimated{
-  -webkit-animation: bounce 3s infinite;
-  animation: bounce 3s both infinite;
-}
- 
- 
-@-webkit-keyframes bounce {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  60% { opacity: 1;}
-  100% {-webkit-transform: translateY(-40px); opacity: 0}
-}
- 
-@-moz-keyframes bounce {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  60% { opacity: 1;}
-  100% {-webkit-transform: translateY(-40px); opacity: 0}
-}
- 
-@-o-keyframes bounce {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  60% { opacity: 1;}
-  100% {-webkit-transform: translateY(-40px); opacity: 0}
-}
-@keyframes bounce {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  60% { opacity: 1;}
-  100% {-webkit-transform: translateY(-40px); opacity: 0}
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
-
-
-
-
-.downarrow{
-  position: absolute;
-
+.wave {
+    background: rgba(65, 65, 65, 0.1);
+    border-radius: 1000% 1000% 0 0;
+    position: absolute;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
 }
 
-.downarrow:before,
-.downarrow:after{
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -24px;
-  width: 30px;
-  height: 7px;
-  border-radius: 10px;
-  display: block;
-  background: black;
-  transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg); 
-}
-.downarrow:after{
-  right: inherit;
-  left: -24px;
-  transform:rotate(45deg);
-  -webkit-transform:rotate(45deg); 
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
 }
 
-.downarrowanimated{
-  -webkit-animation: bounce2 3s infinite;
-  animation: bounce2 3s both infinite;
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
 }
 
-@-webkit-keyframes bounce2 {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  30% { opacity: 1;}
-  100% {-webkit-transform: translateY(40px); opacity: 0}
-}
- 
-@-moz-keyframes bounce2 {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  30% { opacity: 1;}
-  100% {-webkit-transform: translateY(40px); opacity: 0}
-}
- 
-@-o-keyframes bounce2 {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  30% { opacity: 1;}
-  100% {-webkit-transform: translateY(40px); opacity: 0}
-}
-@keyframes bounce2 {
-	0% {-webkit-transform: translateY(0); opacity: 0;}
-  30% { opacity: 1;}
-  100% {-webkit-transform: translateY(40px); opacity: 0}
-}
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
 
- 
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
