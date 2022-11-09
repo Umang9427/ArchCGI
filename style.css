@@ -13,7 +13,8 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: white no-repeat center fixed;
+  background: rgba(0,0,0, 1) no-repeat center fixed;
+
   z-index: 999999;
 }
 .gooey{
@@ -23,7 +24,7 @@
   width: 142px;
   height: 40px;
   margin: -20px 0 0 -71px;
-  background: white;
+  background: rgba(0,0,0, 1);
   filter: contrast(20);
 }
   .dot{
@@ -33,7 +34,7 @@
     top: 12px;
     left: 15px;
     filter: blur(4px);
-    background: #000000;
+    background: #d8d8d8;
     border-radius: 50%;
     transform: translateX(0);
     animation: dot 2.8s infinite;
@@ -53,7 +54,7 @@
       
       margin-left: 16px;
       filter: blur(4px);
-      background: #000;
+      background: #d8d8d8;
       border-radius: 50%;
   }
 
