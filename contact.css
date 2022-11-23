@@ -47,7 +47,7 @@ ul {
   position: relative;
   z-index: 1;
   background-color: #00b8ca;
-  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .contact-page-section .form-column {
   position: relative;
