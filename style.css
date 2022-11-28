@@ -1027,11 +1027,12 @@ main{
 
 .backgroundbubbleanimation {
   background: #2d7e7d;
-  background: -webkit-linear-gradient(top left, #f9f9f9 0%, #f9f9f9 100%);
+  background: -webkit-linear-gradient(top left, #f6f6f6 0%, #f1f1f1 100%);
   background: linear-gradient(to bottom right, #f9f9f9 0%, #f9f9f9 100%);
   position: relative;
   min-width: 100%;
   overflow: hidden;
+ 
 }
 
 .bg-bubbles {
@@ -1169,6 +1170,7 @@ main{
   overflow: hidden;
   background: white;
   background-attachment: fixed;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .trust {
@@ -1199,6 +1201,7 @@ main{
 .background3 {
   background-color: white;
   color: black;
+  box-shadow: rgba(17, 17, 26, 0.2) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .backgroundcolorchange{
   background-color:  rgba(58, 117, 117, 1);
@@ -1542,8 +1545,8 @@ box-shadow: rgba(58, 117, 117, 0.4) 0px 2.5px, rgba(58, 117, 117, 0.3) 0px 5px,
 
 /*---------------------------------------------------- FAQ -------------------------------------------------------*/
 .faqcontainer{
-  background-color: #f9f9f9;
-  
+  background-color: #f1f1f1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .faqcontainer  ul{
   list-style-type: circle;
