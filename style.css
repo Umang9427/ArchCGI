@@ -965,37 +965,37 @@ main{
   display: none;
 }
 .sslide:first-child {
-  background: url("img/l/12_result.webp") no-repeat
+  background: url("img/l/1.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(2) {
-  background: url("img/l/16_result.webp") no-repeat
+  background: url("img/l/2.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
-  background: url("img/l/19_result.webp") no-repeat
+  background: url("img/l/3.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/l/i316_result.webp") no-repeat
+  background: url("img/l/4.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/l/i332_result.webp") no-repeat
+  background: url("img/l/5.webp") no-repeat
     center top/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(6) {
-  background: url("img/l/i230_result.webp") no-repeat
+  background: url("img/l/6.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(7) {
-  background: url("img/l/i313_result.webp") no-repeat
+  background: url("img/l/7.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 } 
@@ -1545,32 +1545,32 @@ main{
 }
 
 .card1:before{
-  background: url("img/Exterior/i321_result.webp");
+  background: url("img/Exterior/i440.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-  --bs-clr: rgba(53, 22, 163, 0.507);
+  --bs-clr: rgba(58, 117, 117, 0.3);
 }
 .card2:before{
-  background: url("img/Interior/i217_result.webp");
+  background: url("img/Interior/i474.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-  --bs-clr: rgba(53, 22, 163, 0.507);
+  --bs-clr: rgba(58, 117, 117, 0.3);
 }
 .card3:before{
   background: url("img/ResortLandscape/i207_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-  --bs-clr: rgba(53, 22, 163, 0.507);
+  --bs-clr: rgba(58, 117, 117, 0.3);
 }
 .card4:before{
-  background: url("img/Exterior/i299_result.webp");
+  background: url("img/Exterior/i488.jpg");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-  --bs-clr: rgba(53, 22, 163, 0.507);
+  --bs-clr: rgba(58, 117, 117, 0.3);
 }
 
 .bottom {
@@ -2633,46 +2633,42 @@ footer p {
   display: block;
 }
 .sslide:first-child {
-  background: url("img/p/12_result.webp") no-repeat
+  background: url("img/p/Image1_004.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(2) {
-  background: url("img/p/2_result.webp") no-repeat
+  background: url("img/p/Image1_0012.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
-  background: url("img/p/11_result.webp") no-repeat
+  background: url("img/p/Image1_001.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/p/20_result.webp") no-repeat
+  background: url("img/p/Image1_008.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/p/41_result.webp") no-repeat
+  background: url("img/p/Image1_005.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 
 .sslide:nth-child(6) {
-  background: url("img/p/17_result.webp") no-repeat
+  background: url("img/p/Image1_0011.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(7) {
-  background: url("img/p/i235_result.webp") no-repeat
+  background: url("img/p/Image1.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
-.sslide:nth-child(8) {
-  background: url("img/p/18_result.webp") no-repeat
-    center bottom/cover;
-    background-attachment: fixed;
-} 
+
 
 .sslide .content {
   background-color: rgba(0, 0, 0, 0.5);
