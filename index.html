@@ -178,6 +178,8 @@
   <!-- Bootstrap CSS -->
   <link rel="preload stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" media="screen">
   <link rel="preload stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" media="screen">
+   <!--Preloading SVG-->
+   <link rel="preload" href="/svg/landing/interior-svg.html" as="document">
 
   <!-- ************SEO optimization ****************-->
 
@@ -510,85 +512,61 @@
           <li></li>
           
         </ul>
+
+
+
         <div class="reveal">
+
           <article>
-            <header>
-              <h4 class="whyus" style="color: rgba(0, 0, 0, 0.6)"><b>Why Choose Us?</b></h4>
-            </header>
-            <header>
-              <h2 class="offerings"> Service Catalogue </h2>
-            </header>
-
-
-
-
-
             <div class="twocoltextcontainer">
 
               <div class="row twocoltext">
                 <div class="col-sm-1">
                 </div>
                 <div class="col-sm-5  onecoltext">
-                  <h3 class="mobilecoltext">ArchCGI provides the Best Detailing required to make your home look and feel real</h3>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-4">
-                  <h3 class="mobilecoltext">We use high quality textures, from your demand we can also provide you
-                    texture Images </h3>
-                </div>
-                <div class="col-sm-1"></div>
-              </div>
-
-
-              <div class="row twocoltext">
-                <div class="col-sm-1">
-                </div>
-                <div class="col-sm-5 onecoltext">
+                  <header>
+                    <h4 class="whyus" style="color: rgba(0, 0, 0, 0.6)"><b>Why Choose Us?</b></h4>
+                  </header>
+                  <header>
+                    <h2 class="offerings"> Service Catalogue </h2>
+                  </header>
+                  <h3 class="mobilecoltext">ArchCGI provides the Best Detailing required to make your home functional. Not just pretty images.  </h3>
                   <h3 class="mobilecoltext">We provide Draft Images before taking the Higher Resolution Images. Hence,
                     you can confirm your design before finalizing the renders.</h3>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-4">
-                  <h3 class="mobilecoltext">No extra charges for minor changes. We provide flexibility in revisions to
-                    you.</h3>
-                </div>
-                <div class="col-sm-1"></div>
-              </div>
-
-              <div class="row twocoltext">
-                <div class="col-sm-1">
-                </div>
-                <div class="col-sm-5 onecoltext">
-                  <h3 class="mobilecoltext">At ArchCGI, we always use architecture softwares, hence the work done
-                    is precise at mm levels. The final image can actually be imported in your field of work.</h3>
-                </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-4">
                   <h3 class="mobilecoltext">Before starting any work, we gather all the information for the best suitable design 
-                    and meet their requirements accordingly.</h3>
-                </div>
-                <div class="col-sm-1"></div>
-              </div>
-
-              <div class="row twocoltext">
-                <div class="col-sm-1">
-                </div>
-                <div class="col-sm-5  onecoltext">
+                      and meet their requirements accordingly.</h3>
                   <h3 class="mobilecoltext">A Team of 3 members work per Project- Modeller, Renderer and
-                    Post-Production Artist</h3>
+                        Post-Production Artist. B2B encouraged.</h3>
+                  
                 </div>
-                <div class="col-sm-1"></div>
-                <div class="col-sm-4">
-                  <h3 class="mobilecoltext">Our Render quality is considered as
-                    top-notch and has helped improve the portfolio of many Architects. </h3>
+<!--****************************************** SVG **********************************-->
+                <div class="col-sm-6">
+                  <iframe class="interiorsvg" src="./svg/landing/interior-svg.html" title="Interior SVG"
+                  allowtransparency="true"></iframe>
+                  <style>
+                    iframe[seamless] {
+                      border: none;
+                  }
+                  .interiorsvg{
+                    width: 90%;
+                    height: 100%;
+                    border: none;
+                   padding-top: 100px;
+                  }
+                  @media only screen and (max-width: 800px) {
+                    .interiorsvg{
+                      display: none;
+                    }
+                  }
+                  </style>
+                  
+                  
                 </div>
-                <div class="col-sm-1"></div>
-              </div>
 
             </div>
 
 
-            <div style="padding-bottom: 150px;"></div>
+            <div style="padding-bottom: 100px;"></div>
           </article>
         </div>
 
@@ -860,7 +838,7 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-5">
             <span class="checkmark"></span>
             <div class="contentinfaq">
               <h3>What is the Time taken per Rendering Project?</h3>
@@ -887,7 +865,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <span class="checkmark"></span>
             <div class="contentinfaq">
               <h3>How much does it cost? Do you charge per render?</h3>
