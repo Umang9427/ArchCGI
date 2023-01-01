@@ -1261,8 +1261,8 @@ main{
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-950px) rotate(600deg);
-            transform: translateY(-950px) rotate(600deg);
+    -webkit-transform: translateY(-1400px) rotate(600deg);
+            transform: translateY(-1400px) rotate(600deg);
   }
 }
 @keyframes square {
@@ -1271,20 +1271,21 @@ main{
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-950px) rotate(600deg);
-            transform: translateY(-950px) rotate(600deg);
+    -webkit-transform: translateY(-1400px) rotate(600deg);
+            transform: translateY(-1400px) rotate(600deg);
   }
 }
 
 
 .whyus {
   padding-top: 200px;
-  text-align: center;
+  margin-left: 5px;
+  text-align: left;
   margin-bottom: 0px;
   font-size: 25px;
 }
 .offerings {
-  text-align: center;
+  text-align: left;
   align-content: center;
   margin-top: 40px;
   margin-bottom: 150px;
@@ -1329,6 +1330,7 @@ main{
   color: rgb(1, 1, 1);
   font-size: 15px;
   letter-spacing: 1px;
+  margin-bottom: 40px;
 }
 
 .background3 {
@@ -1545,7 +1547,7 @@ main{
 }
 
 .card1:before{
-  background: url("img/Exterior/i440.webp");
+  background: url("img/Exterior/i475.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -1566,7 +1568,7 @@ main{
   --bs-clr: rgba(58, 117, 117, 0.3);
 }
 .card4:before{
-  background: url("img/Exterior/i488.jpg");
+  background: url("img/Interior/i429.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
@@ -1674,7 +1676,7 @@ box-shadow: rgba(58, 117, 117, 0.4) 0px 2.5px, rgba(58, 117, 117, 0.3) 0px 5px,
 }
 
 
-
+/*--------------------------------------------------- SVG Animation from storyset.com -----------------------------------------*/
 
 /*---------------------------------------------------- FAQ -------------------------------------------------------*/
 .faqcontainer{
@@ -2725,6 +2727,7 @@ footer p {
     padding-right: 15px;
     margin: 5px;
     font-size: 15px;
+    margin-bottom: 40px;
   }
   .contactmaps {
     margin-top: 100px;
