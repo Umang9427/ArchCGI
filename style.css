@@ -1535,10 +1535,31 @@ main{
   box-shadow: inset -1em -0.5em 0 var(--bs-clr);
 }
 
+
+.showcasepage1{
+  float: left;
+  margin: auto;
+}
+
+.showcasepage2{
+  margin-top: 20px;
+  float: center;
+  margin: auto;
+}
+
+.showcasepage3{
+  margin-top: 20px;
+  float: right;
+  margin: auto; 
+}
+
+
+
 @media only screen and (max-width: 770px) {
   .portfoliocard{
     margin-top: 30px;
   }
+  
 }
 @media only screen and (max-width: 1000px){
   .portfoliocard{
@@ -1554,14 +1575,14 @@ main{
   --bs-clr: rgba(58, 117, 117, 0.3);
 }
 .card2:before{
-  background: url("img/Interior/i474.webp");
+  background: url("img/Interior/i466.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
   --bs-clr: rgba(58, 117, 117, 0.3);
 }
 .card3:before{
-  background: url("img/ResortLandscape/i207_result.webp");
+  background: url("img/ResortLandscape/i277_result.webp");
   border-radius: 50%;
   background-position: center;
   background-size: cover;
