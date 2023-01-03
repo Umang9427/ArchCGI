@@ -966,7 +966,7 @@ main{
 }
 .sslide:first-child {
   background: url("img/l/1.webp") no-repeat
-    center bottom/cover;
+    center/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(2) {
