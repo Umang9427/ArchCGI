@@ -685,10 +685,10 @@ main{
   padding-right: 70px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .mainwords{
     font-weight: 700;
-    font-size: 12px;
+    font-size: 10px;
     
   }
   .mainwords span{
