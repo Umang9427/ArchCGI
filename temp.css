@@ -1,129 +1,68 @@
-.headingcontainer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.mainwords {
-  font-size: 40px;
-  color: rgb(83, 83, 83);
-  white-space: nowrap;
-  overflow: hidden;
+
+
+.portfoliocard {
   display: block;
-  font-weight: 900;
+  position: absolute;
+  border-radius: 12px;
+  width: 450px;
+  height: 450px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.portfoliocard img{
+  transition: all 0.7s ease-in-out;
+}
+.portfoliocard:hover img{
+  transition: all 0.7s ease-in-out; 
+  transform: scale(1.5);
+}
+
+
+.info {
+  z-index: 2;
+  display: block;
   position: relative;
-  left: 0px;
-  text-align: center;
-  padding: 10px;
-  display: inline-block;
-  
+  border-radius: 0px;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  background-image: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(45px);
+  backdrop-filter: blur(50px);
+  bottom: 20%;
+  transition: all 0.7s ease-in-out;
 }
 
+.portfoliocard:hover .info,
+.portfoliocard:hover .info:before {
+  transition: all 0.7s ease;
+  bottom: 100%;
+  height: 500px;
+  border-radius: 12px;
+}
 
-
-.mainwords span{
-  background: linear-gradient(75deg , rgba(247, 0, 99, 0.2), rgba(255, 128, 0, 0.2));
+.title {
+  margin: 0;
+  padding-left: 32%;
   padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
+  font-size: 35px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  transition: padding 0.7s ease-in-out;
+}
+.portfoliocard:hover .title{
+  padding-left: 10%;
+  padding-top: 20px;
+  transition: padding 0.7s ease-in-out;
 }
 
-@media (max-width: 1000px) {
-  .mainwords{
-    font-weight: 600;
-  }
+
+@media (min-width: 800px) {
+
 }
 
-
-
-
-@keyframes Umang{
-  0%{
-   
-    width: 0;
-   
-  }
-  5%{
-    
-    width: 0;
-  }
-  12.5%{
-    
-    width: 100%;
-  
-  }
-  22%{
-    
-    width: 100%;
-  
-  }
-  25%{
-   
-    width: 0;
-   
-  }
-  30%{
-    
-    width: 0;
-   
-  }
-  37.5%{
-    
-    width: 100%;
-    
-  }
-  47%{
-    
-    width: 100%;
-    
-  }
-  50%{
-    
-    width: 0;
-
-  }
-  55%{
-    
-    width: 0;
-
-  }
-  62.5%{
-    
-    width: 100%;
-    
-  }
-  72%{
-    
-    width: 100%;
-    
-  }
-
-  75%{
-    
-    width: 0;
-  }
-  80%{
-    
-    width: 0;
-  }
-
-  87.5%{
-    
-    width: 100%;
-   
-  }
-  
-  97%{
-   
-    width: 100%;
-   
-  }
-
-  100%{
-  
-    width: 0;
-  }
+@media (min-width: 800px) {
   
 }
-

@@ -1,33 +1,46 @@
-document.getElementById("mainwords").style.animation="Umang 15s ease-in-out infinite";
+function fallbackCopyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  
+  // Avoid scrolling to bottom
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
 
-function doSetTimeout(){
-  setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Top Notch Detailing in Architectural Visualization</span>';
-   doSetTimeout2();
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
 
-  }, 3750);
+  try {
+    var successful = document.execCommand('copy');
+    var msg = successful ? 'successful' : 'unsuccessful';
+    console.log('Fallback: Copying text command was ' + msg);
+  } catch (err) {
+    console.error('Fallback: Oops, unable to copy', err);
+  }
+
+  document.body.removeChild(textArea);
 }
-function doSetTimeout2(){
-  setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Bringing 3D Rendering to a Vast Majority Globally</span>';
-   doSetTimeout3();
-
-  }, 3750);
-}
-function doSetTimeout3(){
-  setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Expert 3D Interior | Exterior | Landscape Design</span>';
-   doSetTimeout4();
-
-  }, 3750);
-}
-function doSetTimeout4(){
-  setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Industry Leading Showcase of CGI for Architecture</span>';
-   doSetTimeout();
-
-  }, 3750);
+function copyTextToClipboard(text) {
+  if (!navigator.clipboard) {
+    fallbackCopyTextToClipboard(text);
+    return;
+  }
+  navigator.clipboard.writeText(text).then(function() {
+    console.log('Async: Copying to clipboard was successful!');
+  }, function(err) {
+    console.error('Async: Could not copy text: ', err);
+  });
 }
 
+var copyBobBtn = document.querySelector('.js-copy-bob-btn'),
+  copyJaneBtn = document.querySelector('.js-copy-jane-btn');
 
-doSetTimeout();
+copyBobBtn.addEventListener('click', function(event) {
+  copyTextToClipboard('Bob');
+});
+
+
+copyJaneBtn.addEventListener('click', function(event) {
+  copyTextToClipboard('Jane');
+});
