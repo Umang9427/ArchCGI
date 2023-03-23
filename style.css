@@ -1211,8 +1211,8 @@ main{
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-1400px) rotate(600deg);
-            transform: translateY(-1400px) rotate(600deg);
+    -webkit-transform: translateY(-1800px) rotate(600deg);
+            transform: translateY(-1800px) rotate(600deg);
   }
 }
 @keyframes square {
@@ -1221,8 +1221,8 @@ main{
             transform: translateY(0);
   }
   100% {
-    -webkit-transform: translateY(-1400px) rotate(600deg);
-            transform: translateY(-1400px) rotate(600deg);
+    -webkit-transform: translateY(-1800px) rotate(600deg);
+            transform: translateY(-1800px) rotate(600deg);
   }
 }
 
