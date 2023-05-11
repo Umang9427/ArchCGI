@@ -1458,170 +1458,337 @@ main{
   margin-left: 94%;
 }
 
-/*----------------------------------------------- Portfolio Cards ----------------------------------------*/
+
+
+
+
+/*-------------------------------------------------- Portfolio Card -------------------------------------------------*/
 .portfoliocardscontainer{
-  margin: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.portfoliocard {
-  background-color: rgb(238, 238, 238);
-  width: 300px;
-  overflow: hidden;
-  border-radius: 1em;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
-}
-
-.portfoliocard {
-  position: relative;
-}
-.portfoliocard:before {
-  content: "";
-  position: absolute;
-  transition: 300ms;
-  top: -80px;
-  left: -100%;
-  right: -100%;
-  margin: auto;
-  height: 400px;
-  width: 400px;
-  box-shadow: inset -1em -0.5em 0 var(--bs-clr);
-}
-
-
-.showcasepage1{
-  float: left;
-  margin: auto;
-}
-
-.showcasepage2{
-  margin-top: 20px;
-  float: center;
-  margin: auto;
-}
-
-.showcasepage3{
-  margin-top: 20px;
-  float: right;
-  margin: auto; 
-}
-
-
-
-@media only screen and (max-width: 770px) {
-  .portfoliocard{
-    margin-top: 30px;
-  }
-  
-}
-@media only screen and (max-width: 1000px){
-  .portfoliocard{
-    margin-top: 30px;
-  }
-}
-
-.card1:before{
-  background: url("img/Exterior/i475.webp");
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  --bs-clr: rgba(58, 117, 117, 0.3);
-}
-.card2:before{
-  background: url("img/Interior/i466.webp");
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  --bs-clr: rgba(58, 117, 117, 0.3);
-}
-.card3:before{
-  background: url("img/ResortLandscape/i277_result.webp");
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  --bs-clr: rgba(58, 117, 117, 0.3);
-}
-.card4:before{
-  background: url("img/Interior/i429.webp");
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-  --bs-clr: rgba(58, 117, 117, 0.3);
-}
-
-.bottom {
-  margin-top: calc(400px + -80px);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 2px;
-  padding-right: 2px;
-
-  position: relative;
-  z-index: 2;
-}
-
-.buttonexplore {
-  cursor: pointer;
-  margin: 5px 5px;
-  padding: 10px;
-  background-color: rgba(58, 117, 117, 0.9);
-  border: 0.4px solid rgb(58, 117, 117);
-  overflow: hidden;
-  transition: 0.5s;
-  margin-bottom: 10px;
-  font-weight: 600;
-  font-family: poppinsregular;
-  letter-spacing: 1px;
-  border-radius: 5px;
-
-}
-.buttonexplore:hover {
-  transform: translateY(-10%);
-  letter-spacing: 5px;
-  transition: 0.5s;
-  border-radius: 5px 5px 20px 20px;
-box-shadow: rgba(58, 117, 117, 0.4) 0px 2.5px, rgba(58, 117, 117, 0.3) 0px 5px,
-    rgba(58, 117, 117, 0.2) 0px 7.5px, rgba(58, 117, 117, 0.1) 0px 10px,
-    rgba(58, 117, 117, 0.05) 0px 12.5px;
-}
-.buttonexplore::before {
-  content: "";
-  top: 0;
-  bottom: 0;
   width: 100%;
-  height: 0%;
-  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  margin-top: 50px;
 }
-.buttonexplore:hover::before {
-  height: 100%;
-  transition: 0.5s;
+.portfoliocard {
+  display: block;
+  position: relative;
+  border-radius: 3%;
+  width: 450px;
+  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  shape-rendering: geometricPrecision;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-.nameofcard{
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  letter-spacing: -0.5px;
-  margin-bottom: 20px;
+.portfolio1{
+  margin-left: 15%;
 }
-.profession-wrapper {
+.portfolio2{
+  margin-right: 15%;
+}
+
+
+
+
+
+.portfoliocard img{
+  width: 450px;
+  height: 450px;
+  transition: all 0.7s ease-in-out;
+}
+.portfoliocard:hover img{
+  transition: all 0.7s ease-in-out; 
+  transform: scale(2);
+}
+
+
+.info {
+  z-index: 2;
+  display: block;
+  position: relative;
+  border-radius: 0px;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(55px);
+  backdrop-filter: blur(55px);
+  bottom: 20%;
+  transition: all 0.7s ease-in-out;
+}
+
+.portfoliocard:hover .info,
+.portfoliocard:hover .info:before {
+  transition: all 0.7s ease;
+  bottom: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 0;
+  padding-left: 160px;
+  padding-top: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.7s ease-in-out;
+  opacity: 0.9;
+}
+.portfoliocard:hover .title{
+  padding-left: 8%;
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.65);
+  transition: all 0.7s ease-in-out;
+}
+
+@media screen and (max-width: 1300px){
+  .portfolio1{
+    margin-left: 5%;
+  }
+  .portfolio2{
+    margin-right: 5%;
+  }
+  .portfoliocardscontainer{
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .portfoliocard{
+    width: 350px;
+    height: 350px;
+  }
+  .portfoliocardscontainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio1{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .portfolio2{
+    margin: auto;
+  }
+
+  .portfoliocard img{
+    width: 350px;
+    height: 350px;
+  }
+  .info{
+    width: 350px;
+    height: 350px;
+    bottom: 30%;
+  }
+  .title{
+    padding-left: 125px;
+  }
+}
+
+
+/* ---------------------------  First Button ---------------------------------------- */
+
+
+
+
+
+.btn_wrap {
+  position: absolute;
   display: flex;
+  justify-content: center;
   align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  width: 33%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.35);
+  outline: none;
+  border-radius: 200px;
+  will-change: transform;
+  transition: all 0.7s ease-in-out;
+  float: right;
+  right: 7%;
+  top: 30%;
+  caret-color: transparent;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.portfoliocard:hover .btn_wrap{
+  right: 7%;
+  top: 4.5%;
+  transition: all 0.7s ease-in-out;
+}
+
+
+.btn_wrap span {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 72px;
+  border-radius: 200px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 70px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0,0,0, 0.7);
+  transition: all 0.7s ease;
+  outline: none;
+}
+
+.copymessage {
+  opacity: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #1e1e1e;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  transition: all 0.4s ease;
+}
+
+.btn_wrap i{
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+  color: rgba(255, 255, 255, 0.8);
+  padding-right: 5%;
+}
+
+.socialcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px;
+  height: 56px;
+  border-radius: 200px;
+}
+
+/* ------------------------------------ Second Button ------------------------------------- */
+
+.input-wrapper {
+  top: 60%;
+  margin: auto;
+  max-width: 90%;
+  position: relative;
+  width: 86%;
+  transition: all 0.7s ease-in-out;
+}
+.portfoliocard:hover .input-wrapper{
+  top: 10%;
+  transition: all 0.7s ease-in-out;
+}
+
+.input-wrapper .input-text {
+  border: none;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #f1f1f1;
+  font-size: 14px;
+  height: 40px;
+  line-height: 45px;
+  outline: none;
+  padding: 0 30px;
+  width: 100%;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.input-wrapper .input-text::placeholder{
+  color: rgba(255, 255, 255, 0.75);
+}
+.input-wrapper .input-submit {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  outline: none;
+  border-radius: 20px 100px 100px 20px;
+  font-size: 16px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   justify-content: center;
 }
 
-.profession {
-  font-size: 0.8em;
-  margin-top: 0.5em;
+
+
+@keyframes success {
+  0% {
+    width: 120px;
+  }
+  50%, 60% {
+    border-radius: 100px;
+    width: 80%;
+  }
+  100%{
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    color: #323232;
+    border-radius: 100px;
+    width: 100%;
+    cursor: default;
+  }
+}
+@keyframes inputSuccess {
+  /*Make the rest of input transparent*/
+  0% {
+    color: rgb(241, 241, 241, 0.8);
+  }
+  20%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
-.portfoliocard:hover:before {
-  height: 100%;
-  top: 0;
-  border-radius: 0;
-  --bs-clr: rgba(53, 22, 163, 0);
-  opacity: 0.8;
+/*--------- Form Validation ----------------*/
+
+
+@keyframes radiate
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.15);
+     }
+     30% {
+          box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+     }
+     50%{
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.05);
+     }
+     100% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0);
+ }
+}
+
+
+#input-submit {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+#input-submit:disabled {
+  background-color: rgba(0,0,0,0.45);
+  cursor: not-allowed;
 }
 
 
@@ -1629,13 +1796,166 @@ box-shadow: rgba(58, 117, 117, 0.4) 0px 2.5px, rgba(58, 117, 117, 0.3) 0px 5px,
 
 
 
+/* ------------------------------------------ Third Button -------------------------------------*/
+
+.tworings {
+  position: relative;
+  margin-left: 7%;
+  top: 80%;
+  transition: all 0.7s ease-in-out;
+  caret-color: transparent;
+  text-decoration: none;
+}
 
 
+.portfoliocard:hover .tworings{
+  top: 30%;
+  transition: all 0.7s ease-in-out;
+}
+
+.tworings #viewgallerybutton {
+  width: 390px;
+  padding: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  border-radius: 200px;
+  height: 40px;
+  position: absolute;
+  left: 0%;
+  background: none;
+  -webkit-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: border 1s ease-in-out;
+  cursor: pointer;
+  z-index: 0;
+  animation: shadow-pulse 1.6s infinite;
+  animation-delay: 0.7s;
+}
+
+.tworings #viewgallerybutton:focus {
+  outline:none;
+}
+
+.tworings #viewgallerybutton:hover{
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: border 1s ease-in-out;
+  animation: step-end;
+  animation-play-state: paused;
+  
+}
+
+.tworings #viewgallerybutton p{
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  top: 0%;
+  position: relative;
+  transform: translateY(-45%) scale(1);
+  transition: all 1s ease-in-out;
+  font-weight: 600;
+}
+.tworings #viewgallerybutton .ring {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.65);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  top: 40%;
+  left: 51%;
+  -webkit-transition: all 2.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all 2.5s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all 2.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 2.5s cubic-bezier(0.55, 0, 0.1, 1);
+  transform: perspective(500px) translate3d(0px, 0px, 0px);
+  opacity: 0;
+}
 
 
+.tworings #viewgallerybutton:hover .one {
+  transform: perspective(500px) translate3d(-120px, -50px, 150px);
+  opacity: 1;
+}
+.tworings #viewgallerybutton:hover .two {
+  transform: perspective(800px) translate3d(-150px, 50px, 180px);
+  opacity: 0.6;
+}
+.tworings #viewgallerybutton:hover .three {
+  transform: perspective(800px) translate3d(130px, -50px, 30px);
+  opacity: 0.2;
+}
+.tworings #viewgallerybutton:hover .four {
+  transform: perspective(800px) translate3d(130px, 120px, 80px);
+  opacity: 0.9;
+}
+.tworings #viewgallerybutton::after {
+  position: absolute;
+  top: -170%;
+  left: 32%;
+  width: 150px;
+  height: 170px;
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20%;
+  z-index: -1;
+  transform: perspective(800px) scale(0) rotate(0deg);
+  -webkit-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.tworings #viewgallerybutton:before {
+  position: absolute;
+  top: -200%;
+  left: 32%;
+  width: 160px;
+  height: 180px;
+  border: solid 1px rgba(255, 255, 255, 0.7);
+  content: "";
+  background: transparent;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 10%;
+  transform: perspective(800px) scale(0.4) rotate(0deg);
+  -webkit-transition: all 2.4s cubic-bezier(0.55, 0, 0.1, 1);
+  -moz-transition: all 2.4s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all 2.4s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 2.4s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.tworings #viewgallerybutton:hover::after {
+  transform: perspective(800px) scale(1) rotate(600deg);
+}
+.tworings #viewgallerybutton:hover::before {
+  transform: perspective(800px) scale(1) rotate(-100deg);
+  opacity: 1;
+}
+.tworings #viewgallerybutton:hover p {
+  color: rgba(0, 0, 0, 0.6);
+  transform: translateY(-45%) scale(1.2);
+  transition: all 1s ease-in-out;
+}
 
 
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
+     }
+     30% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+     }
+     50%{
+        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.05);
+     }
+     100% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+ }
+}
 
+/*------------------------------------ End of Portfolio Cards ----------------------------------------*/
 
 
 
