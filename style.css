@@ -1572,7 +1572,7 @@ main{
   }
   .portfolio1{
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 75px;
   }
   .portfolio2{
     margin: auto;
@@ -1585,14 +1585,17 @@ main{
   .info{
     width: 300px;
     height: 300px;
-    bottom: 30%;
+    bottom: 35%;
   }
   .title{
     padding-left: 110px;
     font-weight: 500;
     letter-spacing: 0px;
-    padding-top: 5px;
+    padding-top: 10px;
     font-size: 25px;
+  }
+  .input-wrapper{
+    display: none;
   }
 }
 
