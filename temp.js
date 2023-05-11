@@ -96,7 +96,7 @@ emailInput.addEventListener('input', () => {
     submitButton.style.backgroundColor = 'rgba(0, 0, 0, 0.45)'; // Black color for empty input
     submitButton.style.animationPlayState = 'paused';
   } else if (isValidEmail) {
-    submitButton.style.backgroundColor = 'rgba(0, 120, 0, 0.45)'; // Green color for valid input
+    submitButton.style.backgroundColor = 'rgba(0, 95, 0, 0.45)'; // Green color for valid input
     submitButton.style.animation = 'radiate 1.6s infinite'; // Add radiating animation to submit button
   } else {
     submitButton.style.backgroundColor = 'rgba(142, 0, 0, 0.45)'; // Red color for invalid input

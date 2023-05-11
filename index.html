@@ -202,7 +202,8 @@
   <!-- ************** Passive events for better Performance ********************-->
   <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
 
- 
+  <!--Icon library of fontawesome. Used in share button of portfolio card-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
 
 </head>
 
@@ -245,7 +246,7 @@
           class="iinstagram">
           <i class="fab fa-instagram" aria-hidden="true"></i></a>
         <a href="https://www.linkedin.com/in/tarang-bhalani-b75861114/" class="llinkedin" target="_blank"
-          alt="Message us on Linkedin"><i class="fa fa-linkedin"></i></a>
+          alt="Message us on Linkedin"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.youtube.com/channel/UC9oZ_VOmn76xP7YVPLirm5g/featured" target="_blank"
           alt="Showcase of Architectural Animation on Youtube" class="yyoutube">
           <i class="fab fa-youtube" aria-hidden="true"></i></a>
@@ -408,54 +409,82 @@
 
 
 
-      <!--********************************* Portfolio Cards ***********************************-->
-      <div class="portfoliocardscontainer">
-        <div class="row">
+    <!-- ************************************* Portfolio Cards ******************************************* -->  
+    <div class="portfoliocardscontainer">
+   
+    <!--*************** Card 1 *******************-->
+    <div class='portfoliocard portfolio1' id="portfoliocard">
+      <img width="450px" height="450px" src="img/Exterior/i441.webp">
+      <div class='info'>
+        <h2 class='title'>Exterior</h2>
 
-          
-          <div class="showcasepage1">
-            <a href="./Exterior.html" style="text-decoration: none;" alt="Redirect to Exterior Showcase page">
-              <div class="portfoliocard card1">
-                <div class="bottom">
-                  <h3 class="nameofcard">Exterior Design</h3>
-                  <div class="profession-wrapper">
-                    <button class="buttonexplore">View<span>&rarr;</span></button>
-                  </div>
-                </div>
-              </div>
-            </a>
+        <!--First Button-->
+        <div class="btn_wrap" id="btn_wrap"  onclick="copyTextToClipboard('https://archcgi.com/Exterior.html')">   
+          <span id="slideonclick"><i class="fa-solid fa-arrow-up-from-bracket"></i>Share</span>
+          <div class="socialcontainer">
+            <p class="copymessage" id="copymessage">Link Copied!</p>
           </div>
-
-          <div class="showcasepage2">
-            <a href="./Interior.html" style="text-decoration: none;" alt="Redirect to Interior Showcase page">
-              <div class="portfoliocard card2">
-                <div class="bottom">
-                  <h3 class="nameofcard">Interior Design</h3>
-                  <div class="profession-wrapper">
-                    <button class="buttonexplore">View<span>&rarr;</span></button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="showcasepage3">
-            <a href="./ResortLandscape.html" style="text-decoration: none;"
-              alt="Redirect to Resort and Landscape Showcase page">
-              <div class="portfoliocard card3">
-                <div class="bottom">
-                  <h3 class="nameofcard">Resort/Landscape</h3>
-                  <div class="profession-wrapper">
-                    <button class="buttonexplore">View<span>&rarr;</span></button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-
         </div>
+
+        <!--Second Button-->
+        <form class="input-wrapper" id="input-wrapper form1">
+            <input class="input-text" name="email" type="email" id="email-input1" placeholder="Enter your Email address"/>
+            <button type="submit" class="input-submit input-submit1" id="input-submit1" disabled>Get Quote</button>
+        </form>
+        
+        <!--Third Button-->
+        <a class="tworings" id="tworings" href="https://archcgi.com/Exterior.html">
+          <div id="viewgallerybutton">
+            <p>View Gallery</p>
+            <div class="ring one"></div>
+            <div class="ring two"></div>
+            <div class="ring three"></div>
+            <div class="ring four"></div>
+            </div>
+      
+          </a>
       </div>
+    </div>
+
+    <!--************************ Card 2 ***************************-->
+    <div class='portfoliocard portfolio2' id="portfoliocard">
+      <img width="auto" height="auto" src="img/Interior/i405.webp">
+      <div class='info'>
+        <h2 class='title'>Interior</h2>
+
+        <!--First Button-->
+        <div class="btn_wrap" id="btn_wrap"  onclick="copyTextToClipboard('https://archcgi.com/Exterior.html')">   
+          <span id="slideonclick"><i class="fa-solid fa-arrow-up-from-bracket"></i>Share</span>
+          <div class="socialcontainer">
+            <p class="copymessage" id="copymessage">Link Copied!</p>
+          </div>
+        </div>
+
+        <!--Second Button-->
+        <form class="input-wrapper" id="input-wrapper form2">
+            <input class="input-text" name="email" type="email" id="email-input2" placeholder="Enter your Email address"/>
+            <button type="submit" class="input-submit input-submit2" id="input-submit2" disabled>Get Quote</button>
+        </form>
+        
+        <!--Third Button-->
+        <a class="tworings" id="tworings" href="https://archcgi.com/Exterior.html">
+          <div id="viewgallerybutton">
+            <p>View Gallery</p>
+            <div class="ring one"></div>
+            <div class="ring two"></div>
+            <div class="ring three"></div>
+            <div class="ring four"></div>
+            </div>
+      
+          </a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+<!-- ******************************************** End of Cards ******************************************-->
 
       <section>
         <h2 class="threeimages" style="padding-top: 20px; padding-bottom: 50px;"> <a href="https://tgbarchstudio.com"
@@ -463,7 +492,7 @@
             style="text-decoration: none; color: orange;">Archcgi</a> </h2>
       </section>
     </div>
-  </div>
+</div>
 
 
 
@@ -868,8 +897,8 @@
 
     <div class="carousel-wrap" style="margin-top: 150px;">
       <div class="owl-carousel1">
-        <div class="item1 img-fluid"><img src="img/Client Logo/3dsr.jpg" title="Our Client" alt="Our Client: 3dsr"
-            width="auto" height="auto" loading="lazy"></div>
+        <div class="item1 img-fluid"><a href="https://3dsr.com/"  target="_blank" ><img src="img/Client Logo/3dsr.jpg" title="Our Client" alt="Our Client: 3dsr"
+            width="auto" height="auto" loading="lazy"></a></div>
         <div class="item1 img-fluid"><img src="img/Client Logo/archtic.jpg" title="Our Client" alt="Our Client: Archtic"
             width="auto" height="auto" loading="lazy"></div>
         <div class="item1 img-fluid"><img src="img/Client Logo/SunEdison-Logo-copy.png" title="Our Client" alt="Our Client: SunEdison"
@@ -1090,10 +1119,11 @@
     <script src="index.js" defer></script>
     <script src="clientlogo.js" defer></script>
     <script src="OwlCarousel.js" defer></script>
+    <script src="portfoliocard.js" defer></script>
+
 
 
 </body>
 
-<a href="https://archimagination.business.site/" style="display: none;"></a>
 
 </html>
