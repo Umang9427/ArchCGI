@@ -315,14 +315,19 @@ td {
 
 /*------------------------------------------------ Navigation bar ------------------------------------------------------*/
 nav {
-  width: 100%;
-  padding: 10px 20px;
+  margin: 10px 20px;
   position: fixed;
   z-index: 99;
   overflow: hidden;
-  background-color: transparent;
+  background: none;
   transition: 0.05s;
   text-decoration: none;
+}
+#navcolor{
+  position: fixed;
+  float: right;
+  right: 5%;
+  top: 20px;
 }
 
 #padnav {
@@ -336,12 +341,7 @@ nav {
 }
 
 
-.header {
-  padding-top: 40px;
-  font-size: 68px;
-  text-align: center;
-  color: white;
-}
+
 
 
 
