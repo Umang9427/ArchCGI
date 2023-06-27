@@ -661,6 +661,7 @@ main{
   justify-content: center;
   position: relative;
   margin-top: 40px;
+  border-radius: 10px;
 }
 .mainwords {
   font-size: 40px;
@@ -676,28 +677,53 @@ main{
   display: inline-block;
   font-family: poppinsextralight;
   letter-spacing: 1px;
-  
+  border-radius: 10px;
 }
 
 
 
 .mainwords span{
-  background: linear-gradient(75deg , rgba(247, 0, 99, 0.12), rgba(255, 128, 0, 0.12));
+  background: linear-gradient(75deg , rgba(247, 0, 99, 0.1), rgba(255, 128, 0, 0.1));
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 70px;
   padding-right: 70px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .mainwords{
+    font-weight: 700;
+    font-size: 30px;
+    
+  }
+  .mainwords span{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 }
 
 @media (max-width: 800px) {
   .mainwords{
     font-weight: 700;
-    font-size: 10px;
+    font-size: 20px;
     
   }
   .mainwords span{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainwords{
+    font-weight: 700;
+    font-size: 12px;
+    
+  }
+  .mainwords span{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -707,12 +733,12 @@ main{
 @keyframes Umang{
   0%{
    
-    width: 0;
+    width: 4%;
    
   }
   5%{
     
-    width: 0;
+    width: 4%;
   }
   12.5%{
     
@@ -726,12 +752,12 @@ main{
   }
   25%{
    
-    width: 0;
+    width: 4%;
    
   }
   30%{
     
-    width: 0;
+    width: 4%;
    
   }
   37.5%{
@@ -746,12 +772,12 @@ main{
   }
   50%{
     
-    width: 0;
+    width: 4%;
 
   }
   55%{
     
-    width: 0;
+    width: 4%;
 
   }
   62.5%{
@@ -767,11 +793,11 @@ main{
 
   75%{
     
-    width: 0;
+    width: 4%;
   }
   80%{
     
-    width: 0;
+    width: 4%;
   }
 
   87.5%{
@@ -788,7 +814,7 @@ main{
 
   100%{
   
-    width: 0;
+    width: 4%;
   }
   
 }
@@ -1542,8 +1568,8 @@ main{
   opacity: 0.9;
 }
 .portfoliocard:hover .title{
-  padding-left: 8%;
-  padding-top: 20px;
+  padding-left: 8.5%;
+  padding-top: 8%;
   color: rgba(0, 0, 0, 0.65);
   transition: all 0.7s ease-in-out;
 }
@@ -1638,6 +1664,46 @@ main{
   }
 }
 
+@media screen and (max-width: 500px){
+  .portfoliocard{
+    width: 70%;
+    height: 350px;
+  }
+  .portfoliocardscontainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio1{
+    margin: auto;
+    margin-bottom: 75px;
+  }
+  .portfolio2{
+    margin: auto;
+  }
+
+  .portfoliocard img{
+    width: 100%;
+    height: 350px;
+  }
+  .info{
+    width: 100%;
+    aspect-ratio: 1/1;
+    bottom: 30%;
+  }
+  .title{
+    padding-left: 37%;
+    font-weight: 500;
+    letter-spacing: 0px;
+    padding-top: 3.5%;
+    font-size: 25px;
+  }
+  .input-wrapper{
+    display: none;
+  }
+}
+
+
 
 /* ---------------------------  First Button ---------------------------------------- */
 
@@ -1667,7 +1733,7 @@ main{
 }
 .portfoliocard:hover .btn_wrap{
   right: 7%;
-  top: 4.5%;
+  top: 8%;
   transition: all 0.7s ease-in-out;
 }
 
@@ -1678,12 +1744,12 @@ main{
   width: 100%;
   height: 72px;
   border-radius: 200px;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   line-height: 70px;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0,0,0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255,255,255, 0.3);
   transition: all 0.7s ease;
   outline: none;
 }
@@ -1705,7 +1771,7 @@ main{
 .btn_wrap i{
   font-size: 16px;
   transition: all 0.5s ease-in-out;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   padding-right: 5%;
 }
 
@@ -1734,7 +1800,7 @@ main{
   transition: all 0.7s ease-in-out;
 }
 .portfoliocard:hover .input-wrapper{
-  top: 10%;
+  top: 13%;
   transition: all 0.7s ease-in-out;
 }
 
@@ -1742,7 +1808,7 @@ main{
   border: none;
   border-radius: 100px;
   box-sizing: border-box;
-  color: #f1f1f1;
+  color: rgba(0,0,0);
   font-size: 14px;
   height: 40px;
   line-height: 45px;
@@ -1751,18 +1817,19 @@ main{
   width: 100%;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   opacity: 0.6;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.45);
 }
 .input-wrapper .input-text::placeholder{
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.8);
 }
 .input-wrapper .input-submit {
-  background-color: rgba(0, 0, 0, 0.45);
-  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   border: none;
   outline: none;
   border-radius: 20px 100px 100px 20px;
-  font-size: 16px;
+  font-size: 15px;
   height: 40px;
   padding: 0;
   position: absolute;
@@ -1846,8 +1913,11 @@ main{
 
 .tworings {
   position: relative;
-  margin-left: 7%;
-  top: 80%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  top: 85%;
   transition: all 0.7s ease-in-out;
   caret-color: transparent;
   text-decoration: none;
@@ -1855,18 +1925,22 @@ main{
 
 
 .portfoliocard:hover .tworings{
-  top: 30%;
+  top: 35%;
   transition: all 0.7s ease-in-out;
 }
 
 .tworings #viewgallerybutton {
-  width: 390px;
+  width: 220px;
   padding: 16px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 200px;
   height: 40px;
   position: absolute;
-  left: 0%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   background: none;
   -webkit-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
   -moz-transition: all 1.3s cubic-bezier(0.55, 0, 0.1, 1);
