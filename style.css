@@ -1,23 +1,23 @@
 
 
 @font-face {
-  font-family: poppinsthin;
-  src: url('./Font/Poppins-Thin.ttf');
+  font-family: latothin;
+  src: url('./Font/Lato-Thin.ttf');
 }
 
 @font-face {
-  font-family: poppinsregular;
-  src: url('./Font/Poppins-Regular.ttf');
+  font-family: latoregular;
+  src: url('./Font/Lato-Regular.ttf');
 }
 
 @font-face {
-  font-family: poppinsextralight;
-  src: url('./Font/Poppins-ExtraLight.ttf');
+  font-family: latobold;
+  src: url('./Font/Lato-Bold.ttf');
 }
 
 @font-face {
-  font-family: poppinslight;
-  src: url('./Font/Poppins-Light.ttf');
+  font-family: latolight;
+  src: url('./Font/Lato-Light.ttf');
 }
 
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
@@ -291,7 +291,7 @@ td {
 }
 .allfont {
   /*font-family: 'Times New Roman', Times, serif;*/
-  font-family: poppinslight;
+  font-family: latolight;
 
 }
 
@@ -676,7 +676,7 @@ main{
   text-align: center;
   padding: 10px;
   display: inline-block;
-  font-family: poppinsextralight;
+  font-family: latolight;
   letter-spacing: 1px;
   border-radius: 10px;
 }
@@ -881,7 +881,7 @@ main{
 
 
 .slider1 .content{
-  font-family: poppinsextralight;
+  font-family: latolight;
 
   font-weight: 100;
 }
@@ -1310,7 +1310,8 @@ main{
 .mobilecoltext {
   text-align: justify;
   color: rgb(1, 1, 1);
-  font-size: 15px;
+  font-family: latolight;
+  font-size: 16px;
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
@@ -1559,6 +1560,7 @@ main{
 }
 
 .title {
+  font-family: latobold;
   margin: 0;
   padding-left: 190px;
   padding-top: 22px;
@@ -2112,6 +2114,8 @@ text-align: center;
 }
 .faqcontainer .row h3{
   margin-bottom: 20px;
+  font-family: latolight;
+  font-weight: 600;
 }
 
 .faqcontainer .row p{
@@ -2120,6 +2124,8 @@ text-align: center;
 
 .contentinfaq{
   padding-left: 15%;
+  font-family: latolight;
+  font-weight: 500;
 }
 @media only screen and (max-width: 1000px){
   .contentinfaq{
@@ -2289,7 +2295,7 @@ text-align: center;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  font-family: poppinsregular;
+  font-family: latoregular;
   letter-spacing: 3px;
   font-weight: 500;
 }
@@ -2692,7 +2698,7 @@ footer{
   margin-bottom: 27px;
 }
 footer p {
-  font-family: "Poppins", sans-serif;
+  font-family: latoregular;
   font-size: 15px;
   color: rgb(245, 245, 245);
   line-height: 28px;
@@ -2795,7 +2801,7 @@ footer p {
   position: relative;
   z-index: 2;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: latolight;
 }
 .dk-footer .contact-us {
   margin-top: 0;
