@@ -206,21 +206,21 @@ document.getElementById("mainwords").style.animation="Umang 24s ease-in-out infi
 
 function doSetTimeout(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Top Notch Detailing in Architectural Visualization</span>';
+   document.getElementById('mainwords').innerHTML = '<span>Creative Modern Designs including Complete Details</span>';
    doSetTimeout2();
 
   }, 6000);
 }
 function doSetTimeout2(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Bringing 3D Rendering to a Vast Majority Globally</span>';
+   document.getElementById('mainwords').innerHTML = '<span>Easily Accessible Realistic Architectural Visualization</span>';
    doSetTimeout3();
 
   }, 6000);
 }
 function doSetTimeout3(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Expert 3D Interior | Exterior | Landscape Design</span>';
+   document.getElementById('mainwords').innerHTML = '<span>3D Interior, Exterior and Landscape Rendering</span>';
    doSetTimeout4();
 
   }, 6000);
