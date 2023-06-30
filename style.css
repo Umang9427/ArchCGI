@@ -868,15 +868,18 @@ main{
 }
 
 .sslide .content h1 {
+  font-family: latolight;
   margin-bottom: 10px;
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: 500;
   color: rgb(237, 237, 237);
 }
 
 .sslide .content h2:nth-child(n+1){
-  font-size: 45px;
+  font-family: latolight;
+  font-size: 35px;
   color: rgb(237, 237, 237);
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 
@@ -931,13 +934,13 @@ main{
 
 @media (max-width: 770px) {
   .sslide .content {
-    bottom: -300px;
+    bottom: -250px;
     left: 0px;
     width: 100%;
   }
 
   .sslide.current .content {
-    transform: translateY(-300px);
+    transform: translateY(-250px);
   }
 }
 
@@ -947,12 +950,12 @@ main{
 }
 .sslide:first-child {
   background: url("img/l/1.webp") no-repeat
-    center/cover;
+    left bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(2) {
   background: url("img/l/2.webp") no-repeat
-    center bottom/cover;
+    center center/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
@@ -962,26 +965,17 @@ main{
 }
 .sslide:nth-child(4) {
   background: url("img/l/4.webp") no-repeat
-    center bottom/cover;
+    center top/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
   background: url("img/l/5.webp") no-repeat
-    center top/cover;
+    center center/cover;
     background-attachment: fixed;
 }
-.sslide:nth-child(6) {
-  background: url("img/l/6.webp") no-repeat
-    center bottom/cover;
-    background-attachment: fixed;
-}
-.sslide:nth-child(7) {
-  background: url("img/l/7.webp") no-repeat
-    center bottom/cover;
-    background-attachment: fixed;
-} 
 
-/*Check mobile view images as well*/
+
+/*Check mobile view images in the bottom as well*/
 
 
 
@@ -1309,8 +1303,9 @@ main{
 }
 .mobilecoltext {
   text-align: justify;
-  color: rgb(1, 1, 1);
+  color: rgb(1, 1, 1, 0.7);
   font-family: latolight;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   margin-bottom: 40px;
@@ -1529,10 +1524,10 @@ main{
 .portfoliocard img{
   width: 525px;
   height: 525px;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .portfoliocard:hover img{
-  transition: all 0.7s ease-in-out; 
+  transition: all 0.5s ease-in-out; 
   transform: scale(2);
 }
 
@@ -1548,12 +1543,12 @@ main{
   -webkit-backdrop-filter: blur(55px);
   backdrop-filter: blur(55px);
   bottom: 20%;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .portfoliocard:hover .info,
 .portfoliocard:hover .info:before {
-  transition: all 0.7s ease;
+  transition: all 0.5s ease;
   bottom: 100%;
   height: 600px;
   border-radius: 10px;
@@ -1655,6 +1650,7 @@ main{
     width: 100%;
     aspect-ratio: 1/1;
     bottom: 30%;
+    border-radius: 0px;
   }
   .title{
     padding-left: 37%;
@@ -1694,6 +1690,7 @@ main{
     width: 100%;
     aspect-ratio: 1/1;
     bottom: 30%;
+    border-radius: 0px;
   }
   .title{
     padding-left: 37%;
@@ -1749,6 +1746,7 @@ main{
   height: 72px;
   border-radius: 200px;
   font-size: 15px;
+  font-weight: 600;
   text-align: center;
   line-height: 70px;
   letter-spacing: 2px;
@@ -1814,6 +1812,7 @@ main{
   box-sizing: border-box;
   color: rgba(0,0,0);
   font-size: 14px;
+  font-weight: 800;
   height: 40px;
   line-height: 45px;
   outline: none;
@@ -1829,11 +1828,12 @@ main{
 }
 .input-wrapper .input-submit {
   background-color: rgba(0, 0, 0, 0.6);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.7);
   border: none;
   outline: none;
   border-radius: 20px 100px 100px 20px;
   font-size: 15px;
+  font-weight: 600;
   height: 40px;
   padding: 0;
   position: absolute;
@@ -1953,7 +1953,7 @@ main{
   transition: border 1s ease-in-out;
   cursor: pointer;
   z-index: 0;
-  animation: shadow-pulse 1.6s infinite;
+  animation: shadow-pulse 2s infinite;
   animation-delay: 0.7s;
 }
 
@@ -1970,14 +1970,15 @@ main{
 }
 
 .tworings #viewgallerybutton p{
+  font-family: latoregular;
   font-size: 20px;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   top: 0%;
   position: relative;
   transform: translateY(-45%) scale(1);
   transition: all 1s ease-in-out;
-  font-weight: 600;
 }
 .tworings #viewgallerybutton .ring {
   position: absolute;
@@ -2066,12 +2067,13 @@ main{
 @keyframes shadow-pulse
 {
      0% {
-          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
      }
-     30% {
-          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+     
+     60%{
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
      }
-     50%{
+     75%{
         box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.05);
      }
      100% {
@@ -2113,9 +2115,13 @@ text-align: center;
   padding-top: 100px;
 }
 .faqcontainer .row h3{
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-family: latolight;
   font-weight: 600;
+}
+
+.faqcontainer .row .faq1{
+  margin-bottom: 30px;
 }
 
 .faqcontainer .row p{
@@ -2123,9 +2129,10 @@ text-align: center;
 }
 
 .contentinfaq{
-  padding-left: 15%;
+  padding-left: 18%;
   font-family: latolight;
   font-weight: 500;
+  font-size: 17px;
 }
 @media only screen and (max-width: 1000px){
   .contentinfaq{
@@ -2202,6 +2209,15 @@ text-align: center;
   padding-left: 85px;
   overflow: hidden;
   
+}
+
+.single-testimonial-item p{
+  font-family: latolight;
+  font-size: 16px;
+}
+.single-testimonial-item h3{
+  font-family: latoregular;
+  color: rgb(0,0,0,0.75);
 }
 
 @media only screen and (max-width: 1000px){
@@ -2431,10 +2447,11 @@ text-align: center;
 
 
 .partofcommunity {
+  font-family: latoregular;
   text-align: center;
   margin-top: 30px;
   font-size: 60px;
-  color: rgb(243, 164, 68);
+  color: rgb(243, 164, 68, 0.8);
   letter-spacing: 2px;
   font-weight: 100;
   line-height: 80px;
@@ -2831,6 +2848,7 @@ footer p {
 
 .footer-h3{
   padding: 0px;
+  font-family: latoregular;
 }
 
 .footer-social-links{
@@ -3048,7 +3066,7 @@ footer p {
     font-size: 25px;
   }
 
-  /* Backgorund Images */
+  /* Background Images */
   
 .slider{
   height: 97vh;
@@ -3060,42 +3078,34 @@ footer p {
   display: block;
 }
 .sslide:first-child {
-  background: url("img/p/Image1_004.webp") no-repeat
-    center bottom/cover;
+  background: url("img/p/1.webp") no-repeat
+    center center/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(2) {
-  background: url("img/p/Image1_0012.webp") no-repeat
-    center bottom/cover;
+  background: url("img/p/2.webp") no-repeat
+    left bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(3) {
-  background: url("img/p/Image1_001.webp") no-repeat
-    center bottom/cover;
+  background: url("img/p/3.webp") no-repeat
+    center center/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/p/Image1_008.webp") no-repeat
+  background: url("img/p/4.webp") no-repeat
     center bottom/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
-  background: url("img/p/Image1_005.webp") no-repeat
-    center bottom/cover;
+  background: url("img/p/5.webp") no-repeat
+    center center/cover;
     background-attachment: fixed;
 }
 
-.sslide:nth-child(6) {
-  background: url("img/p/Image1_0011.webp") no-repeat
-    center bottom/cover;
-    background-attachment: fixed;
+.sslide .content h2:nth-child(n+1){
+  padding-top: 0px;
 }
-.sslide:nth-child(7) {
-  background: url("img/p/Image1.webp") no-repeat
-    center bottom/cover;
-    background-attachment: fixed;
-}
-
 
 .sslide .content {
   background-color: rgba(0, 0, 0, 0.5);
