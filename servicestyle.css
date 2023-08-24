@@ -14,7 +14,7 @@ body {
 
 .servicecontainer h1 {
   font-family: latolight;
-  font-size: 32px;
+  font-size: 4.5vh;
   margin-top: 12%;
   margin-bottom: 7%;
   margin-left: 1%;
@@ -23,7 +23,7 @@ body {
 }
 
 .decorative-line {
-  width: 60px;
+  width: 6vw;
   height: 2px;
   background-color: #ccc;
   position: absolute;
@@ -34,18 +34,18 @@ body {
 .services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+  grid-gap: 5vw;
 }
 
 .card {
   width: 100%;
-  height: 300px;
+  height: 40vh;
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
+  border-radius: 2vw;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transform: translateZ(0);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
@@ -56,8 +56,8 @@ body {
 }
 
 .card img {
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform 0.3s ease;
@@ -68,9 +68,10 @@ body {
 }
 
 .info {
-  height: 400px;
+  top: 0;
+  height: 100%;
   flex: 1;
-  padding: 15px;
+  padding: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,15 +86,15 @@ body {
 }
 
 .card h3 {
-  font-size: 24px;
-  
+  font-size: 3vh;
+  margin-top: 20%;
   color: #333;
 }
 
 .card p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 16px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 2.5vh;
   line-height: 1.5;
   color: #666;
 }
@@ -101,10 +102,11 @@ body {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 2vh;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-bottom: 2vh;
 }
 
 .card:hover .tags {
@@ -115,7 +117,7 @@ body {
 .tag {
   margin: 5px;
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 1.5vh;
   font-family: latolight;
   color: #fbfbfb;
   background-color: rgba(0,0,0,0.85);
@@ -149,21 +151,20 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0px;
   }
-  .card img{
-    width: 50%;
-    height: 250px;
-  }
   .card{
     width: 100%;
-    height: 250px;
+    height: 30vh;
     margin-bottom: 50px;
   }
+  .card img{
+    width: 40vw;
+  }
   .info{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%
     
-    height: 400px;
-    width: 300px;
-    z-index: 10;
-    transform: translateY(0px);
   }
   .tags{
     display: none;

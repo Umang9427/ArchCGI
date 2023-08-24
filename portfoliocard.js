@@ -9,7 +9,7 @@ parentDiv.addEventListener('click', function(event) {
         // The click occurred within a child div, do nothing
         return;
     }
-    window.open('https://archcgi.com/Exterior.html', "_self");
+    window.open('https://archcgi.com/realistic.html', "_self");
 });
 
 
@@ -24,7 +24,35 @@ parentDiv2.addEventListener('click', function(event) {
         // The click occurred within a child div, do nothing
         return;
     }
-    window.open('https://archcgi.com/Interior.html', "_self");
+    window.open('https://archcgi.com/ultrarealistic.html', "_self");
+});
+
+
+const parentDiv3 = document.querySelector('.portfolio3');
+
+parentDiv3.addEventListener('click', function(event) {
+    const clickedChild1 = event.target.closest('.portfolio3 .btn_wrap');
+    const clickedChild2 = event.target.closest('.portfolio3 .input-wrapper');
+    const clickedChild3 = event.target.closest('.portfolio3 .tworings');
+    if (clickedChild1 || clickedChild2 || clickedChild3) {
+        // The click occurred within a child div, do nothing
+        return;
+    }
+    window.open('https://archcgi.com/vr.html', "_self");
+});
+
+
+const parentDiv4 = document.querySelector('.portfolio4');
+
+parentDiv4.addEventListener('click', function(event) {
+    const clickedChild1 = event.target.closest('.portfolio4 .btn_wrap');
+    const clickedChild2 = event.target.closest('.portfolio4 .input-wrapper');
+    const clickedChild3 = event.target.closest('.portfolio4 .tworings');
+    if (clickedChild1 || clickedChild2 || clickedChild3) {
+        // The click occurred within a child div, do nothing
+        return;
+    }
+    window.open('https://archcgi.com/Walkthrough.html', "_self");
 });
 
 
@@ -72,7 +100,7 @@ parentDiv2.addEventListener('click', function(event) {
     var copies = document.querySelectorAll("#copymessage");
 
     for (var i = 0; i < 2; i++) {
-    slides[i].style.transform = "translateX(-280px)";
+    slides[i].style.transform = "translateX(-100%)";
     slides[i].style.transitionDelay = "0.1s";
 
     copies[i].style.transitionDelay = "0.2s";

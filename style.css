@@ -315,26 +315,25 @@ td {
 
 /*------------------------------------------------ Navigation bar ------------------------------------------------------*/
 nav {
-  margin: 10px 20px;
   position: fixed;
   z-index: 99;
   overflow: hidden;
   background: none;
   transition: 0.05s;
   text-decoration: none;
+  top: 4vh;
 }
 #navcolor{
   position: fixed;
   float: right;
-  right: 5%;
-  top: 20px;
+  right: 5vw;
+  
 }
 
 #padnav {
   display: block;
   text-align: center;
-  padding-left: 12px;
-  padding-right: 16px;
+  
   text-transform: uppercase;
 
   text-transform: none;
@@ -342,6 +341,12 @@ nav {
 
 
 
+
+
+.right {
+  float: right;
+
+}
 
 
 
@@ -362,39 +367,57 @@ nav {
 
 .overlay-content {
   position: relative;
-  top: 10%;
+  top: 14%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  
 }
 
 .overlay-content2{
   position: relative;
-  top: 25%;
+  top: 15%;
   text-align: center;
   
 }
+
+.overlay .closebtn {
+  position: absolute;
+  right: 6vw;
+  font-size: 14vh;
+  transform: translateY(-2vh);
+}
+
 .navtext {
   padding: 8px;
   text-decoration: none;
-  font-size: 60px;
+  font-size: 7vh;
   color: black;
   display: block;
   transition: 0.3s;
+  letter-spacing: 0.1em;
 }
 
 .navtext2 {
   padding: 0 40px 0 40px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 6vh;
+  font-weight: 200;
   color: black;
   transition: 0.3s;
+  letter-spacing: 0.1em;
 }
-
+.navdivider{
+  position: relative;
+  text-align: center;
+  font-size: 6vh;
+  margin-top: 8vh;
+  font-weight: 700;
+  color: rgba(238, 131, 0, 0.8);
+}
 @media screen and (max-width: 1000px){
   .navtext2{
-  font-size: 25px;
-  padding: 0 8px 0 8px;
+  font-size: 4vh;
+  padding: 0 15px 0 15px;
   }
 }
 
@@ -428,6 +451,13 @@ nav {
     background-clip: padding-box;
     padding: 5px;
     transform: scale(1.4);
+  }
+
+  @media screen and (max-width: 1000px){
+
+    .ham{
+      width: 14vw;
+    }
   }
  
   .line {
@@ -465,30 +495,20 @@ nav {
 }
 
 
-.overlay .closebtn {
-  position: absolute;
-  top: -10px;
-  right: 50px;
-  font-size: 110px;
-}
 
-.workdone {
-  font-size: 25px;
-  align-content: center;
-  text-align: center;
-  margin-bottom: 5%;
-  z-index: 2;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-}
 ul.top li {
   list-style: none;
   float: left;
 }
 #logo {
-  margin-top: 20px;
   transition: all 1s ease-in-out;
-  opacity: 0.5;
+  opacity: 0.7;
+  margin-left: 3vw;
+}
+#logo img{
+  width: 4vw;
+  height: 4vw;
+  
 }
 #logo:hover {
   transform: scale(1.2);
@@ -496,17 +516,13 @@ ul.top li {
   opacity: 1;
 }
 
-#padnav2 {
-  margin-top: 10px;
+@media screen and (max-width: 1000px){
+  #logo img{
+    width: 12vw;
+    height: 12vw;
+  }
 }
-#right2 {
-  margin-top: 10px;
-}
-.right {
-  float: right;
-  padding-top: 10px;
-  padding-right: 20px;
-}
+
 
 /*ul.top li a:hover {
     text-decoration: underline;
@@ -598,15 +614,14 @@ main{
   background-size: cover;
 
 }
-.background1container{
-  padding-bottom: 1px;
-}
+
 .authentic {
-  padding-top: 150px;
+  margin-top: 4vh;
+  margin-bottom: 10vh;
   text-align: center;
   align-content: center;
-  font-size: 20px;
- 
+  font-size: 3.5vh;
+  letter-spacing: 2px;
 }
 .threeimages {
   text-align: center;
@@ -614,7 +629,8 @@ main{
   margin-top: 20px;
   margin-bottom: 100px;
   color: black;
-  font-size: 45px;
+  font-size: 4vh;
+  letter-spacing: 1px;
   color: rgb(58, 117, 117);
   
   font-weight: 800;
@@ -665,7 +681,7 @@ main{
   border-radius: 10px;
 }
 .mainwords {
-  font-size: 40px;
+  font-size: 5vh;
   color: rgb(83, 83, 83);
   white-space: nowrap;
   overflow: hidden;
@@ -677,8 +693,9 @@ main{
   padding: 10px;
   display: inline-block;
   font-family: latolight;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   border-radius: 10px;
+  margin-top: 8vh;
 }
 
 
@@ -689,7 +706,7 @@ main{
   padding-bottom: 10px;
   padding-left: 70px;
   padding-right: 70px;
-  border-radius: 10px;
+  
 }
 
 @media (max-width: 1200px) {
@@ -708,6 +725,7 @@ main{
   .mainwords{
     font-weight: 700;
     font-size: 20px;
+    letter-spacing: 0px;
     
   }
   .mainwords span{
@@ -733,89 +751,89 @@ main{
 
 @keyframes Umang{
   0%{
-   
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
    
   }
   5%{
-    
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
   }
   12.5%{
-    
+    color: rgb(83, 83, 83);
     width: 100%;
   
   }
   22%{
-    
+    color: rgb(83, 83, 83);
     width: 100%;
   
   }
   25%{
-   
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
    
   }
   30%{
-    
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
    
   }
   37.5%{
-    
+    color: rgb(83, 83, 83);
     width: 100%;
     
   }
   47%{
-    
+    color: rgb(83, 83, 83);
     width: 100%;
     
   }
   50%{
-    
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
 
   }
   55%{
-    
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
 
   }
   62.5%{
-    
+    color: rgb(83, 83, 83);
     width: 100%;
     
   }
   72%{
-    
+    color: rgb(83, 83, 83);
     width: 100%;
     
   }
 
   75%{
-    
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
   }
   80%{
-    
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
   }
 
   87.5%{
-    
+    color: rgb(83, 83, 83);
     width: 100%;
    
   }
   
   97%{
-   
+    color: rgb(83, 83, 83);
     width: 100%;
    
   }
 
   100%{
-  
-    width: 4%;
+    color: rgba(0,0,0,0);
+    width: 10%;
   }
   
 }
@@ -853,12 +871,12 @@ main{
   bottom: 0px;
   left: -600px;
   opacity: 0;
-  width: 500px;
-  height: 200px;
+  width: 30vw;
+  height: 25vh;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
-  padding: 35px;
+  padding: 4vh;
   text-align: left;
   align-items: center;
   justify-content: center;
@@ -870,22 +888,23 @@ main{
 .sslide .content h1 {
   font-family: latolight;
   margin-bottom: 10px;
-  font-size: 70px;
+  font-size: 8vh;
   font-weight: 500;
   color: rgb(237, 237, 237);
+  letter-spacing: 1px;
 }
 
 .sslide .content h2:nth-child(n+1){
   font-family: latolight;
-  font-size: 35px;
+  font-size: 4.5vh;
   color: rgb(237, 237, 237);
   padding-top: 20px;
+  letter-spacing: 2px;
 }
 
 
 .slider1 .content{
   font-family: latolight;
-
   font-weight: 100;
 }
 
@@ -942,6 +961,10 @@ main{
   .sslide.current .content {
     transform: translateY(-250px);
   }
+
+  .sslide .content h2:nth-child(n+1){
+    font-size: 4vh;
+  }
 }
 
 /* Background Images */
@@ -964,13 +987,13 @@ main{
     background-attachment: fixed;
 }
 .sslide:nth-child(4) {
-  background: url("img/l/4.webp") no-repeat
-    center top/cover;
+    background: url("img/l/4.webp") no-repeat
+    center center/cover;
     background-attachment: fixed;
 }
 .sslide:nth-child(5) {
   background: url("img/l/5.webp") no-repeat
-    center center/cover;
+    center bottom/cover;
     background-attachment: fixed;
 }
 
@@ -985,10 +1008,10 @@ main{
   top: 45%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-5px);
   z-index: 8;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
 
 }
 
@@ -1000,7 +1023,7 @@ main{
   top: 40%;
   right: 0%;
   z-index: 8;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   text-decoration: none;
   
@@ -1009,20 +1032,21 @@ main{
 .rightbar h5{
   display: block;
   position: relative;
-  color: black;
-  font-size: 13px;
-  padding: 5px;
-  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 2.5vh;
+  padding: 1vh;
+  padding-top: 2vh;
   border-radius: 5px;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .rightbar h5:hover{
-  color: darkorange;
+  color: rgb(215, 215, 215);
   cursor: pointer;
   transform: scale(1.3);
   transition: all 0.2s ease-in-out;
-  background: rgb(58, 117, 117);
+  background: rgba(25, 25, 25);
   text-decoration: none;
 }
 
@@ -1030,9 +1054,9 @@ main{
 .icon-bar .socialfixed a {
   display: block;
   text-align: center;
-  padding: 10px;
+  padding: 2vh;
   transition: all 0.2s ease;
-  font-size: 20px;
+  font-size: 3vh;
   border-radius: 2px;
  
 }
@@ -1042,6 +1066,7 @@ main{
     display: none;
   }
   .icon-bar{
+    width: 10vw;
     background: rgba(0, 0, 0,0.2);
   }
   .rightbar{
@@ -1049,13 +1074,16 @@ main{
   }
   .icon-bar .socialfixed a{
     padding: 10px 4px 10px 4px;
-    font-size: 20px;
+    font-size: 15px;
   }
   .ffacebook{
-    margin-top: 0px ;
+    margin-top: 10px ;
   }
   .ppinterest{
     margin-bottom: 7px;
+  }
+  .rightbar{
+    display: none;
   }
 }
 .ffacebook {
@@ -1099,7 +1127,7 @@ main{
   
 }
 .llinkedin {
-  color: #007bb5;
+  color: #006fa2;
   
 }
 .llinkedin:hover{
@@ -1134,9 +1162,9 @@ main{
 /*----------------------------------- Why us Background -------------------------------*/
 
 .backgroundbubbleanimation {
-  background: #2d7e7d;
+  background: #040404;
   background: -webkit-linear-gradient(top left, #f6f6f6 0%, #f1f1f1 100%);
-  background: linear-gradient(to bottom right, #f9f9f9 0%, #f9f9f9 100%);
+  background: linear-gradient(to bottom,rgba(254, 233, 225, 0.3), rgba(255, 252, 245, 0.3)  );
   position: relative;
   min-width: 100%;
   overflow: hidden;
@@ -1157,7 +1185,7 @@ main{
   display: block;
   width: 40px;
   height: 40px;
-  background-color: rgba(58, 117, 117, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   bottom: -160px;
   -webkit-animation: square 25s infinite;
   animation: square 25s infinite;
@@ -1253,18 +1281,23 @@ main{
 
 
 .whyus {
-  padding-top: 150px;
+  margin-top: 20vh;
   margin-left: 5px;
   text-align: left;
   margin-bottom: 0px;
-  font-size: 25px;
+  font-size: 3vh;
+}
+@media (max-width: 1000px){
+  .whyus{
+    margin-top: 12vh;
+  }
 }
 .offerings {
   text-align: left;
   align-content: center;
-  margin-top: 40px;
-  margin-bottom: 100px;
-  font-size: 45px;
+  margin-top: 3vh;
+  margin-bottom: 11vh;
+  font-size: 5vh;
   font-weight: bold;
   letter-spacing: 2px;
   color: orange;
@@ -1280,19 +1313,20 @@ main{
   background: white;
   background-attachment: fixed;
   box-shadow: rgba(0, 0, 0, 0.03) 1.95px 1.95px 2.6px;
+  
 }
 
 .trust {
   text-align: center;
   align-content: center;
-  font-size: 20px;
-  margin-bottom: 40px;
-  margin-top: 100px;
+  font-size: 3vh;
+  margin-bottom: 4vh;
+  margin-top: 14vh;
 }
 .reviews {
   text-align: center;
-  margin-bottom: 100px;
-  font-size: 45px;
+  margin-bottom: 10vh;
+  font-size: 5vh;
   font-weight: bold;
   color: rgb(255, 164, 52);
   letter-spacing: 1px;
@@ -1306,7 +1340,7 @@ main{
   color: rgb(1, 1, 1, 0.7);
   font-family: latolight;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 2vh;
   letter-spacing: 1px;
   margin-bottom: 40px;
 }
@@ -1488,19 +1522,38 @@ main{
 
 /*-------------------------------------------------- Portfolio Card -------------------------------------------------*/
 .portfoliocardscontainer{
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 150px;
-  margin-top: 50px;
+  margin-bottom: 15vh;
+  margin-top: 0vh;
+  flex-direction: row;
+}
+
+.portfoliocardscontainer2{
+  margin-bottom: 30vh;
+}
+
+
+@media (max-width: 1000px){
+  .portfoliocardscontainer{
+    margin-top: 5vh;
+  }
+  .authentic{
+    margin-top: 5vh;
+  }
+  .mainwords{
+    margin-top: 0vh;
+  }
 }
 .portfoliocard {
   display: block;
+  
   position: relative;
-  border-radius: 3%;
-  width: 525px;
-  height: 525px;
+  border-radius: 4%;
+  width: 32vw;
+  height: 32vw;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   overflow: hidden;
   background-size: cover;
@@ -1508,34 +1561,35 @@ main{
   shape-rendering: geometricPrecision;
   box-sizing: border-box;
   cursor: pointer;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  
 
 }
 
-.portfolio1{
-  margin-left: 10%;
+.portfolio1, .portfolio3{
+  margin-left: 13%;
 }
-.portfolio2{
-  margin-right: 10%;
+.portfolio2, .portfolio4{
+  margin-right: 13%;
 }
 
 .portfoliocard:hover{
   transform: translateY(-15px);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
 }
 
 
 
 .portfoliocard img{
-  width: 525px;
-  height: 525px;
-  transition: all 0.4s ease-in-out;
+  width: 32vw;
+  height: 32vw;
+  transition: all 0.3s ease-in-out;
 }
 .portfoliocard:hover img{
-  transition: all 0.4s ease-in-out; 
-  transform: scale(1.5);
+  transition: all 0.3s ease-in-out; 
+  transform: scale(1.3);
 }
 
 
@@ -1544,171 +1598,46 @@ main{
   display: block;
   position: relative;
   border-radius: 5px;
-  width: 525px;
-  height: 525px;
+  width: 32vw;
+  height: 100vh;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(55px);
-  backdrop-filter: blur(55px);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(70px);
+  background-color: rgba(255, 255, 255, 0.3);
   bottom: 20%;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .portfoliocard:hover .info,
 .portfoliocard:hover .info:before {
-  transition: all 0.4s ease;
-  bottom: 100%;
-  height: 600px;
+  transition: all 0.4s ease-out;
+  bottom: 101%;
+  height: 100vh;
   border-radius: 10px;
 }
 
 .title {
-  font-family: latobold;
-  margin: 0;
-  padding-left: 190px;
-  padding-top: 22px;
-  font-size: 35px;
+  width: 16vw;
+  font-family: latoregular;
+  transform: translateY(3vh);
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  font-size: 3vh;
   font-weight: 500;
-  letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.75);
-  transition: all 0.7s ease-in-out;
-  opacity: 0.9;
+  letter-spacing: 1px;
+  color: rgba(30, 30, 30, 0.7);
+  transition: all 0.4s ease-in-out;
+  border-radius: 50px;
+  padding: 8px 0px 8px 0px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .portfoliocard:hover .title{
-  padding-left: 8.5%;
-  padding-top: 8%;
-  color: rgba(0, 0, 0, 0.65);
-  transition: all 0.4s ease-in-out;
-}
-
-@media screen and (max-width: 1300px){
-  .portfolio1{
-    margin-left: 5%;
-  }
-  .portfolio2{
-    margin-right: 5%;
-  }
-  .portfoliocardscontainer{
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 1000px){
-  .portfoliocard{
-    width: 50%;
-    aspect-ratio: 1/1;
-  }
-  .portfoliocardscontainer{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio1{
-    margin: auto;
-    margin-bottom: 75px;
-  }
-  .portfolio2{
-    margin: auto;
-  }
-
-  .portfoliocard img{
-    width: 100%;
-    aspect-ratio: 1/1;
-  }
-  .info{
-    width: 100%;
-    aspect-ratio: 1/1;
-    bottom: 20%;
-  }
-  .title{
-    padding-left: 35%;
-    font-weight: 500;
-    letter-spacing: 0px;
-    padding-top: 7%;
-    font-size: 25px;
-  }
-  .input-wrapper{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 700px){
-  .portfoliocard{
-    width: 70%;
-    aspect-ratio: 1/1;
-  }
-  .portfoliocardscontainer{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio1{
-    margin: auto;
-    margin-bottom: 75px;
-  }
-  .portfolio2{
-    margin: auto;
-  }
-
-  .portfoliocard img{
-    width: 100%;
-    aspect-ratio: 1/1;
-  }
-  .info{
-    width: 100%;
-    aspect-ratio: 1/1;
-    bottom: 30%;
-    border-radius: 0px;
-  }
-  .title{
-    padding-left: 37%;
-    font-weight: 500;
-    letter-spacing: 0px;
-    padding-top: 7%;
-    font-size: 25px;
-  }
-  .input-wrapper{
-    display: none;
-  }
-}
-
-@media screen and (max-width: 500px){
-  .portfoliocard{
-    width: 70%;
-    height: 350px;
-  }
-  .portfoliocardscontainer{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .portfolio1{
-    margin: auto;
-    margin-bottom: 75px;
-  }
-  .portfolio2{
-    margin: auto;
-  }
-
-  .portfoliocard img{
-    width: 100%;
-    height: 350px;
-  }
-  .info{
-    width: 100%;
-    aspect-ratio: 1/1;
-    bottom: 30%;
-    border-radius: 0px;
-  }
-  .title{
-    padding-left: 37%;
-    font-weight: 500;
-    letter-spacing: 0px;
-    padding-top: 3.5%;
-    font-size: 25px;
-  }
-  .input-wrapper{
-    display: none;
-  }
+  font-weight: 600;
+  background-color: rgba(0,0,0,0);
+  transform:  translateY(6vh);
+  color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -1722,26 +1651,27 @@ main{
 .btn_wrap {
   position: absolute;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-  width: 33%;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.35);
+  width: 28%;
+  height: 6vh;
+  background-color: rgba(255, 255, 255, 0.05);
   outline: none;
   border-radius: 200px;
   will-change: transform;
   transition: all 0.7s ease-in-out;
   float: right;
   right: 7%;
-  top: 30%;
+  top: 85%;
   caret-color: transparent;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .portfoliocard:hover .btn_wrap{
   right: 7%;
-  top: 8%;
+  top: 39.5%;
   transition: all 0.4s ease-in-out;
 }
 
@@ -1750,13 +1680,13 @@ main{
   position: absolute;
   z-index: 3;
   width: 100%;
-  height: 72px;
   border-radius: 200px;
-  font-size: 15px;
+  font-size: 2vh;
   font-weight: 600;
+  margin: auto;
   text-align: center;
-  line-height: 70px;
-  letter-spacing: 2px;
+  line-height: 3;
+  letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.7);
   background-color: rgba(255,255,255, 0.3);
   transition: all 0.7s ease;
@@ -1767,10 +1697,10 @@ main{
   opacity: 0;
   margin: auto;
   text-align: center;
-  font-size: 16px;
+  font-size: 2vh;
   letter-spacing: 1px;
-  font-weight: 500;
-  color: #1e1e1e;
+  font-weight: 600;
+  color: #3d3d3d;
   will-change: transform;
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -1794,7 +1724,7 @@ main{
   -ms-flex-align: center;
   align-items: center;
   width: 200px;
-  height: 56px;
+  
   border-radius: 200px;
 }
 
@@ -1925,9 +1855,8 @@ main{
 .tworings {
   position: relative;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  text-align: center; 
+  left: 10%;
   top: 85%;
   transition: all 0.4s ease-in-out;
   caret-color: transparent;
@@ -1936,18 +1865,16 @@ main{
 
 
 .portfoliocard:hover .tworings{
-  top: 35%;
+  top: 29%;
   transition: all 0.4s ease-in-out;
 }
 
 .tworings #viewgallerybutton {
-  width: 220px;
+  width: 15vw;
+  height: 40px;
   padding: 16px;
-  padding-top: 20px;
-  padding-bottom: 25px;
   border: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 200px;
-  height: 40px;
   position: absolute;
   justify-content: center;
   text-align: center;
@@ -1978,24 +1905,31 @@ main{
 
 .tworings #viewgallerybutton p{
   font-family: latoregular;
-  font-size: 20px;
+  font-size: 2.5vh;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  top: 0%;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  transform: translateY(-45%) scale(1);
   transition: all 1s ease-in-out;
+  top: -1.5vh
+}
+
+.portfoliocard:hover .tworings #viewgallerybutton p{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .tworings #viewgallerybutton .ring {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 2vh;
+  height: 2vh;
   background: rgba(0, 0, 0, 0.65);
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 2vh;
+  -moz-border-radius: 2vh;
+  -o-border-radius: 2vh;
+  border-radius: 2vh;
   top: 40%;
   left: 51%;
   -webkit-transition: all 2.5s cubic-bezier(0.55, 0, 0.1, 1);
@@ -2027,8 +1961,8 @@ main{
   position: absolute;
   top: -170%;
   left: 32%;
-  width: 150px;
-  height: 170px;
+  width: 10vw;
+  height: 20vh;
   content: "";
   background: rgba(255, 255, 255, 0.6);
   border-radius: 20%;
@@ -2043,8 +1977,8 @@ main{
   position: absolute;
   top: -200%;
   left: 32%;
-  width: 160px;
-  height: 180px;
+  width: 10vw;
+  height: 20vh;
   border: solid 1px rgba(255, 255, 255, 0.7);
   content: "";
   background: transparent;
@@ -2088,6 +2022,215 @@ main{
  }
 }
 
+
+
+@media screen and (max-width: 1300px){
+  .portfolio1, .portfolio3{
+    margin-left: 5%;
+  }
+  .portfolio2, .portfolio4{
+    margin-right: 5%;
+  }
+  .portfoliocardscontainer{
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .portfoliocard{
+    width: 50%;
+    aspect-ratio: 1/1;
+  }
+  .portfoliocardscontainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0vh;
+  }
+  .portfolio1, .portfolio2, .portfolio3{
+    margin: auto;
+    margin-bottom: 75px;
+  }
+ .portfolio4{
+    margin: auto;
+    margin-bottom: 20vh;
+  }
+
+  .portfoliocard img{
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .info{
+    width: 100%;
+    aspect-ratio: 1/1;
+    bottom: 20%;
+  }
+  .title{
+    text-align: center;
+    width: 20vw;
+    font-size: 2vh;
+    transform: translateY(1vh);
+  }
+  .input-wrapper{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .portfoliocard{
+    width: 70%;
+    aspect-ratio: 1/1;
+  }
+  .portfoliocardscontainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio1, .portfolio2, .portfolio3{
+    margin: auto;
+    margin-bottom: 75px;
+  }
+  .portfolio4{
+    margin: auto;
+    margin-bottom: 20vh;
+
+  }
+
+  .portfoliocard img{
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .info{
+    width: 100%;
+    aspect-ratio: 1/1;
+    bottom: 50%;
+    border-radius: 0px;
+  }
+  .title{
+    width: 50vw;
+    font-size: 2vh;
+    transform: translateY(1vh);
+  }
+  .input-wrapper{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .portfoliocard{
+    width: 70%;
+    height: 350px;
+  }
+  .portfoliocardscontainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio1, .portfolio2, .portfolio3{
+    margin: auto;
+    margin-bottom: 75px;
+  }
+  .portfolio4{
+    margin: auto;
+    margin-bottom: 20vh;
+
+  }
+
+  .portfoliocard img{
+    width: 100%;
+    height: 350px;
+  }
+  .info{
+    width: 100%;
+    aspect-ratio: 1/1;
+    bottom: 30%;
+    border-radius: 0px;
+  }
+  .title{
+    width: 50vw;
+    font-size: 2vh;
+    transform: translateY(1vh);
+  }
+  .input-wrapper{
+    display: none;
+  }
+}
+
+
+
+/* Media query for larger screens */
+@media (min-width: 2880px) {
+  .portfoliocardscontainer {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10vh;
+  } 
+
+  
+
+  .portfolio1, .portfolio2, .portfolio3{
+    margin-left: auto;
+    margin-bottom: 75px;
+  }
+  .portfolio4{
+    margin: auto;
+    margin-bottom: 0px;
+  }
+  
+  
+  
+  .title{
+    font-size: 3vh;
+  }
+  .input-wrapper{
+    display: block;
+  }
+  .input-wrapper .input-text{
+    font-size: 30px;
+    height: 80px;
+  }
+  .input-wrapper .input-text::placeholder{
+    font-size: 1.5vh;
+  }
+  .input-wrapper .input-submit{
+    width: 8vw;
+    height: 4vh;
+    font-size: 2vh;
+  }
+  
+  .btn_wrap{
+    height: 4vh;
+    
+  }
+  .portfoliocard:hover .btn_wrap{
+    top: 35%;
+  }
+
+  .portfoliocard:hover .tworings{
+    top: 27%;
+  }
+  .tworings #viewgallerybutton{
+    height: 110px;
+  }
+  .tworings #viewgallerybutton p{
+    top: 0vh;
+  }
+  
+  .btn_wrap span{
+
+    font-size: 2vh;
+    margin: auto;
+    text-align: center;
+  }
+  .btn_wrap i{
+    font-size: 2vh;
+  }
+
+  
+  
+}
+
+
 /*------------------------------------ End of Portfolio Cards ----------------------------------------*/
 
 
@@ -2110,26 +2253,28 @@ main{
 .faqcontainer{
   background-color: #f1f1f1;
   box-shadow: rgba(0, 0, 0, 0.03) 1.95px 1.95px 2.6px;
+  z-index: 6;
 }
 .faqcontainer  ul{
   list-style-type: circle;
 }
 .faqheading{
-text-align: center;
+  text-align: center;
   align-content: center;
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding-top: 100px;
+  font-size: 3vh;
+  margin-bottom: 4vh;
+  padding-top: 14vh;
+  letter-spacing: 4px;
+
 }
 .faqcontainer .row h3{
   margin-bottom: 0px;
   font-family: latolight;
   font-weight: 600;
+  font-size: 3.5vh;
 }
 
-.faqcontainer .row .faq1{
-  margin-bottom: 30px;
-}
+
 
 .faqcontainer .row p{
   margin-bottom: 80px;
@@ -2139,7 +2284,7 @@ text-align: center;
   padding-left: 18%;
   font-family: latolight;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 2.5vh;
 }
 @media only screen and (max-width: 1000px){
   .contentinfaq{
@@ -2151,7 +2296,7 @@ text-align: center;
 
 .fa-minus{
   position: absolute;
-  font-size: 50px;
+  font-size: 6vh;
   font-family: FontAwesome;
   top: 10px;
   left: 0;
@@ -2197,21 +2342,9 @@ text-align: center;
 .client-review-stars{
   color: darkorange;
 }
-.client-testimonial-carousel .owl-dots button {  /*Button at the bottom*/
-  height: 5px;
-  background: orange !important;
-  width: 120px;
-  display: inline-block;
-  margin: 5px;
-  transition: .2s;
-  border-radius: 2px;
-}
 
 
-.client-testimonial-carousel button.owl-dot.active {
-  background: rgb(58,117,117) !important;
-  width: 30px;
-}
+
 
 .client-testimonial-carousel .owl-dots {
   text-align: center;
@@ -2224,16 +2357,17 @@ text-align: center;
   border: 1px solid rgba(0,0,0, 0.2);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
   margin: 2px;
-  padding: 20px;
-  height: 350px;     /*Height of card*/
-  padding-left: 85px;
+  padding: 4vh;
+  width: 35vw;
+  height: 48vh;     /*Height of card*/
+  padding-left: 6vw;
   overflow: hidden;
   
 }
 
 .single-testimonial-item p{
   font-family: latolight;
-  font-size: 16px;
+  font-size: 2vh;
 }
 .single-testimonial-item h3{
   font-family: latoregular;
@@ -2258,9 +2392,7 @@ text-align: center;
     padding-left: 10px;
     height: 275px;
   }
-  .client-testimonial-carousel .owl-dots button{
-    width: 50px;
-  }
+  
   .material-symbols-outlined{
    opacity: 0;
    position: relative;
@@ -2272,6 +2404,7 @@ text-align: center;
   position: absolute;
   top: 50%;
 }
+
 
 .material-symbols-outlined{
   font-family: "Material Symbols Outlined";
@@ -2301,7 +2434,7 @@ text-align: center;
 .single-testimonial-item:after {
   background: #ddd;
   content: "";
-  height: 80%;
+  height: 48vh;
   left: 60px;
   position: absolute;
   top: 10%;
@@ -2309,18 +2442,26 @@ text-align: center;
 }
 
 .single-testimonial-item h3 {
-  font-size: 20px;
+  font-size: 3vh;
   font-style: normal;
   margin-bottom: 0;
 }
 
 .single-testimonial-item h3 span {
   display: block;
-  font-size: 12px;
+  font-size: 2vh;
   font-weight: normal;
   margin-top: 5px;
 }
 
+@media (min-width: 2880px) {
+  .single-testimonial-item{
+    width: 28vw;
+    height: 60vh;
+    padding: 200px;
+  }
+  
+}
 
 /*----------------------------------------------- Motto --------------------------------------------------*/
 
@@ -2346,14 +2487,14 @@ text-align: center;
   }
 }
 .motto h2 {
-  font-size: 50px;
+  font-size: 7vh;
   letter-spacing: 2px;
-  padding-top: 60px;
+  margin-top: 10vh;
   font-weight: 600;
 }
 .motto .linear-wipe {
   text-align: center;
-  background: linear-gradient(to left, #3A7575 20%, orange 40%, orange 60%, #3A7575 80%);
+  background: linear-gradient(to left, #434343 20%, orange 40%, orange 60%, #424242 80%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -2383,25 +2524,29 @@ text-align: center;
 #counter-section-container {
   width: 100%;
   text-align: center;
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
 }
 
 #counter-box-container {
   /*border: 1px solid #999999;*/
   overflow: hidden;
-  display: inline-block;
+  
 }
 
 #counter-box {
   /*width: 33.22%;*/
-  width: 300px;
-  min-width: 200px;
-  margin: 5px 5px 5px 5px;
-  padding: 5px 5px 5px 5px;
-  float: left;
+  display: inline-block;
+  flex-direction: row;
+  width: 25vw;
+  min-width: 250px;   
   text-align: center;
   /*background-color: #111111;*/
-  color: #c0c0c0;
+  color: #909090;
   /*border: 1px solid #666666;*/
 }
 
@@ -2412,18 +2557,21 @@ text-align: center;
 }
 
 .counter {
-  font-size: 50px;
-  color: #c0c0c0;
+  flex-direction: row;
+  font-size: 7vh;
+  color: #909090;
 }
 
+#counter-box h3{
+  font-size: 4vh;
+}
 
 
 
 /*------------------------------------------- Client slider owlcarousel ----------------------------------------------*/
 .carousel-wrap {
-  margin: 30px auto;
-  margin-bottom: 100px;
-  padding: 0 5%;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
   width: 100%;
   position: relative;
   display: block;
@@ -2725,10 +2873,9 @@ text-align: center;
 /*------------------------------------------------------ Footer -----------------------------------------------------------*/
 
 .footer {
-  background-color: #2c2c2c;
+  background-color: #1e1e1e;
   color: #d9d9d9;
   padding: 40px 0;
-  text-align: center;
   font-family: Arial, sans-serif;
   width: 100%;
 }
@@ -2741,39 +2888,66 @@ text-align: center;
 .footer-sections {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  
   margin-bottom: 20px;
 }
 
+
+
 .footer-section {
   flex: 1 1 0px;
-  margin-top: 0px;
   opacity: 1;
   transform: translateY(20px);
   
 }
 
-.footer-section h4 {
-  margin-bottom: 20px;
-  font-size: 18px;
+.footer-about{
   font-weight: bold;
+  text-align: center;
+  margin-top: 4vh;
+  font-size: 4vh;
+  letter-spacing: 1px;
+  color: rgba(225,225,225);
+}
+
+.footersection2{
+  margin-top: 5vh;
+  margin-left: 2vw;
+  text-align: left;
+}
+
+.footersection2 h4 {
+  margin-bottom: 20px;
+  font-size: 3.5vh;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 1px;
+  color: rgb(207, 114, 0);
+}
+
+.footersection2 .footersocials{
+  text-align: center;
+  transform: translateX(-1vw);
+}
+
+.footersection2 .footerquick{
+  text-align: center;
   
 }
 
-.footer-section p {
-  font-size: 14px;
+.footer-sections p {
+  font-size: 2vh;
   margin-bottom: 5px;
 }
 
-.footer-section a {
+
+.footer-sections a {
   text-decoration: none;
   margin-bottom: 5px;
   display: flex;
-  align-items: center;
-  font-size: 14px;
+  
+  font-size: 2vh;
   color: #d9d9d9;
-  text-decoration: none;
 }
 .footer-section a:hover{
   text-decoration: none;
@@ -2782,47 +2956,69 @@ text-align: center;
   color: darkorange;
 }
 .footer-section a i {
-  margin-left: 39%;
-  margin-bottom: 0px;
-}
-
-.footer-links{
-  margin-left: 40%;
-  align-items: center;
+  margin-left: 35%;
+  padding-top: 4px;
 }
 
 .footer-section a span{
   margin-left: 10px;
 }
 
-.footer-separator {
-  width: 30px;
-  height: 2px;
-  background-color: #fff;
-  margin: 10px auto;
+.footersection1 p{
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer-links{
+  justify-content: center;
+  
+}
+
+.footer-logo-seperator{
+  width: 5vw;
+  height: 0.2vh;
+  background-color: rgb(207, 114, 0);
+  margin: 0px auto;
+  margin-top: 15px;
   margin-bottom: 30px;
+}
+.footer-separator {
+  width: 15vw;
+  height: 0.3vh;
+  background-color: rgb(207, 114, 0);
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 6vh;
 }
 
 .footer-logo {
-  width: 40px;
-  height: 40px;
 
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin-top: 1vh;
+}
+.footer-logo img{
+  width: 6vh;
+  height: 6vh;
 }
 
-.footer-logo i {
-  color: #333;
+.footersection2 .spancolor span{
+  color: rgb(207, 114, 0);
 }
 
+.footersection2 .icolor i{
+  color: rgb(207, 114, 0);
+  transform: translateY(-3px);
+}
 
 
 
 /* Mobile Styles */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .footer-content {
       max-width: 100%;
       padding: 0 20px;
@@ -2842,17 +3038,31 @@ text-align: center;
       margin-bottom: 10px;
   }
   .footer-section a i {
-    margin-left: 41%;
+    margin-left: 36%;
   }
 
   .footer-sections .footer-section:nth-child(2),
   .footer-sections .footer-section:nth-child(3) {
       align-self: flex-start;
   }
+
+  .footer-sections p{
+    text-align: center;
+    
+  }
+
+  .footersection2 h4{
+    text-align: center;
+  }
 }
 
 
 /*------------------------------------------------------ End of  Footer -----------------------------------------------------------*/
+
+
+
+
+
 
 /* ==========================
 
@@ -3106,9 +3316,9 @@ text-align: center;
     color: orange;
   }
   .overlay .closebtn {
-    top: 0px;
-    right: 20px;
-    font-size: 70px;
+    top: 1vh;
+    right: 10vw;
+    font-size: 10vh;
   }
   .address {
     margin-left: 30px;
@@ -3133,7 +3343,7 @@ text-align: center;
   }
   
   .threeimages{
-    font-size: 35px;
+    font-size: 3vh;
   }
   .threeimageanchors{
     font-size:20px;

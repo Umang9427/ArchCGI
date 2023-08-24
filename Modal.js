@@ -97,7 +97,7 @@ passive: true
     // the image in the modal
     var modalImg = document.getElementById("img01");
     // and the caption in the modal
-    var captionText = document.getElementById("caption");
+    var captionText = document.getElementById("captiontext");
 
     // Go through all of the images with our custom class
     for (var i = 0; i < images.length; i++) {
@@ -120,3 +120,146 @@ passive: true
 
 
 
+
+
+  /* ----------------------------------------------- Tab Bar Animation ------------------------------------------ */
+  var nav = $('.tabbar');
+  var line = $('<div/>').addClass('line');
+  
+  line.appendTo(nav);
+
+  var active = nav.find('.active');
+  var pos = 0;
+  var wid = 0;
+  
+  if(active.length) {
+    pos = active.position().left;
+    wid = active.width();
+    line.css({
+      left: pos,
+      width: wid
+    });
+  }
+  
+  nav.find('ul li a').click(function(e) {
+    e.preventDefault();
+    const linewidth = document.querySelectorAll('.line');
+    linewidth.forEach(line =>{
+      line.style.marginLeft='-4px';
+    });
+    if(!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+      
+      nav.addClass('animate');
+  
+      var _this = $(this);
+  
+      nav.find('ul li').removeClass('active');
+  
+      var position = _this.parent().position();
+      var width = _this.parent().width();
+  
+      if(position.left >= pos) {
+        line.animate({
+          width: ((position.left - pos) + width)
+        }, 300, function() {
+          line.animate({
+            width: width,
+            left: position.left
+          }, 150, function() {
+            nav.removeClass('animate');
+          });
+          _this.parent().addClass('active');
+        });
+      } else {
+        line.animate({
+          left: position.left,
+          width: ((pos - position.left) + wid)
+        }, 300, function() {
+          line.animate({
+            width: width
+          }, 150, function() {
+            nav.removeClass('animate');
+          });
+          _this.parent().addClass('active');
+        });
+      }
+  
+      pos = position.left;
+      wid = width;
+    };
+
+    if(_this.parent().text()== 'exterior'){
+      state1();
+    }
+    else if(_this.parent().text()== 'interior'){
+      state2();
+    }
+    else{
+      imagesvisible()
+    };
+  });
+
+function imagesvisible(){
+  ext=document.querySelectorAll("#exteriorimages");
+  ext.forEach(function(element) {
+    element.style.display = 'block';
+  });
+  int=document.querySelectorAll("#interiorimages");
+  int.forEach(function(element) {
+    element.style.display = 'block';
+  });
+}
+
+function state1(){
+  ext=document.querySelectorAll("#exteriorimages");
+  ext.forEach(function(element) {
+    element.style.display = 'block';
+  });
+  int=document.querySelectorAll("#interiorimages");
+  int.forEach(function(element) {
+    element.style.display = 'none';
+  });
+  
+}
+
+function state2(){
+  ext=document.querySelectorAll("#exteriorimages");
+  ext.forEach(function(element) {
+    element.style.display = 'none';
+  });
+  int=document.querySelectorAll("#interiorimages");
+  int.forEach(function(element) {
+    element.style.display = 'block';
+  });
+  
+}
+
+      
+
+
+
+
+/* ------------------------------ Text Animation --------------------------------- */
+
+
+// import Typed from 'typed.js';
+
+var typed = new Typed('#typed', {
+  strings: ['Quick', 'Budget-Friendly', 'Quantitative'],
+  typeSpeed: 80,
+  backDelay: 750,
+  loop: true });
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  

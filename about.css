@@ -16,42 +16,78 @@ h1, h2, h3, h4 {
 
 
 
-.seperator {
+
+
+.title {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 8vh;
+}
+
+.title .row {
+  padding: 50px 0 0;   /*Padding bottom of about us*/
+}
+
+
+.title h1 {
+  color: black;
+  text-transform: uppercase;
+  cursor: text;
+  letter-spacing: 2px;
+  font-size: 4vh;
+}
+
+
+.title .seperator {
+  margin: 0 auto 10px;
   margin-bottom: 30px;
-  width: 50px;
+  width: 5vw;
   height: 3px;
-  background: #777;
+  background: darkorange;
   border: none;
   transition: all 0.4s;
 }
 
 
-.title {
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 100px;
-}
+
 .title:hover .seperator{
-  width: 200px;
+  width: 11vw;
   transition: width 0.4s;
 }
-.title .row {
-  padding: 50px 0 0;   /*Padding bottom of about us*/
+@media (max-width: 1000px) {
+  .title .seperator{
+    width: 30vw;
+  }
 }
-.title h1 {
-  text-transform: uppercase;
-  cursor: text;
-}
-.title .seperator {
-  margin: 0 auto 10px;
-}
+
 
 .rowstyling1{
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
- padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: row;
+  width: 80vw;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  padding: 2vw;
 
 }
 
+@media (max-width: 1000px) {
+  .rowstyling1{
+    width: 95vw;
+  }
+}
+
+.seperator{
+  margin-top: 1vh;
+  margin-bottom: 30px;
+  width: 5vh;
+  height: 3px;
+  background: darkorange;
+  border: none;
+  transition: all 0.4s;
+}
 
 .item {
   position: relative;
@@ -68,10 +104,11 @@ h1, h2, h3, h4 {
   
 }
 .item .item-in {
-  background: #fff;
+  background: #f9f9f9;
   padding: 40px;
   position: relative;
-  
+  box-shadow: rgba(46, 41, 23, 0.12) 0px 2px 4px 0px, rgba(46, 41, 23, 0.12) 0px 2px 16px 0px;
+  border-radius: 2%;
 }
 .item .item-in:hover:before {
   width: 100%;
@@ -88,94 +125,75 @@ h1, h2, h3, h4 {
 }
 
 .rowstyling1 h2 {
-  font-size: 20px;
-  margin-top: 25px;
+  font-size: 2.5vh;
+  margin-top: 4vh;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 400;
   cursor: text;
-  line-height: 25px;
+  line-height: 3vh;
 }
 
 
 .item p {
-  font-size: 13px;
+  font-size: 1.8vh;
   cursor: text;
   color: black;
-  line-height: 18px;
+  line-height: 3vh;
   letter-spacing: 1px;
+}
+.bulletpoints{
+  margin-left: 2vw;
+}
+.bulletpoints ul{
+  list-style-type: disc;
 }
 .bulletpoints h2{
   font-family: latolight;
-  font-size: 14px;
+  font-size: 2vh;
   font-weight: 400;
   color: black;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   cursor: text;
-  line-height: 0px;
+  line-height: 2.5vh;
+  
 }
 
 
 
 
-.item .icon {
-  position: absolute;
-  top: 27px;
-  left: -16px;
-  cursor: pointer;
-}
-.item .icon a {
-  font-family: "Poppins", serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #999;
-  text-transform: none;
-}
-.item .icon svg {
-  width: 32px;
-  height: 32px;
-  float: left;
-}
-.item .icon .icon-topic {
-  opacity: 0;
-  padding-left: 0px;
-  transition: 0.4s;
-  display: inline-block;
-  top: 0px;
-  position: relative;
-}
-.item .icon:hover .icon-topic {
-  opacity: 1;
-  padding-left: 10px;
-}
 
-@media only screen and (max-width: 768px) {
-  .item .icon {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-}
+
+
   
 
 .gradientbox {
-    width: 100%;
+    
+    width: 80vw;
+    display: flex;
+    
+    margin: auto;
+    margin-top: 10vh;
+    
     overflow: hidden;
-    padding: 150px 10px 250px 50px;
+    padding: 10vh 2vw 20vh 3vw;
     position: relative;
     background-size: 600% 200%;
     background-image: linear-gradient(
       -45deg,
-      orange,
-      orange,
-      rgb(58,117,117),
-      rgb(58, 117, 117),
-      rgb(84, 133, 133)
+      rgba(50, 33, 0, 0.8),
+      rgba(206, 113, 0, 0.8),
+      rgba(0,0,0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(224, 123, 0, 0.8)
     );
-    transition-duration: 0.5s;
-    animation: Gradient 5s ease infinite;
+    transition-duration:0.5s;
+    animation: Gradient 9s ease infinite;
     opacity: 0.9;
     overflow: hidden;
+    border-radius: 5vw;
+    transform: translateY(10vh);
+    z-index: -1;
   }
   @keyframes Gradient {
     0% {
@@ -196,100 +214,188 @@ h1, h2, h3, h4 {
   
 
   .ourteam{
-      text-align: center;
-      margin-top: 50px;
-      margin-bottom: 150px;
-      color: black;
-     
-  }
-
-  .ourteam{
-    font-size: 30px;
+    position: absolute;
+    text-align: left;
+    font-size: 4.5vh;
+    margin-top: 20vh;
+    left: 10vw;
+    padding-right: 1vw;
+    color: rgba(255,255,255,0.8);
+    line-height: 5vh;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 500;
     cursor: text;
-    line-height: 25px;
     font-family: latoregular ;
+
+  }
+
+
+  .profilecontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    position: relative;
+    grid-gap: 5vw;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    left: 5vw;
   }
 
   .profile {
-    width: 300px;
-    height: 400px;
+    position: relative;
+    width: 18vw;
+    height: 45vh;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 2vh;
+    
     border: 1px solid rgba(209, 213, 219, 0.3);
-    margin: 20px 0 20px 0;
+    padding: 0px;
+  }
+
+  .profile:nth-child(1){
+    grid-column: 1/span 3;
+    left: 10vw;
   }
   
-  .image_boy1 {
-    position: absolute;
+  .pro1, .pro2{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    transform: translateY(-60px) scale(0.6);
-  }
-  .image_boy2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transform: translateY(-55px) scale(0.4);
-  }
-  
-  .profile img {
-    position: absolute;
-    width: 100%;
-    border-radius: 10px;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-  }
-  
-  .profile .text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    margin-bottom: 1vh;
+    padding: 5%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     align-items: center;
-    padding-top: 250px;
+    justify-content: center;
   }
-  
-  .profile h2 {
+    
+  .pro1 img{
+    
+    display: flex;
+    width: 60%;
+   
+    border-radius: 5%;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .pro2 img{
+    display: flex;
+    width: 60%;
+   
+    border-radius: 5%;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+  }
+ 
+  .pro1 h2 {
+    position: relative;
     font-family: "Poppins", sans-serif;
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 3vh;
     font-weight: 400;
     letter-spacing: 2px;
-    padding-bottom: 25%;
+    float: bottom;
+    margin-top: 5%;
   }
+
+  .pro2 h2{
+    width: 90%;
+    position: absolute;
+    bottom: 3vh;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 3vh;
+    font-weight: 400;
+    letter-spacing: 2px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+
+  
   
   .profile h2 span {
     font-family: latolight;
-    font-size: 15px;
+    font-size: 2vh;
     color: black;
     font-weight: bold;
     font-weight: 600;
     letter-spacing: 1px;
+    justify-content: center;
+    text-align: center;
+
   }
   
   
-  
+  @media (min-width: 2880px){
+   .profile{
+    height: 40vh;
+   }
+    
+  }
 
 
+  @media (max-width: 1000px){
+    .gradientbox{
+      width: 95vw;
+      padding: 5vh 1vw 15vh 1vw;
+    }
+    .profilecontainer{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-gap: 0vw;
+      left: 7vw;
+    }
+    .profile:nth-child(1){
+      grid-column: 1/ span 1;
+      left: 0vw;
+      margin-top: 25vh;
+    }
+    .ourteam{
+      font-size: 4vh;
+      margin-top: 10vh;
+      left: 10vw;
+    }
+    .profile{
+      max-width: 95vw;
+      width: 60vw;
+      height: 50vh;
+      grid-column: 1;
+      margin-top: 5vh;
+      position: relative;
+      
+    }
+    .pro1{
+      height: 50vh;
+    }
+    .pro2{
+      height: 50vh;
+    }
+    
+  }
 
-
+  @media (max-width: 800px){
+    .profile{
+      width: 80vw;
+      height: 50vh;
+    }
+  }
 
 
   /*------------------------------------- Socials --------------------------------------*/
   .tarangsocials{
     position: relative;
-    font-size: 20px;
+    font-size: 3vh;
     text-decoration: none;
   }
   .tarangsocials i{

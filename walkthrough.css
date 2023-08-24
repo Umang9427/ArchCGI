@@ -1,0 +1,42 @@
+.portfolioheading{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17vh;
+  }
+  .portfolioh1{
+    font-size: 4.5vh;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .vidcontainer{
+    width: 100vw;
+
+  }
+
+  .vidcontainer iframe{
+    display: flex;
+    width: 70vw;
+    aspect-ratio: 16/9;
+    height: 100%;
+    z-index: 1;
+    margin: auto;
+  }
+
+  
+
+  #interiorvids, #exteriorvids{
+    margin-top: 10vh;
+  }
+
+  #exteriorvids{
+    margin-bottom: 5vh;
+  }
+
+@media (max-width: 1000px){
+    .vidcontainer iframe{
+        width: 100vw;
+    }
+}

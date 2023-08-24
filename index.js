@@ -206,7 +206,7 @@ document.getElementById("mainwords").style.animation="Umang 24s ease-in-out infi
 
 function doSetTimeout(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Creative Modern Designs including Complete Details</span>';
+   document.getElementById('mainwords').innerHTML = '<span>Creative Modern Designs including Accurate Details</span>';
    doSetTimeout2();
 
   }, 6000);
@@ -220,7 +220,7 @@ function doSetTimeout2(){
 }
 function doSetTimeout3(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>3D Interior, Exterior and Landscape Rendering</span>';
+   document.getElementById('mainwords').innerHTML = '<span>3D Interior, Exterior and Landscape Design</span>';
    doSetTimeout4();
 
   }, 6000);

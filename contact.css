@@ -4,49 +4,42 @@ ul {
   padding: 0;
   margin: 0;
 }
-.sec-title {
+.titlecontainer {
   position: relative;
-  padding-bottom: 40px;
+  margin-top: 20vh;
+  
 }
-.sec-title .title {
+.titlecontainer h1 {
   position: relative;
-  color: #00b8ca;
-  font-size: 18px;
+  display: flex;
+  color: darkorange;
+  font-size: 3vh;
   font-weight: 700;
-  padding-right: 50px;
-  margin-bottom: 15px;
-  display: inline-block;
+  margin-bottom: 1vh;
   text-transform: capitalize;
+  left: 15vw;
 }
-.sec-title .title:before {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 7px;
-  width: 40px;
-  height: 1px;
-  background-color: #bbb;
-}
-.sec-title h2 {
+
+.titlecontainer h2 {
   position: relative;
   color: #252525;
-  font-size: 36px;
+  font-size: 4vh;
   font-weight: 700;
   line-height: 1.5em;
   display: block;
+  left: 15vw;
 }
-.sec-title.light h2 {
-  color: #fff;
-}
+
 .contact-page-section {
   position: relative;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 100vw;
 }
 .contact-page-section .inner-container {
   position: relative;
   z-index: 1;
-  background-color: #00b8ca;
+  background-color: rgb(14, 14, 14);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .contact-page-section .form-column {
@@ -122,7 +115,7 @@ ul {
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
-  border-color: #00b8ca;
+  border-color: rgba(14,14,14);
 }
 
 
@@ -136,9 +129,9 @@ ul {
   margin-top: 10px;
   text-transform: capitalize;
   padding: 16px 39px;
-  border: 2px solid #00b8ca;
+  border: 2px solid rgba(14,14,14);
   font-family: Arimo, sans-serif;
-  background: #00b8ca;
+  background: rgba(14,14,14);
   display: inline-block;
   position: relative;
   line-height: 24px;
@@ -146,8 +139,8 @@ ul {
   color: #fff;
 }
 .contact-form .theme-btn:hover {
-  color: #00b8ca;
-  border-color: #00b8ca;
+  color: rgba(14,14,14);
+  border-color: rgba(14,14,14);
   background: 0 0;
 }
 .contact-form input.error,
@@ -202,4 +195,8 @@ ul {
 .contactmaps {
   text-align: center;
   
+}
+
+.list-info p{
+  color: darkorange;
 }
