@@ -418,6 +418,16 @@ nav {
   .navtext2{
   font-size: 4vh;
   padding: 0 15px 0 15px;
+  letter-spacing: 1px;
+  }
+
+  .navtext{
+    font-size: 5vh;
+    letter-spacing: 1px;
+  }
+  .navdivider{
+    font-size: 4vh;
+    letter-spacing: 1px;
   }
 }
 
