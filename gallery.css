@@ -1,5 +1,15 @@
-
-
+.portfolioheading{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17vh;
+}
+.portfolioh1{
+  font-size: 5vh;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
 .gallery {
     image-rendering: pixelated;
     margin: 10px;
@@ -33,9 +43,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 16px solid rgba(0, 0, 0, 0.1);
+    border: 16px solid rgba(0, 0, 0, 0.2);
     transition: all 0.2s;
     will-change: border;
+  }
+  .gallery-image:before{
+    border: 16px solid rgba(0, 0, 0, 0);
   }
   .gallery-image:after {
     border-width: 0;
@@ -45,6 +58,8 @@
     max-width: 100%;
     height: auto;
   }
+
+ 
   html:not(.touch) .gallery-image {
     overflow: hidden;
   }
@@ -52,12 +67,9 @@
     border-width: 16px;
   }
   html:not(.touch) .gallery-image:hover:after {
-    border-width: 32px;
+    border-width: 16px;
   }
-  .touch .gallery-image figcaption {
-    top: auto;
-    bottom: 2em;
-  }
+ 
   
   .mfp-with-zoom .mfp-container, .mfp-with-zoom.mfp-bg {
     opacity: 0;
@@ -199,6 +211,8 @@
     text-decoration: none;
     color: inherit;
   }
+
+  
   
   [id=footer] {
     margin-top: 10vh;
@@ -236,4 +250,157 @@
     text-transform: uppercase;
     font-size: 0.75em;
     font-weight: 600;
+  }
+
+  .pswp__caption__center{
+    width: 100vw;
+    bottom: 1vh; 
+    font-weight: 500;
+    font-family: latoregular;
+    display: flex;
+    position: relative;
+    transform: scale(1.5);
+    letter-spacing: 1px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 2880px){
+    .pswp__caption__center{
+      transform: scale(3);
+      bottom: 1vh;
+    }
+  }
+
+  @media (max-width: 1000px){
+    .pswp__caption__center{
+      transform: scale(1);
+      bottom: 2vh;
+    }
+  }
+
+
+  /* ---------------------------------------- Tab Bar Design ----------------------------------------*/
+  .tabbar {
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-bottom: 0.7vh;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  .tabbar .line {
+    height: 0.3vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #FFA500;
+    margin-left: 0.9vh;
+  }
+
+ 
+  .tabbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+  .tabbar ul li {
+    margin: 0 3vw 0 0;
+    opacity: 0.4;
+    transition: all 0.4s ease;
+  }
+  .tabbar ul li:hover {
+    opacity: 0.7;
+  }
+  .tabbar ul li.active {
+    opacity: 1;
+  }
+  .tabbar ul li:last-child {
+    margin-right: 0;
+  }
+  .tabbar ul li a {
+    text-align: center;
+    font-family: latoregular;
+    text-decoration: none;
+    color: #1b1b1b;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    font-size: 2.8vh;
+  }
+
+  @media (max-width: 1000px) {
+    .tabbar ul li a{
+      font-size: 1.8vh;
+    }
+    .tabbar ul li {
+      margin: 0 6vw 0 0;
+    }
+
+    .tabbar .line{
+      margin-left: 0.45vw;
+    }
+  }
+
+
+
+
+
+  /*--------------------------------------- Text Animation on Top -----------------------------------------*/
+  
+  
+  .wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vh;
+  }
+  .wrap .headline {
+    position: relative;
+    width: 50vw;
+    color: black;
+    font-family: "Roboto", sans-serif;
+  }
+  @media  (max-width: 1000px) {
+    .wrap .headline {
+      width: 70vw;
+    }
+  }
+  .wrap .headline .normal {
+    font-size: 3vh;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.6em;
+  }
+  .wrap .headline .normal .typed-animation {
+    color: darkorange;
+  }
+  .wrap .headline::after {
+    display: block;
+    content: "";
+    background-color: rgb(221, 122, 0);
+    width: 4rem;
+    height: 0.5rem;
+    position: absolute;
+    left: -2.5rem;
+    top: -2rem;
+  }
+  .wrap .headline::before {
+    display: block;
+    content: "";
+    background-color: rgb(221, 122, 0);
+    width: 0.5rem;
+    height: 4rem;
+    position: absolute;
+    left: -2.5rem;
+    top: -2rem;
   }

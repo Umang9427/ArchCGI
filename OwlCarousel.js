@@ -9,10 +9,14 @@ $(document).ready(function(){
       },
       1000: {
         items: 2
+      },
+      2000:{
+        items: 1
       }
     },
-     autoplay:1200,
-      margin:30,
+     autoplay:1100,
+    
+      margin: 30,
       loop:true,
       dots:true
 //      nav:true,

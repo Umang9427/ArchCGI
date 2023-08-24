@@ -1,367 +1,185 @@
 
-body {
-    background: #fcf8f5;
-    box-sizing: border-box;
-  }
-  
 
-.closebutn {
-    position: absolute;
-    top: 0px;
-    right: 50px;
-    font-size: 70px;
-    text-decoration: none;
-    color: black;
-  }
-
-  .closebutn:hover{
-      text-decoration: none;
-      color: rgb(58, 117, 117)
-  }
-
-  
-.outer {
-    position: fixed;
-    margin: auto;
-    width: 50px;
-    margin-top: 0px;
-    cursor: pointer;
-    margin-right: 20px;
-    font-size: 20px;
-  }
-  
-  .inner {
-    width: inherit;
-    text-align: center;
-  }
-  
-  label { 
-    font-size: 0.8em; 
-    line-height: 2em;
-    text-transform: uppercase;
-    color: black;
-    transition: all .3s ease-in;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  .inner:before, .inner:after {
-    position: absolute;
-    content: '';
-    height: 1px;
-    width: inherit;
-    background: #ffb007;
-    left: 0;
-    transition: all .3s ease-in;
-  }
-  
-  .inner:before {
-    top: 50%; 
-    transform: rotate(45deg);  
-  }
-  
-  .inner:after {  
-    bottom: 50%;
-    transform: rotate(-45deg);  
-  }
-  
-  .outer:hover label {
-    opacity: 1;
-  }
-  
-  .outer:hover .inner:before,
-  .outer:hover .inner:after {
-    transform: rotate(0);
-  }
-  
-  .outer:hover .inner:before {
-    top: 0;
-  }
-  
-  .outer:hover .inner:after {
-    bottom: 0;
-  }
-
-  .blog-container {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    font-family: latolight;
-    font-weight: 100;
-    margin: 48px auto;
-    width: 50rem;
-    max-width: 95%;
-  }
-
-  @media screen and (min-width: 480px) {
-    .blog-container {
-      width: 28rem;
-    }
-  }
-  @media screen and (min-width: 767px) {
-    .blog-container {
-      width: 40rem;
-    }
-  }
-  @media screen and (min-width: 959px) {
-    .blog-container {
-      width: 60rem;
-    }
-  }
-  
-
-
-
-
-  .blog-container a {
-    color: #4d4dff;
-    text-decoration: none;
-    transition: 0.25s ease;
-  }
-  .blog-container a:hover {
-    border-color: #ff4d4d;
-    color: #ff4d4d;
-  }
-  
-  .blog-cover {
-    background: url("img/Blog/archviz.png");
-    background-size: cover;
-    border-radius: 5px 5px 0 0;
-    height: 15rem;
-    box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px;
-  }
-  .blog-cover2{
-    background:url("img/Blog/futureofinterior.jpg");
-    background-size: cover;
-    background-position: 10% 80%;
-  }
-  .blog-author,
-  .blog-author--no-cover {
-    margin: 0 auto;
-    padding-top: 0.125rem;
-    transform: translateX(-75px);
-    width: 80%;
-  }
-  
-  .blog-author h5::before,
-  .blog-author--no-cover h3::before {
-    background: url("img/Team/Umang\ Bhalani.jpg");
-    background-size: cover;
-    border-radius: 50%;
-    content: " ";
-    display: inline-block;
-    height: 32px;
-    margin-right: 0.5rem;
-    position: relative;
-    top: 8px;
-    width: 32px;
-    font-weight: 100;
-  }
-  
-  .blog-author h5 {
-    color: rgb(241, 241, 241);
-    font-weight: 100;
-  }
-  
-  .blog-author--no-cover h5 {
-    color: #999999;
-    font-weight: 100;
-  }
-  
-  .blog-body {
-    margin: 0 auto;
-    width: 80%;
-  }
-  
-  .video-body {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .blog-title h1 a {
-    color: #333;
-    font-weight: 100;
-  }
-  
-  .blog-summary p {
-    color: #4d4d4d;
-  }
-  
-  .blog-tags ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .blog-tags li + li {
-    margin-left: 0.5rem;
-  }
-  
-  .blog-tags a {
-    border: 1px solid #999999;
-    border-radius: 3px;
-    color: #999999;
-    font-size: 0.75rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    letter-spacing: 1px;
-    padding: 0 0.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
-    width: 5rem;
-  }
-  
-  .blog-footer {
-    border-top: 1px solid #e6e6e6;
-    margin: 0 auto;
-    padding-bottom: 0.125rem;
-    width: 80%;
-  }
-  
-  .blog-footer ul {
-    list-style: none;
-    display: flex;
-    flex: row wrap;
-    justify-content: flex-end;
-    padding-left: 0;
-  }
-  
-  .blog-footer li:first-child {
-    margin-right: auto;
-  }
-  
-  .blog-footer li + li {
-    margin-left: 0.5rem;
-  }
-  
-  .blog-footer li {
-    color: #999999;
-    font-size: 0.75rem;
-    height: 1.5rem;
-    letter-spacing: 1px;
-    line-height: 1.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    white-space: nowrap;
-  }
-  .blog-footer li a {
-    color: #999999;
-  }
-  
-  .comments {
-    margin-right: 1rem;
-  }
-  
-  .published-date {
-    border: 1px solid #999999;
-    border-radius: 3px;
-    padding: 0 0.5rem;
-  }
-  
-  .numero {
-    position: relative;
-    top: -0.5rem;
-  }
-  
-  .icon-star,
-  .icon-bubble {
-    fill: #999999;
-    height: 24px;
-    margin-right: 0.5rem;
-    transition: 0.25s ease;
-    width: 24px;
-  }
-  .icon-star:hover,
-  .icon-bubble:hover {
-    fill: #ff4d4d;
-  }
-
-
-
-
-
-   
-
-.blog-container h1 {
-  font-family: latoregular;
-  font-weight: 800;
-  font-size: 3em;
+.servicecontainer {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  background: linear-gradient(to bottom, #FFFCF5, #FEE9E1);
 }
 
-/* Style the rainbow text element. */
-.rainbow-text {
-  /* Create a conic gradient. */
-  /* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
-  background: #ca4246;
-  background-color: #ca4246;
-  background: conic-gradient(
-    #ca4246 16.666%,
-    #e16541 16.666%,
-    #e16541 33.333%,
-    #f18f43 33.333%,
-    #f18f43 50%,
-    #8b9862 50%,
-    #8b9862 66.666%,
-    #3A7575 66.666%,
-    #3A7575 83.333%,
-    #a7489b 83.333%
-  );
+.servicecontainer h1 {
+  font-family: latolight;
+  font-size: 4.5vh;
+  margin-top: 12%;
+  margin-bottom: 7%;
+  margin-left: 1%;
+  text-align: left;
+  position: relative;
+}
 
-  /* Set thee background size and repeat properties. */
-  background-size: 57%;
-  background-repeat: repeat;
+.decorative-line {
+  width: 6vw;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
 
-  /* Use the text as a mask for the background. */
-  /* This will show the gradient as a text color rather than element bg. */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.services {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5vw;
+}
 
-  /* Animate the text when loading the element. */
-  /* This animates it on page load and when hovering out. */
-  animation: rainbow-text-animation-rev 1s ease forwards;
+.card {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2vw;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  position: relative;
+  width: 20vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.info {
+  position: relative;
+  top: 0;
+  float: right;
+  height: 100%;
+  flex: 1;
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover .info {
+  transform: scale(1.04);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card h3 {
+  font-size: 3vh;
+  margin-top: 20%;
+  color: #333;
+}
+
+.card p {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 2.5vh;
+  line-height: 1.5;
+  color: #666;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-bottom: 2vh;
+}
+
+.card:hover .tags {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tag {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 1.5vh;
+  font-family: latolight;
+  color: #fbfbfb;
+  background-color: rgba(0,0,0,0.85);
+  border: 1px solid #979797;
+  border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: tagAnimation 0.3s ease forwards;
 }
 
-/* Add animation on hover. */
-.rainbow-text:hover {
-  animation: rainbow-text-animation 1s ease forwards;
-}
 
-/* Move the background and make it larger. */
-/* Animation shown when hovering over the text. */
-@keyframes rainbow-text-animation {
+@keyframes tagAnimation {
   0% {
-    background-size: 57%;
-    background-position: 0 0;
-  }
-  20% {
-    background-size: 57%;
-    background-position: 0 1em;
+    opacity: 0;
+    transform: translateY(10px);
   }
   100% {
-    background-size: 500%;
-    background-position: -9em 1em;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* Move the background and make it smaller. */
-/* Animation shown when entering the page and after the hover animation. */
-@keyframes rainbow-text-animation-rev {
-  0% {
-    background-size: 300%;
-    background-position: -9em 1em;
+
+@media screen and (max-width: 1000px){
+  .servicecontainer h1{
+    margin-top: 50%;
+    margin-bottom: 30%;
   }
-  20% {
-    background-size: 57%;
-    background-position: 0 1em;
+  .services {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
   }
-  100% {
-    background-size: 57%;
-    background-position: 0 0;
+  .card{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 50px;
+  }
+  .card img{
+    width: 40vw;
+  }
+  .info{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+    
+  }
+  .tags{
+    display: none;
+  }
+  .card p{
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
+  .card h3{
+    font-size: 24px;
+  }
+  .decorative-line{
+    bottom: -20px;
   }
 }
+
+
