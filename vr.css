@@ -134,8 +134,8 @@
 .panaromaset{
     height: 100vh;
     width: 100vw; 
-    min-height: 350px; 
-    min-width: 350px;
+    min-height: 300px; 
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
