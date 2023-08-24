@@ -170,12 +170,12 @@ body {
     display: none;
   }
   .card p{
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 100px;
   }
   .card h3{
-    margin-top: 80%;
-    font-size: 24px;
+    margin-top: 60%;
+    font-size: 20px;
   }
   .decorative-line{
     bottom: -20px;
