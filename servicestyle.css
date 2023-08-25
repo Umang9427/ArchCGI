@@ -161,8 +161,7 @@ body {
   }
   .info{
     margin: auto;
-    align-items: center;
-    justify-content: center;
+    
     height: 100%
     
   }
@@ -170,12 +169,13 @@ body {
     display: none;
   }
   .card p{
-    font-size: 11px;
+    font-size: 1vh;
     margin-bottom: 100px;
   }
   .card h3{
     margin-top: 60%;
-    font-size: 20px;
+    font-size: 1.5vh;
+    text-align: left;
   }
   .decorative-line{
     bottom: -20px;
