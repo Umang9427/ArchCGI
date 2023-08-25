@@ -83,17 +83,15 @@
 
 
     <!--   **** Linking css file ****   -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="blogandfaq.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="blogs.css">
 
-    <link rel="icon" href="img/ArchCGI_ICON.png" type="image/icon type">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="icon" href="../img/ArchCGI_ICON.png" type="image/icon type">
+   
 
     <!-- ************SEO optimization ****************-->
     <link rel="canonical" href="https://archcgi.com/">
-    <link rel="apple-touch-icon" href="img/ArchCGI_ICON.png">
+    <link rel="apple-touch-icon" href="../img/ArchCGI_ICON.png">
     <meta name="theme-color" content="#3A7575">
 </head>
 
@@ -101,36 +99,74 @@
 
 <body class="allfont pagescroll">
 
-    <!--**************************************************   Navigation Bar *****************************************************-->
+  <!--**************************************************   Navigation Bar *****************************************************-->
 
-    <nav style="padding-bottom: 10px;" id="topnav">
-        <ul class="top">
-            <li id="logo">
-                <a href="./index.html" alt="Redirect to Main page">
-                    <img src="img/ArchCGI_ICON.png" title="Official ArchCGI logo" alt="logo" width="80" height="80"
-                        loading="eager">
-                </a>
-            </li>
+  <nav id="topnav">
+    <ul class="top">
+      <li id="logo" style="padding: 10px;">
+        <a href="../index.html" alt="Redirect to Main page">
+          <img src="../img/ArchCGI_ICON.png" title="Official ArchCGI logo" alt="logo" width="auto" height="auto"
+            loading="eager">
+        </a>
+      </li>
 
-            <div id="navcolor">
-                <div class="right" id="right2">
+      <div id="navcolor">
+        <div class="right" id="right2">
+          <div id="responsiveSideNav" class="overlay">
+            <a href="javascript:void(0)" class="navtext closebtn" onclick="closeNav()"
+              style="text-decoration: none;">&times;</a>
+            <div class="overlay-content">
+              <a href="../about.html" class="navtext" style="text-decoration: none;"
+                alt="Redirect to about us page"><b>About</b></a>
+              <a href="../services.html" class="navtext" style="text-decoration: none;"
+                alt="Redirect to Services page"><b>Services</b></a>
+              <a href="../contact.html" class="navtext" style="text-decoration: none;"
+                alt="Redirect to Contact page"><b>Contact</b></a>
+              <a href="../faqandblog.html" class="navtext" style="text-decoration: none;"
+                alt="Redirect to Contact page"><b>FAQ And Blogs</b></a>
 
-                    <a href="blogandfaq.html" style="text-decoration: none;">
-                        <div class="outer">
-                            <div class="inner">
-                                <label>Back</label>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
+                <h2 class="navdivider">Portfolio:</h2>
             </div>
-        </ul>
-    </nav>
+           
+            <div class="overlay-content2">
+              <a href="../realistic.html" class="navtext2" style="text-decoration: none;"
+                alt="Redirect to Exterior showcase page"><b>Realistic</b></a>
+              <a href="../ultrarealistic.html" class="navtext2" style="text-decoration: none;"
+                alt="Redirect to Interior Showcase page"><b>Ultra-Realistic</b></a>
+              <a href="../VR.html" class="navtext2" style="text-decoration: none;"
+                alt="Redirect to Resort and Landscape Showcase page"><b>VR / AR</b></a>
+              <a href="../Walkthrough.html" class="navtext2" style="text-decoration: none;"
+                alt="Redirect to Architectural walkthrough page"><b>Walkthrough</b></a>
+            </div>
+          </div>
 
-    <!--********************************************   Navigation Bar End ****************************************-->
+          <svg class="ham ham2" viewBox="0 0 100 100" width="4vw" onmouseover="this.classList.add('active')" onmouseout="this.classList.remove('active')" onclick="openNav()">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381" />
+            <path
+                  class="line middle"
+                  d="m 30,50 h 40" />
+            <path
+                  class="line bottom"
+                  d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381" />
+          </svg>
 
-    <div style="margin-top: 100px;"></div>
+        </div>
+      </div>
+    </ul>
+  </nav>
+
+  
+  <ul class="breadcrumb">
+    <li><a href="../index.html">Home></a></li>
+    <li><a href="../faqandblog.html">Blogs></a></li>
+    <li>10reasonswhy</li>
+   
+  </ul>
+  <!--********************************************   Navigation Bar End ****************************************-->
+
+    <div style="margin-top: 10vh"></div>
 
 
     <section style="margin-left: 10%; margin-right:10% ">
@@ -197,7 +233,7 @@
         </h2>
         <h2 style="text-align: left;">
             <ul style="text-align: left;">
-                <li><span style="font-family: verdana; font-size: large;">Material and Color Selection</span></li>
+                <li><span style="font-family: verdana;">Material and Color Selection</span></li>
             </ul>
             <p style="text-align: justify;"><span style="font-family: helvetica; font-size: small;"><span
                         style="font-weight: 400;">Some architects or clients choose the materials and colours before
@@ -215,7 +251,7 @@
         </h2>
         <h3>
             <ul style="text-align: left;">
-                <li><span style="font-family: verdana; font-size: large;">Furniture Selection</span></li>
+                <li><span style="font-family: verdana;">Furniture Selection</span></li>
             </ul>
             <div style="text-align: justify;"><span style="font-family: helvetica; font-size: small;"><span
                         style="font-weight: 400;">One of the major advantages of 3D Visualization is furniture
@@ -236,7 +272,7 @@
                 <h3></h3>
                 <h3>
                     <ul style="text-align: left;">
-                        <li><span style="font-family: verdana; font-size: large;">False Ceiling/ Truss</span></li>
+                        <li><span style="font-family: verdana;">False Ceiling/ Truss</span></li>
                     </ul>
                     <div style="text-align: justify;"><span style="font-family: helvetica; font-size: small;"><span
                                 style="font-weight: 400;">There is a variety of false ceiling considering the size,
@@ -267,7 +303,7 @@
                                 <li><span style="font-family: verdana;">Easy Amendments and Less Errors</span></li>
                             </ul>
                             <p style="text-align: justify;"><span
-                                    style="font-family: helvetica; font-size: small; font-weight: normal;">From the very
+                                    >From the very
                                     beginning of the design process, 3D visualisation makes it straightforward to spot
                                     flaws and
                                     design problems that may be quickly fixed or replaced with a suitable alternative.
@@ -308,7 +344,7 @@
                             <div>
                                 <h3>
                                     <ul style="text-align: left;">
-                                        <li><span style="font-family: verdana; font-size: large;">Landscaping /
+                                        <li><span style="font-family: verdana;">Landscaping /
                                                 Surroundings</span></li>
                                     </ul>
                                     <div style="text-align: justify;"><span
@@ -334,7 +370,7 @@
                                     <div>
                                         <h3>
                                             <ul style="text-align: left;">
-                                                <li><span style="font-family: verdana; font-size: large;">Flexibility
+                                                <li><span style="font-family: verdana;">Flexibility
                                                         According
                                                         to your Needs</span></li>
                                             </ul>
@@ -359,7 +395,7 @@
                                             <div>
                                                 <h3>
                                                     <ul style="text-align: left;">
-                                                        <li><span style="font-family: verdana; font-size: large;">Future
+                                                        <li><span style="font-family: verdana;">Future
                                                                 Ready
                                                                 with AR and VR</span></li>
                                                     </ul>
@@ -389,7 +425,7 @@
                                                 <h3>
                                                     <ul style="text-align: left;">
                                                         <li><span><span
-                                                                    style="font-family: verdana; font-size: large;">Overall
+                                                                    style="font-family: verdana;">Overall
                                                                     Cost Reduction</span></span></li>
                                                     </ul>
                                                     <div><span style="font-family: helvetica; font-size: small;"><span
@@ -465,7 +501,7 @@
         <p><span style="font-family: helvetica;"><br /></span></p>
     </section>
 
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 
 </html>
