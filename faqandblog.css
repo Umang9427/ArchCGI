@@ -1,8 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.faqheader{
+    position: relative;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.faqheader h1{
+    color: rgb(229, 126, 0);
+    font-size: 3.5vh;
+    font-family: latoregular;
+    letter-spacing: 0.05em;
+    padding: 1px;
+
+}
+
+.faqheader h1::after{
+    content:"";
+    display:block;
+    width: 3em;
+    max-width:70%;
+    border-bottom: 0.1em solid black;
+    margin: 0.3em auto 0;
+
+}
+
+.faqheader h2{
+    font-size: 4vh;
+    margin-top: 2vh;
+    letter-spacing: 0.05em;
+}
+
+.faqheader h2::after{
+    content:"";
+    display:block;
+    width: 10em;
+    max-width:70%;
+    border-bottom: 0.1em solid black;
+    margin: 0.5em auto 0;
+}
+
+
+
+
+.faqtextscontainer{
+    margin-top: 10vh ;
+   
+}
+.faqtextscontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4vw;
+  }
+@media (max-width: 1000px) {
+  .faqtextscontainer{
+    grid-template-columns: repeat(1, 1fr);
+  }  
+}
+.faqtexts {
+  position: relative;
+  padding: 5vh;
+  
+}
+
+.contentfaq{
+  margin-left: 5vw;
+  
+}
+.faqtexts h3{
+  font-size: 3vh;
+  letter-spacing: 0.05em;
+}
+
+.faqtexts p{
+  position: relative;
+  margin-top: 1em;
+  font-size: 2.3vh;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+
+.verticalline{
+  left: 3vw;
+  content: "";
+  width: 0.5vw;
+  top: 5vh;
+  bottom: 5vh;
+  display: block;
+  position: absolute;
+  border-radius: 10vw;
+  
+  background: rgba(229, 126, 0, 1);
+}
+
+@media (max-width: 1000px){
+  .verticalline{
+    width: 2vw;
+  }
+}
+
+
+
+
+
+
 
 
 .servicecontainer {
-  max-width: 100%;
-  overflow: hidden;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   position: relative;
@@ -12,11 +123,12 @@
 .servicecontainer h1 {
   font-family: latolight;
   font-size: 4.5vh;
-  margin-top: 12%;
+  margin-top: 6%;
   margin-bottom: 7%;
   margin-left: 1%;
   text-align: left;
   position: relative;
+  letter-spacing: 0.1em;
 }
 
 .decorative-line {
@@ -30,7 +142,6 @@
 
 .services {
   display: grid;
-  position: relative;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5vw;
 }
@@ -43,7 +154,7 @@
   border-radius: 2vw;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
 }
@@ -54,8 +165,7 @@
 }
 
 .card img {
-  position: relative;
-  width: 20vw;
+  width: 15vw;
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -63,13 +173,11 @@
 }
 
 .card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .info {
-  position: relative;
   top: 0;
-  float: right;
   height: 100%;
   flex: 1;
   padding: 2vh;
@@ -88,13 +196,13 @@
 
 .card h3 {
   font-size: 3vh;
-  margin-top: 20%;
+  padding-top: 5%;
   color: #333;
 }
 
 .card p {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 1.5vh;
+  margin-bottom: 1vh;
   font-size: 2.5vh;
   line-height: 1.5;
   color: #666;
@@ -171,11 +279,12 @@
     display: none;
   }
   .card p{
-    font-size: 14px;
+    font-size: 11px;
     margin-bottom: 100px;
   }
   .card h3{
-    font-size: 24px;
+    margin-top: 60%;
+    font-size: 20px;
   }
   .decorative-line{
     bottom: -20px;
