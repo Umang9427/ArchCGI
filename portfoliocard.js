@@ -38,7 +38,7 @@ parentDiv3.addEventListener('click', function(event) {
         // The click occurred within a child div, do nothing
         return;
     }
-    window.open('https://archcgi.com/vr.html', "_self");
+    window.open('https://archcgi.com/VR.html', "_self");
 });
 
 
