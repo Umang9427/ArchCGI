@@ -983,7 +983,7 @@ main {
 }
 
 .sslide:nth-child(3) {
-  background: url("img/l/3.webp") no-repeat center bottom/cover;
+  background: url("img/l/Pinterest\ 169.png") no-repeat center bottom/cover;
   background-attachment: fixed;
 }
 
@@ -3175,7 +3175,7 @@ main {
   }
 
   .sslide:nth-child(2) {
-    background: url("img/p/2.webp") no-repeat left bottom/cover;
+    background: url("img/p/2.webp") no-repeat center bottom/cover;
     background-attachment: fixed;
   }
 
