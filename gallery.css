@@ -299,7 +299,7 @@
     left: 0;
     bottom: 0;
     background: #FFA500;
-    margin-left: 0.9vh;
+    margin-left: 0vh;
   }
 
  
@@ -373,6 +373,9 @@
   @media  (max-width: 1000px) {
     .wrap .headline {
       width: 70vw;
+    }
+    .wrap{
+      height: 25vh;
     }
   }
   .wrap .headline .normal {

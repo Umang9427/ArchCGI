@@ -202,35 +202,35 @@ function reveal() {
 
 
 /*------------------------------ Animated Text header------------------------------- */
-document.getElementById("mainwords").style.animation="Umang 24s ease-in-out infinite";
+document.getElementById("mainwords").style.animation="Umang 20s ease infinite";
 
 function doSetTimeout(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Creative Modern Designs including Accurate Details</span>';
+   document.getElementById('mainwords').innerHTML = '<span>3D Modelling and Enhanced Workflow with AI</span>';
    doSetTimeout2();
 
-  }, 6000);
+  }, 5000);
 }
 function doSetTimeout2(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Easily Accessible Realistic Architectural Visualization</span>';
+   document.getElementById('mainwords').innerHTML = '<span>Value for Money 3D Rendering</span>';
    doSetTimeout3();
 
-  }, 6000);
+  }, 5000);
 }
 function doSetTimeout3(){
   setTimeout(function() {
    document.getElementById('mainwords').innerHTML = '<span>3D Interior, Exterior and Landscape Design</span>';
    doSetTimeout4();
 
-  }, 6000);
+  }, 5000);
 }
 function doSetTimeout4(){
   setTimeout(function() {
-   document.getElementById('mainwords').innerHTML = '<span>Industry Leading Showcase of CGI for Architecture</span>';
+   document.getElementById('mainwords').innerHTML = '<span>Industry Leading Showcase for ArchViz</span>';
    doSetTimeout();
 
-  }, 6000);
+  }, 5000);
 }
 
 

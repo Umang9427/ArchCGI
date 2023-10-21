@@ -13,20 +13,6 @@ parentDiv.addEventListener('click', function(event) {
 });
 
 
-//Extra code for opening the gallery on clicking on the card
-const parentDiv2 = document.querySelector('.portfolio2');
-
-parentDiv2.addEventListener('click', function(event) {
-    const clickedChild1 = event.target.closest('.portfolio2 .btn_wrap');
-    const clickedChild2 = event.target.closest('.portfolio2 .input-wrapper');
-    const clickedChild3 = event.target.closest('.portfolio2 .tworings');
-    if (clickedChild1 || clickedChild2 || clickedChild3) {
-        // The click occurred within a child div, do nothing
-        return;
-    }
-    window.open('https://archcgi.com/ultrarealistic.html', "_self");
-});
-
 
 const parentDiv3 = document.querySelector('.portfolio3');
 
