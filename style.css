@@ -18,6 +18,26 @@
   src: url('./Font/Lato-Light.ttf');
 }
 
+@font-face {
+  font-family: bevietnambold;
+  src: url('./Font/BeVietnamPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: bevietnamdefault;
+  src: url('./Font/BeVietnamPro-Light.ttf');
+}
+
+@font-face {
+  font-family: bevietnamlight;
+  src: url('./Font/BeVietnamPro-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: bevietnamthin;
+  src: url('./Font/BeVietnamPro-Thin.ttf');
+}
+
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
 * {
   box-sizing: border-box;
@@ -368,7 +388,7 @@ nav {
   left: 0;
   background-color: rgba(0, 0, 0, 0.1);
   /*Please take a note of this color. It is slight different from footer*/
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(170px);
   overflow-x: hidden;
   transition: 0.7s;
   max-height: 100vh;
@@ -616,16 +636,44 @@ main {
   background-attachment: fixed;
   background-size: cover;
 }
-
+.authenticcontainer{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 13vh;
+  width: 100vw;
+  height: 10vh;
+}
 .authentic {
-  margin-top: 4vh;
-  margin-bottom: 10vh;
-  text-align: center;
-  align-content: center;
-  font-size: 3.5vh;
-  letter-spacing: 2px;
+  position: relative;
+  margin: auto;
+  font-size: 4vh;
+  letter-spacing: 0.2em;
+  font-family: bevietnamdefault;
+  z-index: 2;
+}
+.authenticsvg{
+  width: 10vh;
+  position: absolute;
+  left: 57%;
+  aspect-ratio: 1/1;
+  z-index: 1;
+  opacity: 0.3;
+  top: -2vh;
 }
 
+@media (max-width: 500px) {
+  .authentic{
+    font-size: 3vh;
+  }
+  .authenticsvg{
+    
+    width: 15vw;
+    left: 70%;
+    top: 0.5vh;
+  }
+  
+}
 .threeimages {
   text-align: center;
   align-content: center;
@@ -643,43 +691,10 @@ main {
   font-size: 23px;
 }
 
-.rowmargin {
-  margin-bottom: 100px;
-  padding: 10px;
-}
 
-.colpadding {
-  text-align: center;
-  margin-bottom: 100px;
-}
 
-.imgpad {
-  width: 100%;
-  max-height: 400px;
-  align-content: center;
-  text-align: center;
-  opacity: 1;
-}
 
-.newimage {
-  /*border: 1px solid gray;*/
-  text-align: center;
-  background-color: white;
-  margin-bottom: 30px;
-  box-shadow: 0 0 19px -8px rgb(0 0 0 / 50%);
-  border-radius: 11px;
-  /*Rounded corners*/
-}
 
-.newimage:hover {
-  background-color: white;
-  border: 0px;
-  box-shadow: 0 0 25px -4px rgba(0 0 0 / 50%);
-}
-
-.newimage a:hover {
-  text-decoration: none;
-}
 
 /* --------------------------------------- Changing Text Heading ------------------------------------*/
 .headingcontainer {
@@ -687,13 +702,13 @@ main {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 40px;
-  border-radius: 10px;
+  
+  
 }
 
 .mainwords {
-  font-size: 5vh;
-  color: rgb(83, 83, 83);
+  font-size: 4vh;
+  
   white-space: nowrap;
   overflow: hidden;
   display: block;
@@ -703,140 +718,141 @@ main {
   text-align: center;
   padding: 10px;
   display: inline-block;
-  font-family: latolight;
-  letter-spacing: 5px;
+  font-family: bevietnamlight;
+  letter-spacing: 0.1em;
   border-radius: 10px;
-  margin-top: 8vh;
+  margin-top: 26vh;
 }
+
 
 .mainwords span {
-  background: linear-gradient(75deg, rgba(247, 0, 99, 0.1), rgba(255, 128, 0, 0.1));
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
+  background: linear-gradient(90deg, rgba(255, 133, 34, 0.3),rgba(112, 185, 123, 0.3), rgba(255, 91, 121, 0.3),rgba(44, 153, 255, 0.3));
+  background-size: 500% 500%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  animation: mainwordsgradient 7s ease infinite;
+  border-radius: 5vh;
+  
 }
 
-@media (max-width: 1200px) {
-  .mainwords {
-    font-weight: 700;
-    font-size: 30px;
-  }
-
-  .mainwords span {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-}
-
-@media (max-width: 800px) {
-  .mainwords {
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0px;
-  }
-
-  .mainwords span {
-    padding-left: 25px;
-    padding-right: 25px;
+@media (max-width: 800px){
+  .mainwords{
+    font-size: 3vw;
+    letter-spacing: 0em;
   }
 }
 
-@media (max-width: 600px) {
-  .mainwords {
-    font-weight: 700;
-    font-size: 12px;
-  }
-
-  .mainwords span {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+@keyframes mainwordsgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
+
+
 
 @keyframes Umang {
   0% {
-    color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
+    color: rgba(0,0,0,0);
     width: 10%;
   }
 
-  5% {
-    color: rgba(0, 0, 0, 0);
+  3% {
+   
+    border-radius: 5vh;
+    color: rgba(0,0,0,0);
     width: 10%;
   }
 
-  12.5% {
-    color: rgb(83, 83, 83);
+  10% {
+    
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   22% {
-    color: rgb(83, 83, 83);
+    
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   25% {
     color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
     width: 10%;
   }
 
-  30% {
+  28% {
     color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
     width: 10%;
   }
 
-  37.5% {
-    color: rgb(83, 83, 83);
+  35% {
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   47% {
-    color: rgb(83, 83, 83);
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   50% {
     color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
     width: 10%;
   }
 
-  55% {
+  53% {
     color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
     width: 10%;
   }
 
-  62.5% {
-    color: rgb(83, 83, 83);
+  60% {
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   72% {
-    color: rgb(83, 83, 83);
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   75% {
     color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
     width: 10%;
   }
 
-  80% {
+  78% {
     color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
     width: 10%;
   }
 
-  87.5% {
-    color: rgb(83, 83, 83);
+  85% {
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   97% {
-    color: rgb(83, 83, 83);
+    color: rgba(0, 0, 0, 0.6);
     width: 100%;
   }
 
   100% {
     color: rgba(0, 0, 0, 0);
+    border-radius: 5vh;
     width: 10%;
   }
 }
@@ -886,26 +902,22 @@ main {
 }
 
 .sslide .content h1 {
-  font-family: latolight;
+  font-family: bevietnamdefault;
   margin-bottom: 10px;
   font-size: 8vh;
-  font-weight: 500;
-  color: rgb(237, 237, 237);
-  letter-spacing: 1px;
+  color: rgb(226, 226, 226);
+  letter-spacing: 0.15em; 
 }
 
 .sslide .content h2:nth-child(n+1) {
-  font-family: latolight;
-  font-size: 4.5vh;
-  color: rgb(237, 237, 237);
+  font-family: bevietnamlight;
+  font-size: 4vh;
+  color: rgb(240, 240, 240);
   padding-top: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em;
 }
 
-.slider1 .content {
-  font-family: latolight;
-  font-weight: 100;
-}
+
 
 .sslide.current .content {
   opacity: 1;
@@ -1007,7 +1019,7 @@ main {
   transform: translateY(-50%) translateX(-5px);
   z-index: 8;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 0 15px 15px 0;
 }
 
 .rightbar {
@@ -1019,6 +1031,7 @@ main {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   text-decoration: none;
+  font-family: bevietnamlight;
 }
 
 .rightbar h5 {
@@ -1030,15 +1043,17 @@ main {
   padding-top: 2vh;
   border-radius: 5px;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .rightbar h5:hover {
-  color: rgb(215, 215, 215);
+  color: rgb(91, 91, 91);
   cursor: pointer;
   transform: scale(1.3);
-  transition: all 0.2s ease-in-out;
-  background: rgba(25, 25, 25);
+  transition: all 0.1s ease-in-out;
+  background: rgba(245,245,245, 1);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border: solid 1px rgb(226, 226, 226);
   text-decoration: none;
 }
 
@@ -1046,9 +1061,9 @@ main {
   display: block;
   text-align: center;
   padding: 2vh;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
   font-size: 3vh;
-  border-radius: 2px;
+  border-radius: 0 10px 10px 0;
 }
 
 @media only screen and (max-width: 770px) {
@@ -1091,6 +1106,7 @@ main {
   background: #3B5998;
   color: white;
   transform: scale(1.4);
+  
 }
 
 .wwhatsapp {
@@ -1616,62 +1632,46 @@ main {
 /*-------------------------------------------------- Portfolio Card -------------------------------------------------*/
 .portfoliocardscontainer {
   width: 100vw;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   margin-bottom: 15vh;
-  margin-top: 0vh;
-  flex-direction: row;
+  margin-top: 8vh;
+  column-gap: 5vw;
+  align-items: center;
 }
 
-.portfoliocardscontainer2 {
-  margin-bottom: 30vh;
-}
-
-@media (max-width: 1000px) {
-  .portfoliocardscontainer {
-    margin-top: 5vh;
-  }
-
-  .authentic {
-    margin-top: 5vh;
-  }
-
-  .mainwords {
-    margin-top: 0vh;
-  }
-}
 
 .portfoliocard {
   display: block;
   position: relative;
   border-radius: 4%;
-  width: 32vw;
-  height: 32vw;
+  width: 25vw;
+  height: 30vw;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   overflow: hidden;
   background-size: cover;
   background-attachment: fixed;
-  shape-rendering: geometricPrecision;
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin: auto;
 }
 
-.portfolio1,
-.portfolio3 {
-  margin-left: 13%;
-}
 
-.portfolio2,
-.portfolio4 {
-  margin-right: 13%;
-}
 
 .portfoliocard:hover {
   transform: translateY(-15px);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   transition: all 0.3s ease-in-out;
+}
+
+.portfolio1{
+  left: 5vw;
+}
+
+.portfolio3{
+  right: 5vw;
 }
 
 .portfoliocard img {
@@ -1693,9 +1693,7 @@ main {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(40px);
-  backdrop-filter: blur(70px);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(40, 40, 40, 0.98);
   bottom: 20%;
   transition: all 0.4s ease-in-out;
 }
@@ -1709,111 +1707,33 @@ main {
 }
 
 .title {
-  width: 16vw;
-  font-family: latoregular;
+  width: 50%;
+  font-family: bevietnamdefault;
   transform: translateY(3vh);
   margin: auto;
   text-align: center;
   justify-content: center;
   font-size: 1.2em;
   font-weight: 500;
-  letter-spacing: 1px;
-  color: rgba(30, 30, 30, 0.7);
+  letter-spacing: 0;
+  color: rgba(30, 30, 30, 1);
   transition: all 0.4s ease-in-out;
   border-radius: 50px;
   padding: 8px 0px 8px 0px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(227, 227, 227, 0.7);
 }
 
 .portfoliocard:hover .title {
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   background-color: rgba(0, 0, 0, 0);
   transform: translateY(6vh);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(218, 218, 218);
   transition: all 0.3s ease-in-out;
 }
 
-/* --------------------------- First Button ---------------------------------------- */
-.btn_wrap {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  cursor: pointer;
-  width: 28%;
-  height: 6vh;
-  background-color: rgba(255, 255, 255, 0.05);
-  outline: none;
-  border-radius: 200px;
-  will-change: transform;
-  transition: all 0.7s ease-in-out;
-  float: right;
-  right: 7%;
-  top: 85%;
-  caret-color: transparent;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
 
-.portfoliocard:hover .btn_wrap {
-  right: 7%;
-  top: 39.5%;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn_wrap span {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  border-radius: 200px;
-  font-size: 2vh;
-  font-weight: 600;
-  margin: auto;
-  text-align: center;
-  line-height: 3;
-  letter-spacing: 1px;
-  color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.7s ease;
-  outline: none;
-}
-
-.copymessage {
-  opacity: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 2vh;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: #3d3d3d;
-  will-change: transform;
-  -webkit-transform: scale(0.1);
-  transform: scale(0.1);
-  transition: all 0.4s ease;
-}
-
-.btn_wrap i {
-  font-size: 16px;
-  transition: all 0.5s ease-in-out;
-  color: rgba(0, 0, 0, 0.6);
-  padding-right: 5%;
-}
-
-.socialcontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 200px;
-  border-radius: 200px;
-}
-
-/* ------------------------------------ Second Button ------------------------------------- */
+/* ------------------------------------ First Button ------------------------------------- */
 .input-wrapper {
   top: 60%;
   margin: auto;
@@ -1832,7 +1752,6 @@ main {
   border: none;
   border-radius: 100px;
   box-sizing: border-box;
-  color: rgba(0, 0, 0);
   font-size: 14px;
   font-weight: 800;
   height: 40px;
@@ -1842,16 +1761,16 @@ main {
   width: 100%;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   opacity: 0.6;
-  background-color: rgba(255, 255, 255, 0.45);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .input-wrapper .input-text::placeholder {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 1);
 }
 
 .input-wrapper .input-submit {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(42, 42, 42, 0.8);
   color: rgba(255, 255, 255, 0.7);
   border: none;
   outline: none;
@@ -1937,28 +1856,118 @@ main {
   cursor: not-allowed;
 }
 
-/* ------------------------------------------ Third Button -------------------------------------*/
-.tworings {
+
+/* --------------------------- Second Button ---------------------------------------- */
+
+.portfoliorow{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.btn_wrap {
   position: absolute;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  width: 28%;
+  height: 6vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border-radius: 200px;
+  will-change: transform;
+  transition: all 0.7s ease-in-out;
+  float: right;
+  left: 8%;
+  caret-color: transparent;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  
+}
+
+.portfoliocard:hover .btn_wrap {
+  transition: all 0.4s ease-in-out;
+}
+
+.btn_wrap span {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  border-radius: 200px;
+  font-size: 2vh;
+  font-weight: 600;
+  margin: auto;
   text-align: center;
-  left: 10%;
-  top: 85%;
+  line-height: 3;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(120, 120, 120, 0.2);
+  transition: all 0.7s ease;
+  outline: none;
+  font-family: bevietnamlight;
+}
+
+.copymessage {
+  opacity: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 1.6vh;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+  color: rgb(48, 48, 48);
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  transition: all 0.4s ease;
+  font-family: bevietnamlight;
+}
+
+.btn_wrap i {
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+  color: rgba(0, 0, 0, 0.8);
+  padding-right: 5%;
+}
+
+.socialcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px;
+  border-radius: 200px;
+}
+
+
+
+/* ------------------------------------------ Third Button -------------------------------------*/
+.tworings {
+  position: relative;
+  display: flex;
+  left: 40%;
   transition: all 0.4s ease-in-out;
   caret-color: transparent;
   text-decoration: none;
 }
 
 .portfoliocard:hover .tworings {
-  top: 39.5%;
+  
   transition: all 0.4s ease-in-out;
 }
 
 .tworings #viewgallerybutton {
-  width: 15vw;
-  height: 40px;
+  width: 13vw;
+  height: 6vh;
   padding: 16px;
-  border: 2px solid rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 200px;
   position: absolute;
   justify-content: center;
@@ -1988,16 +1997,16 @@ main {
 }
 
 .tworings #viewgallerybutton p {
-  font-family: latoregular;
+  font-family: bevietnamlight;
   font-size: 2.5vh;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   text-align: center;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all 1s ease-in-out;
-  top: -1.5vh
+  top: -1.4vh;
 }
 
 .portfoliocard:hover .tworings #viewgallerybutton p {
@@ -2010,7 +2019,7 @@ main {
   position: absolute;
   width: 2vh;
   height: 2vh;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 2vh;
   -moz-border-radius: 2vh;
   -o-border-radius: 2vh;
@@ -2091,193 +2100,85 @@ main {
 }
 
 .tworings #viewgallerybutton:hover p {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 1);
   transform: translateY(-45%) scale(1.2);
   transition: all 1s ease-in-out;
 }
 
 @keyframes shadow-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.15);
   }
 
   60% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.15);
   }
 
   75% {
-    box-shadow: 0 0 0 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.05);
   }
 
   100% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0);
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .portfoliocard {
+
+/* -------- Media query for Portfolio cards ---------------*/
+
+@media (max-width: 1000px){
+  .portfoliocardscontainer{
+    grid-template-columns: repeat(1,3fr);
+    margin-top: 5vh;
+  }
+  .portfoliocard{
     width: 40vw;
-    height: 40vw;
+    height: 55vw;
   }
-
-  .portfoliocardscontainer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0vh;
+  .portfolio1{
+    left: 0vw;
+    margin-bottom: 5vh;
   }
-
-  .portfolio1,
-  .portfolio2,
-  .portfolio3 {
-    margin: auto;
-    margin-bottom: 75px;
+  .portfolio3{
+    right: 0vw;
+    margin-top: 5vh;
   }
-
-  .portfolio4 {
-    margin: auto;
-    margin-bottom: 20vh;
-  }
-
-  .portfoliocard img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .info {
-    width: 100%;
-    aspect-ratio: 1/1;
+  .portfoliocard .info{
     bottom: 20%;
   }
-
-  .title {
-    text-align: center;
-    width: 20vw;
-    font-size: 2vh;
-    transform: translateY(1vh);
+  .portfoliocard:hover .info{
+    bottom: 20%;
   }
-
-  .input-wrapper {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .portfoliocard {
-    width: 60vw;
-    height: 60vw;
-  }
-
-  .portfoliocardscontainer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .portfolio1,
-  .portfolio2,
-  .portfolio3 {
-    margin: auto;
-    margin-bottom: 75px;
-  }
-
-  .portfolio4 {
-    margin: auto;
-    margin-bottom: 20vh;
-  }
-
-  .portfoliocard img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .info {
-    width: 100%;
-    aspect-ratio: 1/1;
-    bottom: 35%;
-    border-radius: 0px;
-  }
-
-  .title {
-    width: 30vw;
-    font-size: 1.8vh;
+  .portfoliocard .title{
+    width: 60%;
     transform: translateY(2vh);
   }
-
-  .input-wrapper {
-    display: none;
-  }
 }
 
-@media screen and (max-width: 500px) {
-  .portfoliocard {
-    width: 80vw;
-    height: 80vw;
+@media (max-width: 700px){
+  .portfoliocard{
+    width: 75vw;
+    height: 90vw;
   }
-
-  .portfoliocardscontainer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .portfoliocard .info{
+    bottom: 35%
   }
-
-  .portfolio1,
-  .portfolio2,
-  .portfolio3 {
-    margin: auto;
-    margin-bottom: 75px;
-  }
-
-  .portfolio4 {
-    margin: auto;
-    margin-bottom: 20vh;
-  }
-
-  .portfoliocard img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .info {
-    width: 100%;
-    aspect-ratio: 1/1;
+  .portfoliocard:hover .info{
     bottom: 35%;
-    border-radius: 0px;
   }
-
-  .title {
-    width: 45vw;
-    font-size: 1.8vh;
+  .portfoliocard .title{
+    width: 60%;
     transform: translateY(2vh);
   }
-
-  .input-wrapper {
-    display: none;
-  }
+  
 }
+
 
 /* Media query for larger screens */
 @media (min-width: 2880px) {
-  .portfoliocardscontainer {
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 10vh;
-  }
-
-  .portfolio1,
-  .portfolio2,
-  .portfolio3 {
-    margin-left: auto;
-    margin-bottom: 75px;
-  }
-
-  .portfolio4 {
-    margin: auto;
-    margin-bottom: 0px;
-  }
 
   .title {
-    font-size: 3vh;
+    font-size: 2vh;
   }
 
   .input-wrapper {
@@ -2285,31 +2186,24 @@ main {
   }
 
   .input-wrapper .input-text {
-    font-size: 30px;
-    height: 80px;
+    height: 4vh;
   }
 
   .input-wrapper .input-text::placeholder {
-    font-size: 1.5vh;
+    font-size: 1.2vh;
   }
 
   .input-wrapper .input-submit {
     width: 8vw;
     height: 4vh;
-    font-size: 2vh;
+    font-size: 1.8vh;
   }
 
+  .portfoliorow{
+    top: 35%;
+  }
   .btn_wrap {
     height: 4vh;
-  }
-
- 
-  .tworings #viewgallerybutton {
-    height: 110px;
-  }
-
-  .tworings #viewgallerybutton p {
-    top: 0vh;
   }
 
   .btn_wrap span {
@@ -2321,6 +2215,17 @@ main {
   .btn_wrap i {
     font-size: 2vh;
   }
+
+ 
+  .tworings #viewgallerybutton {
+    height: 4vh;
+  }
+
+  .tworings #viewgallerybutton p {
+    top: -0.7vh;
+  }
+
+ 
 }
 
 /*------------------------------------ End of Portfolio Cards ----------------------------------------*/

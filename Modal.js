@@ -245,7 +245,7 @@ function state2(){
 // import Typed from 'typed.js';
 
 var typed = new Typed('#typed', {
-  strings: ['Quick', 'Budget-Friendly', 'Quantitative'],
+  strings: ['Quick', 'Budget-Friendly', 'Quantitative', 'Precise', 'Photorealistic'],
   typeSpeed: 80,
   backDelay: 750,
   loop: true });
