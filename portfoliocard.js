@@ -14,12 +14,12 @@ parentDiv.addEventListener('click', function(event) {
 
 
 
-const parentDiv3 = document.querySelector('.portfolio3');
+const parentDiv3 = document.querySelector('.portfolio2');
 
 parentDiv3.addEventListener('click', function(event) {
-    const clickedChild1 = event.target.closest('.portfolio3 .btn_wrap');
-    const clickedChild2 = event.target.closest('.portfolio3 .input-wrapper');
-    const clickedChild3 = event.target.closest('.portfolio3 .tworings');
+    const clickedChild1 = event.target.closest('.portfolio2 .btn_wrap');
+    const clickedChild2 = event.target.closest('.portfolio2 .input-wrapper');
+    const clickedChild3 = event.target.closest('.portfolio2 .tworings');
     if (clickedChild1 || clickedChild2 || clickedChild3) {
         // The click occurred within a child div, do nothing
         return;
@@ -28,12 +28,12 @@ parentDiv3.addEventListener('click', function(event) {
 });
 
 
-const parentDiv4 = document.querySelector('.portfolio4');
+const parentDiv4 = document.querySelector('.portfolio3');
 
 parentDiv4.addEventListener('click', function(event) {
-    const clickedChild1 = event.target.closest('.portfolio4 .btn_wrap');
-    const clickedChild2 = event.target.closest('.portfolio4 .input-wrapper');
-    const clickedChild3 = event.target.closest('.portfolio4 .tworings');
+    const clickedChild1 = event.target.closest('.portfolio3 .btn_wrap');
+    const clickedChild2 = event.target.closest('.portfolio3 .input-wrapper');
+    const clickedChild3 = event.target.closest('.portfolio3 .tworings');
     if (clickedChild1 || clickedChild2 || clickedChild3) {
         // The click occurred within a child div, do nothing
         return;
@@ -107,9 +107,12 @@ parentDiv4.addEventListener('click', function(event) {
     copy[i].style.transform = "scale(0.1)";
     }
   }
+
+
   
   
-  //-------------------------- Validate email from input and send to google sheet --------------------------------
+  
+  //-------------------------- Get quote button: Validate email from input and send to google sheet --------------------------------
   
   
   // Get the email input and submit button for portfolio card 1
@@ -135,10 +138,11 @@ parentDiv4.addEventListener('click', function(event) {
       submitButton.style.backgroundColor = 'rgba(0, 0, 0, 0.45)'; // Black color for empty input
       submitButton.style.animationPlayState = 'paused';
     } else if (isValidEmail) {
-      submitButton.style.backgroundColor = 'rgba(0, 95, 0, 0.45)'; // Green color for valid input
+      submitButton.style.backgroundColor = 'rgba(0, 95, 0, 0.55)'; // Green color for valid input
       submitButton.style.animation = 'radiate 1.6s infinite'; // Add radiating animation to submit button
+      
     } else {
-      submitButton.style.backgroundColor = 'rgba(142, 0, 0, 0.45)'; // Red color for invalid input
+      submitButton.style.backgroundColor = 'rgba(142, 0, 0, 0.55)'; // Red color for invalid input
       submitButton.style.animation = 'step-end';
       submitButton.style.animationPlayState = 'paused';
     }
@@ -149,12 +153,13 @@ parentDiv4.addEventListener('click', function(event) {
     $(".input-submit1").click(function () {
       document.getElementById('email-input1').style.animation = "inputSuccess 2s ease-in-out 1 normal forwards";
       document.getElementById('input-submit1').innerHTML = 'Thank You!';
-      submitButton.style.animation = "success 2s ease-in-out 1 normal forwards"
+      submitButton.style.animation = "success 2s ease-in-out 1 normal forwards";
+      
     });
   });
 
 
-// ----------------------- REPEATED CODE ------------------------------
+// ----------------------- Card 2 REPEATED CODE  ------------------------------
 // Get the email input and submit button for portfolio card 2
 const emailInput2 = document.getElementById('email-input2');
 const submitButton2 = document.getElementById('input-submit2');
@@ -189,8 +194,46 @@ $(document).ready(function () {
     });
   });
 
+
+
+  // ----------------------- Card 3 REPEATED CODE  ------------------------------
+// Get the email input and submit button for portfolio card 2
+const emailInput3 = document.getElementById('email-input3');
+const submitButton3 = document.getElementById('input-submit3');
+
+// Add input event listener to email input
+emailInput3.addEventListener('input', () => {
+  // Validate email address using the validateEmail function
+  const isValidEmail = validateEmail(emailInput3.value);
+
+  // Enable/disable submit button based on email input validity
+  submitButton3.disabled = !isValidEmail;
+
+  // Change submit button color based on email input validity
+  if (emailInput3.value === '') {
+    submitButton3.style.backgroundColor = 'rgba(0, 0, 0, 0.45)'; // Black color for empty input
+    submitButton3.style.animationPlayState = 'paused';
+  } else if (isValidEmail) {
+    submitButton3.style.backgroundColor = 'rgba(0, 95, 0, 0.45)'; // Green color for valid input
+    submitButton3.style.animation = 'radiate 1.6s infinite'; // Add radiating animation to submit button
+  } else {
+    submitButton3.style.backgroundColor = 'rgba(142, 0, 0, 0.45)'; // Red color for invalid input
+    submitButton3.style.animation = 'step-end';
+    submitButton3.style.animationPlayState = 'paused';
+  }
+});
+
+$(document).ready(function () {
+    $(".input-submit3").click(function () {
+      document.getElementById('email-input3').style.animation = "inputSuccess 2s ease-in-out 1 normal forwards";
+      document.getElementById('input-submit3').innerHTML = 'Thank You!';
+      submitButton3.style.animation = "success 2s ease-in-out 1 normal forwards"
+    });
+  });
+
+
   
-  
+
 
   
 //On submit(click), also execute the google sheets as per the video https://www.youtube.com/watch?v=jzzgFi_PO3g
@@ -208,4 +251,4 @@ forms.forEach(function(form) {
     })
 });
 
-//------------------------------------------ End of sending email and validation--------------------------------------
+//------------------------------------------ End of Get quote button for sending email and validation---------------------------------
