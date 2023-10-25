@@ -9,7 +9,7 @@ parentDiv.addEventListener('click', function(event) {
         // The click occurred within a child div, do nothing
         return;
     }
-    window.open('https://archcgi.com/realistic.html', "_self");
+    window.open('https://archcgi.com/renders.html', "_self");
 });
 
 

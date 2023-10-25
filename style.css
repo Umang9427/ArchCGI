@@ -386,9 +386,9 @@ nav {
   z-index: 99;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255,255, 0.2);
   /*Please take a note of this color. It is slight different from footer*/
-  backdrop-filter: blur(170px);
+  backdrop-filter: blur(200px);
   overflow-x: hidden;
   transition: 0.7s;
   max-height: 100vh;
@@ -564,6 +564,7 @@ ul.top li {
   animation: gradient 6s ease infinite;
   background-size: 400% 400%;
   background-attachment: fixed;
+  
 }
 
 @keyframes gradient {
@@ -1168,7 +1169,23 @@ main {
   transform: scale(1.4);
 }
 
-/*----------------------------------- Why us Background -------------------------------*/
+/*----------------------------------- Reviews Background -------------------------------*/
+
+  .reviewsectioncontainer {
+    max-height: 100%;
+    position: sticky;
+    overflow: hidden;
+    background: white;
+    background-attachment: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    
+  }
+
+
+
+
+
+
 .backgroundbubbleanimation {
   background: #040404;
   background: -webkit-linear-gradient(top left, #f6f6f6 0%, #f1f1f1 100%);
@@ -1304,15 +1321,19 @@ main {
 
 /* -------------------------------------------- Third Section ---------------------------------------------*/
 
-.thirdsection {
-  background: linear-gradient(to bottom, #fffcf3, #eaeaea);
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.03) 1.95px 1.95px 2.6px;
-  width: 100%;
+.whyussection{
+  background-color: rgb(177, 177, 177);
+    width: 100%;
+  
   overflow: hidden;
+  
+}
+.thirdsection {
+  color: black;
   display: grid;
   grid-template-columns: 65% 35% 1fr;
   padding-bottom: 8vh;
+  
 }
 
 .thirdleftsection{
@@ -1322,6 +1343,7 @@ main {
 .thirdrightsection{
   margin-right: 20%;
   z-index: 1;
+  opacity: 0.9;
 }
 
 @media (max-width: 1000px) {
@@ -1336,9 +1358,132 @@ main {
   }
 }
 
+
+.ripplebackground{
+  position: relative;
+  width: 100%;
+  
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(218, 120, 0, 0.7);
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px rgb(255, 186, 101);
+  z-index: 3;
+ 
+}
+
+.ripplebackground .small {
+  width:  8.75vw;
+  height: 8.75vw;
+  right: -4.375vw;
+  bottom: -4.375vw;
+}
+
+.ripplebackground .medium {
+  width: 17.5vw;
+  height: 17.5vw;
+  right: -8.75vw;
+  bottom: -8.75vw;
+}
+
+.ripplebackground .large {
+  width: 26.25vw;
+  height: 26.25vw;
+  right: -13.125vw;
+  bottom: -13.125vw;
+}
+
+.ripplebackground .xlarge {
+  width: 35vw;
+  height: 35vw;
+  right: -17.5vw;
+  bottom: -17.5vw;
+}
+
+.ripplebackground .xxlarge {
+  width: 43.75vw;
+  height: 43.75vw;
+  right: -21.875vw;
+  bottom: -21.875vw;
+}
+
+@media (max-width: 600px) {
+  .ripplebackground .small {
+    width:  28vw;
+    height: 28vw;
+    right: -14vw;
+    bottom: -14vw;
+  }
+  
+  .ripplebackground .medium {
+    width: 56vw;
+    height: 56vw;
+    right: -28vw;
+    bottom: -28vw;
+  }
+  
+  .ripplebackground .large {
+    width: 84vw;
+    height: 84vw;
+    right: -42vw;
+    bottom: -42vw;
+  }
+  
+  .ripplebackground .xlarge {
+    width: 112vw;
+    height: 112vw;
+    right: -56vw;
+    bottom: -56vw;
+  }
+  
+  .ripplebackground .xxlarge {
+    width: 140vw;
+    height: 140vw;
+    right: -70vw;
+    bottom: -70vw;
+  }
+}
+
+.shade1 {
+  opacity: 0.25;
+}
+.shade2 {
+  opacity: 0.35;
+}
+
+.shade3 {
+  opacity: 0.5;
+}
+
+.shade4 {
+  opacity: 0.7;
+}
+
+.shade5 {
+  opacity: 1;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+
 .whyus {
   font-family: bevietnamthin;
-  color: rgba(0,0,0,0.8);
+  color: rgba(255, 255, 255, 1);
   margin-top: 10vh;
   position: relative;
   text-align: left;
@@ -1357,21 +1502,14 @@ main {
   font-size: 5vh;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: darkorange;
+  color: rgb(45, 45, 45)
 }
 
 .lastcoltext {
   margin-bottom: 0px;
 }
 
-.wavecontainer2 {
-  max-height: 100%;
-  position: sticky;
-  overflow: hidden;
-  background: white;
-  background-attachment: fixed;
-  box-shadow: rgba(0, 0, 0, 0.03) 1.95px 1.95px 2.6px;
-}
+
 
 .trust {
   text-align: center;
@@ -1379,6 +1517,9 @@ main {
   font-size: 3vh;
   margin-bottom: 4vh;
   margin-top: 14vh;
+  font-family: bevietnamlight;
+  font-weight: 200;
+  color: rgb(33, 33, 33);
 }
 
 .reviews {
@@ -1386,8 +1527,10 @@ main {
   margin-bottom: 10vh;
   font-size: 5vh;
   font-weight: bold;
-  color: rgb(255, 164, 52);
+  color: rgb(255, 140, 0);
   letter-spacing: 1px;
+  font-family: bevietnamdefault;
+  font-weight: 200;
 }
 
 .twocoltext {
@@ -1396,7 +1539,7 @@ main {
 
 .mobilecoltext {
   text-align: justify;
-  color: rgb(1, 1, 1, 1);
+  color: rgb(52, 52, 52);
   font-family: bevietnamthin;
   font-weight: 600;
   font-size: 2vh;
@@ -1411,7 +1554,7 @@ main {
   margin-top: 16vh;
   width: 100%;
   transform: translateX(-5vw);
-  opacity: 1;
+  opacity: 0.;
 }
 
 
@@ -2201,8 +2344,9 @@ main {
     bottom: 35%;
   }
   .portfoliocard .title{
-    width: 60%;
-    transform: translateY(2vh);
+    width: 75%;
+    transform: translateY(1.5vh);
+    font-size: 1em;
   }
   
 }
@@ -2274,6 +2418,7 @@ main {
   /*Margin above the container*/
   padding: 80px 0;
   overflow: hidden;
+  margin-bottom: 6vh;
 }
 
 .client-review-stars {
@@ -2398,15 +2543,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  font-family: latoregular;
+  
+  font-family: bevietnamdefault;
   letter-spacing: 3px;
   font-weight: 500;
+  padding-top: 6vh;
+  margin-bottom: 1vh;
 }
 
 .motto svg {
   float: left;
-  fill: #1c68b3;
+  fill: darkorange;
   margin-right: 15px;
 }
 
@@ -2425,15 +2572,14 @@ main {
 
 .motto .linear-wipe {
   text-align: center;
-  background: linear-gradient(to left, #434343 20%, orange 40%, orange 60%, #424242 80%);
+  background: linear-gradient(to left, #000000 20%, darkorange 40%, darkorange 60%, #000000 80%);
   background-size: 200% auto;
-  color: #000;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: shine 1s linear infinite;
-  animation: shine 1s linear infinite;
+  -webkit-animation: shine 2.5s linear infinite;
+  animation: shine 2.5s linear infinite;
 }
 
 @-webkit-keyframes shine {
@@ -2456,8 +2602,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 2vh;
-  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
 #counter-box-container {
@@ -2473,7 +2618,8 @@ main {
   min-width: 250px;
   text-align: center;
   /*background-color: #111111;*/
-  color: #909090;
+  font-family: bevietnamlight;
+  color: #0d0d0d;
   /*border: 1px solid #666666;*/
 }
 
@@ -2486,7 +2632,7 @@ main {
 .counter {
   flex-direction: row;
   font-size: 7vh;
-  color: #909090;
+  color: #f7f7f7;
 }
 
 #counter-box h3 {
@@ -2495,8 +2641,8 @@ main {
 
 /*------------------------------------------- Client slider owlcarousel ----------------------------------------------*/
 .carousel-wrap {
-  margin-top: 20vh;
-  margin-bottom: 10vh;
+  margin-top: 5vh;
+  padding-bottom: 10vh;
   width: 100%;
   position: relative;
   display: block;
@@ -2522,7 +2668,7 @@ main {
 }
 
 .owl-carousel1 img {
-  max-height: 100px;
+  max-height: 6vw;
 }
 
 .owl-carousel1 .owl-nav {
@@ -2543,69 +2689,22 @@ main {
 .partofcommunity {
   font-family: bevietnamdefault;
   text-align: center;
-  margin-top: 3vh;
+  margin-top: 20vh;
+  margin-bottom: 8vh;
+  
   font-size: 6vh;
-  color: darkorange;
+  color: black;
   line-height: 80px;
 }
 
 .partofcommunity span {
-  color: rgb(30,30,30);
+  color: rgb(235, 129, 0);
   font-family: bevietnambold;
   letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
-.boxanimated {
-  width: 300px;
-  margin: 0 auto;
-  padding: 10px;
-  padding-left: 20px;
-  background-color: white;
-  /* gold */
-  /* Single pixel data uri image http://jsfiddle.net/LPxrT/ /* background-image: gold, gold, white */
-  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAPAAAOqrAP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="), url("data:image/gif;base64,R0lGODlhAQABAPAAAP///////yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==");
-  background-repeat: no-repeat;
-  background-size: 0 2px, 0 100%, 0% 2px;
-  background-position: top center, top center, bottom center;
-  -webkit-animation: drawBorderFromCenter 6s linear infinite;
-}
 
-@media only screen and (max-width: 900px) {
-  .boxanimated {
-    margin-top: 0px;
-  }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes drawBorderFromCenter {
-  0% {
-    background-size: 0 2px, 0 0, 100% 100%;
-  }
-
-  16.67% {
-    background-size: 100% 2px, 100% 0, 100% 100%;
-  }
-
-  33.33% {
-    background-size: 100% 2px, 100% 98%, 100% 100%;
-  }
-
-  50% {
-    background-size: 100% 2px, 100% 98%, 0 2px;
-  }
-
-  66.67% {
-    background-size: 100% 2px, 100% 98%, 100% 100%;
-  }
-
-  83.33% {
-    background-size: 100% 2px, 100% 0, 100% 100%;
-  }
-
-  100% {
-    background-size: 0 2px, 0 0, 100% 100%;
-  }
-}
 
 /*------------------------------------All the image gallery in portfolio(interior, exterior)------------------------------------*/
 .maxsize {
@@ -2803,6 +2902,86 @@ main {
   justify-items: center;
 }
 
+
+/*------------------------------------------------------ Bottom Section -----------------------------------------------------------*/
+
+.bottomsection{
+  background-color: rgb(177, 177, 177);
+ 
+}
+
+
+.starlines {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+}
+
+.starline {
+  position: absolute;
+  width: 0.2vw;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+.starline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.3) 75%, rgb(0, 0, 0,0.8) 100%);
+  -webkit-animation: drop 6s 0s infinite;
+          animation: drop 6s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.starline:nth-child(1) {
+  margin-left: -35%;
+}
+.starline:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.starline:nth-child(3) {
+  margin-left: 35%;
+}
+.starline:nth-child(3)::after {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+@-webkit-keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+
+
+
 /*------------------------------------------------------ Footer -----------------------------------------------------------*/
 .footer {
   background-color: #1e1e1e;
@@ -2810,6 +2989,7 @@ main {
   padding: 40px 0;
   font-family: Arial, sans-serif;
   width: 100%;
+  border-radius: 3vw 3vw 0vw 0;
 }
 
 .footer-content {
