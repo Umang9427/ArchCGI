@@ -1365,7 +1365,7 @@ main {
   
 }
 
-.circle {
+.circle2 {
   position: absolute;
   border-radius: 50%;
   background: rgba(218, 120, 0, 0.7);
@@ -2672,19 +2672,32 @@ main {
 }
 
 .owl-carousel1 .owl-nav {
-  font-size: 52px;
+  
   display: none;
 }
 
 .owl-nav .owl-prev {
-  left: -30px;
   display: none;
 }
 
 .owl-nav .owl-next {
-  right: -30px;
   display: none;
 }
+@media (max-width: 700px){
+  .owl-carousel1 img{
+    max-height: 15vw;
+  }
+  .owl-carousel1 .owl-stage{
+    align-items: right;
+    justify-content: right;
+  }
+}
+
+
+
+
+
+
 
 .partofcommunity {
   font-family: bevietnamdefault;
