@@ -10,15 +10,15 @@ $(document).ready(function(){
       1000: {
         items: 2
       },
-      2000:{
-        items: 1
+      1500:{
+        items: 2
       }
     },
      autoplay:1100,
-    
       margin: 30,
       loop:true,
-      dots:true
+      dots:true,
+      
 //      nav:true,
 //      navText:["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>" ]
   });
@@ -40,7 +40,7 @@ $('.owl-carousel1').owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 1
+      items: 2
     },
     600: {
       items: 3
