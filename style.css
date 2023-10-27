@@ -1322,7 +1322,7 @@ main {
 /* -------------------------------------------- Third Section ---------------------------------------------*/
 
 .whyussection{
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(190, 190, 190);
     width: 100%;
   
   overflow: hidden;
@@ -2416,9 +2416,14 @@ main {
 /*------------------------------------------ Owl Carousel Reviews ---------------------------------------*/
 .section-padding {
   /*Margin above the container*/
-  padding: 80px 0;
+  padding: 2vw 0;
   overflow: hidden;
-  margin-bottom: 6vh;
+  
+  width: 80vw;
+  margin: auto;
+  
+  margin-bottom: 10vh;
+  padding: 2vw;
 }
 
 .client-review-stars {
@@ -2427,36 +2432,75 @@ main {
 
 .client-testimonial-carousel .owl-dots {
   text-align: center;
-  margin-top: 25px
+  
+  
+}
+
+.client-testimonial-carousel{
+  margin: auto;
+
 }
 
 .single-testimonial-item {
+  
   position: relative;
-  border-radius: 10px;
+  border-radius: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
-  margin: 2px;
+  margin: 0vw;
   padding: 4vh;
-  width: 35vw;
-  height: 48vh;
+  width: 95%;
+  height: 45vh;
   /*Height of card*/
   padding-left: 6vw;
   overflow: hidden;
 }
 
 .single-testimonial-item p {
-  font-family: latolight;
+  font-family: bevietnamthin;
   font-size: 2vh;
+  
+  font-weight: 400;
 }
 
 .single-testimonial-item h3 {
-  font-family: latoregular;
+  font-family: bevietnambold;
+  font-weight: 100;
   color: rgb(0, 0, 0, 0.75);
+  font-size: 3vh;
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+/*Quote sign*/
+.single-testimonial-item:before {
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+}
+
+
+.single-testimonial-item:after {
+  background: #ddd;
+  content: "";
+  height: 48vh;
+  left: 60px;
+  position: absolute;
+  top: 10%;
+  width: 1px;
+}
+
+
+.single-testimonial-item h3 span {
+  display: block;
+  font-size: 2vh;
+  font-weight: normal;
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 1000px) {
   .section-padding p {
-    font-size: 12px;
+    font-size: 3vw;
   }
 
   .single-testimonial-item:before {
@@ -2472,8 +2516,8 @@ main {
 
   .single-testimonial-item {
     width: 100%;
-    padding-left: 10px;
-    height: 275px;
+    padding: 4vw;
+    height: 35vh;
   }
 
   .material-symbols-outlined {
@@ -2482,57 +2526,11 @@ main {
   }
 }
 
-/*Quote sign*/
-.single-testimonial-item:before {
-  font-weight: 900;
-  position: absolute;
-  top: 50%;
-}
 
-.material-symbols-outlined {
-  font-family: "Material Symbols Outlined";
-  font-weight: 600;
-  position: absolute;
-  left: 10px;
-  top: 46%;
-  font-size: 120px;
-  color: rgb(58, 117, 117);
-  line-height: 30px;
-  margin-top: -15px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48
-}
-
-.single-testimonial-item:after {
-  background: #ddd;
-  content: "";
-  height: 48vh;
-  left: 60px;
-  position: absolute;
-  top: 10%;
-  width: 1px;
-}
-
-.single-testimonial-item h3 {
-  font-size: 3vh;
-  font-style: normal;
-  margin-bottom: 0;
-}
-
-.single-testimonial-item h3 span {
-  display: block;
-  font-size: 2vh;
-  font-weight: normal;
-  margin-top: 5px;
-}
 
 @media (min-width: 2880px) {
   .single-testimonial-item {
-    width: 28vw;
-    height: 60vh;
-    padding: 200px;
+    width: 90%;
   }
 }
 
@@ -2924,73 +2922,6 @@ main {
 }
 
 
-.starlines {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  margin: auto;
-  width: 90vw;
-}
-
-.starline {
-  position: absolute;
-  width: 0.2vw;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  background: rgba(255, 255, 255, 0);
-  overflow: hidden;
-}
-.starline::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 20vh;
-  width: 100%;
-  top: -50%;
-  left: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.3) 75%, rgb(0, 0, 0,0.8) 100%);
-  -webkit-animation: drop 6s 0s infinite;
-          animation: drop 6s 0s infinite;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-}
-.starline:nth-child(1) {
-  margin-left: -35%;
-}
-.starline:nth-child(1)::after {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.starline:nth-child(3) {
-  margin-left: 35%;
-}
-.starline:nth-child(3)::after {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
-@-webkit-keyframes drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
-
-@keyframes drop {
-  0% {
-    top: -50%;
-  }
-  100% {
-    top: 110%;
-  }
-}
 
 
 
