@@ -1322,7 +1322,7 @@ main {
 /* -------------------------------------------- Third Section ---------------------------------------------*/
 
 .whyussection{
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(43, 43, 43);
     width: 100%;
   
   overflow: hidden;
@@ -1343,7 +1343,13 @@ main {
 .thirdrightsection{
   margin-right: 20%;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 1;
+}
+.thirdrightsection img{
+  margin-top: 16vh;
+  width: 100%;
+  transform: translateX(-3vw);
+  opacity: 0.;
 }
 
 @media (max-width: 1000px) {
@@ -1368,7 +1374,7 @@ main {
 .circle2 {
   position: absolute;
   border-radius: 50%;
-  background: rgba(218, 120, 0, 0.7);
+  background: rgba(218, 120, 0, 0.4);
   animation: ripple 15s infinite;
   box-shadow: 0px 0px 1px 0px rgb(255, 186, 101);
   z-index: 3;
@@ -1482,8 +1488,8 @@ main {
 
 
 .whyus {
-  font-family: bevietnamthin;
-  color: rgba(255, 255, 255, 1);
+  font-family: bevietnamlight;
+  color: rgb(156, 156, 156);
   margin-top: 10vh;
   position: relative;
   text-align: left;
@@ -1498,11 +1504,11 @@ main {
   text-align: left;
   margin-top: 3vh;
   margin-bottom: 8vh;
-  font-family: bevietnamdefault;
+  font-family: bevietnambold;
   font-size: 5vh;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: rgb(45, 45, 45)
+  color: rgb(227, 125, 0);
 }
 
 .lastcoltext {
@@ -1537,12 +1543,18 @@ main {
   margin-bottom: 20px;
 }
 
+.offeringstext{
+  width: 90%;
+  
+}
+
 .mobilecoltext {
   text-align: justify;
-  color: rgb(52, 52, 52);
+  text-justify: inter-word;
+  color: rgb(198, 198, 198);
   font-family: bevietnamthin;
   font-weight: 600;
-  font-size: 2vh;
+  font-size: 1.8vh;
   letter-spacing: 1px;
   margin-bottom: 40px;
   
@@ -1550,12 +1562,7 @@ main {
 
 
 
-.thirdrightsection img{
-  margin-top: 16vh;
-  width: 100%;
-  transform: translateX(-5vw);
-  opacity: 0.;
-}
+
 
 
 
