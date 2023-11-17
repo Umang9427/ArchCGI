@@ -2929,7 +2929,12 @@ main {
 
 }
 
-
+.footercontactsection p{
+  margin-top: 1vh;
+}
+.footersocialsection a, .footerquicksection a{
+  margin-top: 1vh;
+}
 
 .footersocialsection h4{ 
   text-align: center;
