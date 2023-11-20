@@ -1,14 +1,14 @@
 body{
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: latoregular;
+    font-family: bevietnamlight;
 }
 
 ul.breadcrumb {
     margin-top: 20vh;
     list-style: none;
     margin-left: 10%;
-    font-family: latoregular;
+    font-family: bevietnamlight;
   }
   
   /* Display list items side by side */
@@ -20,6 +20,9 @@ ul.breadcrumb {
   ul.breadcrumb a{
     text-decoration: none;
     color: black;
+  }
+  ul.breadcrumb a:hover{
+    color: orange;
   }
 
   span{
