@@ -1,41 +1,49 @@
 @font-face {
   font-family: latothin;
   src: url('./Font/Lato-Thin.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: latoregular;
   src: url('./Font/Lato-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: latobold;
   src: url('./Font/Lato-Bold.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: latolight;
   src: url('./Font/Lato-Light.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: bevietnambold;
   src: url('./Font/BeVietnamPro-Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: bevietnamdefault;
   src: url('./Font/BeVietnamPro-Light.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: bevietnamlight;
   src: url('./Font/BeVietnamPro-ExtraLight.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: bevietnamthin;
   src: url('./Font/BeVietnamPro-Thin.ttf');
+  font-display: swap;
 }
 
 /*Watch the youtube tutorial https://www.youtube.com/watch?v=x2K6ZP7iUYA to understand preloader*/
@@ -386,7 +394,7 @@ nav {
   position: fixed;
   z-index: 99;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: rgba(255, 255,255, 0.2);
   /*Please take a note of this color. It is slight different from footer*/
   backdrop-filter: blur(200px);
@@ -400,12 +408,16 @@ nav {
   top: 14%;
   width: 100%;
   text-align: center;
+  font-family: bevietnamdefault;
+  font-weight: 500;
 }
 
 .overlay-content2 {
   position: relative;
   top: 15%;
   text-align: center;
+  font-family: bevietnamlight;
+  font-weight: 500;
 }
 
 .overlay .closebtn {
@@ -418,7 +430,7 @@ nav {
 .navtext {
   padding: 8px;
   text-decoration: none;
-  font-size: 7vh;
+  font-size: 8vh;
   color: black;
   display: block;
   transition: 0.3s;
@@ -428,7 +440,7 @@ nav {
 .navtext2 {
   padding: 0 40px 0 40px;
   text-decoration: none;
-  font-size: 6vh;
+  font-size: 5vh;
   font-weight: 200;
   color: black;
   transition: 0.3s;
@@ -904,7 +916,7 @@ main {
 
 .sslide .content h1 {
   font-family: bevietnamdefault;
-  margin-bottom: 10px;
+  font-weight: 400;
   font-size: 8vh;
   color: rgb(226, 226, 226);
   letter-spacing: 0.15em; 
@@ -941,16 +953,16 @@ main {
 }
 
 .buttons button {
-  border: 2px solid rgb(0, 0, 0, 0.75);
-  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0, 0.1);
+  background-color: rgba(0,0,0,0.5);
   color: rgb(255, 165, 0);
   cursor: pointer;
-  padding: 12px 17px;
+  padding: 1em 1.2em;
   border-radius: 50%;
   outline: none !important;
   transition: all 1.5s ease;
   /*Effect of taking cursor away after hovering the button*/
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.08) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .buttons button:hover {
@@ -1680,6 +1692,7 @@ main {
 .promisecard h3{
   position: relative;
   font-family: bevietnambold;
+  font-weight: 300;
   font-size: 3.5vh;
   color: rgb(40, 40, 40);
 }
@@ -1860,6 +1873,7 @@ main {
 
 .input-wrapper .input-text::placeholder {
   font-size: 0.8em;
+  font-family: bevietnamthin;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -2386,7 +2400,7 @@ main {
   color: rgb(190, 190, 190, 1);
   font-size: 3vh;
   font-style: normal;
-  margin-bottom: 0;
+  margin-top: 5%;
 }
 
 /*Quote sign*/
@@ -2557,7 +2571,9 @@ main {
 }
 
 #counter-box h3 {
+  font-family: bevietnamdefault;
   font-size: 4vh;
+  font-weight: 400;
 }
 
 /*------------------------------------------- Client slider owlcarousel ----------------------------------------------*/
@@ -2625,7 +2641,7 @@ main {
   text-align: center;
   margin-top: 20vh;
   margin-bottom: 8vh;
-  
+  font-weight: 500;
   font-size: 6vh;
   color: black;
   line-height: 80px;
