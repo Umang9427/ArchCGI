@@ -153,16 +153,16 @@ pprev.addEventListener('click', e => {
 const $arrow = document.getElementById("nnext")
 $arrow.onclick = () => {
   $arrow.animate([
-    { right: '0' }
+    { right: '0vw' }
   ], {
-    duration: 150,
+    duration: 100,
     iterations: 1
   });
 }
 const $arrow2 = document.getElementById("pprev")
 $arrow2.onclick = () => {
   $arrow2.animate([
-    { left: '0' }
+    { left: '0vw' }
   ], {
     duration: 150,
     iterations: 1
