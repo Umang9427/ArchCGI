@@ -198,7 +198,7 @@ html, body{
     grid-template-columns: 0% 100% 1fr;
   }
   .contactheading{
-    margin-top: 25%;
+    margin-top: 15%;
     left: 10%;
   }
   .formcontainer{
@@ -230,5 +230,8 @@ html, body{
   }
   .heading2{
     margin-top: 5%;
+  }
+  #logo{
+    display: none;
   }
 }
