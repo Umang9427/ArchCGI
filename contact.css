@@ -1,117 +1,90 @@
-li,
-ul {
-  list-style: none;
-  padding: 0;
+html, body{
+  height: 100dvh;
   margin: 0;
-}
-.titlecontainer {
-  position: relative;
-  margin-top: 20vh;
-  
-}
-.titlecontainer h1 {
-  position: relative;
-  display: flex;
-  color: darkorange;
-  font-size: 3vh;
-  font-weight: 700;
-  margin-bottom: 1vh;
-  text-transform: capitalize;
-  left: 15vw;
+  padding: 0;
+  overflow: hidden;
 }
 
-.titlecontainer h2 {
-  position: relative;
-  color: #252525;
-  font-size: 4vh;
-  font-weight: 700;
-  line-height: 1.5em;
-  display: block;
-  left: 15vw;
+
+.ham{
+  filter: invert(90%);
 }
 
 .contact-page-section {
   position: relative;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
   width: 100vw;
+  display: grid;
+  grid-template-columns: 50% 50% 1fr;
+
+  background-color: rgb(20, 20, 20);
+  
 }
-.contact-page-section .inner-container {
+
+.contactrightsection{
+  margin: 0;
+  padding: 0;
+  height: 100dvh;
+}
+
+.contactheading{
+  color: white;
   position: relative;
-  z-index: 1;
-  background-color: rgb(14, 14, 14);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  
+  text-align: left;
+  font-family: bevietnamdefault;
+  
+  letter-spacing: 0.05em;
+  font-size: 3.5vh;
+  left: 15%;
+  margin-top: 15%;
 }
-.contact-page-section .form-column {
+.formcontainer{
   position: relative;
-  padding: 0 0 0 15px;
+  left: 15%;
+  max-width: 60%;
+  margin-top: 5%;
 }
-.contact-page-section .form-column .inner-column {
-  position: relative;
-  padding: 60px 45px 30px;
-  background-color: #fff;
-}
-.contact-page-section .info-column {
-  position: relative;
-}
-.contact-page-section .info-column .inner-column {
-  position: relative;
-  padding: 60px 35px;
-}
-.contact-page-section .info-column h2 {
-  position: relative;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 1.4em;
-  margin-bottom: 45px;
-}
-.contact-page-section .info-column .list-info {
-  position: relative;
-  margin-bottom: 60px;
-}
-.contact-page-section .info-column .list-info li {
-  position: relative;
-  margin-bottom: 25px;
-  font-size: 18px;
-  color: #fff;
-  line-height: 1.8em;
-  padding-left: 45px;
-}
-.contact-page-section .info-column .list-info li:last-child {
-  margin-bottom: 0;
-}
-.contact-page-section .info-column .list-info li i {
-  position: absolute;
-  left: 0;
-  top: 8px;
-  color: #fff;
-  font-size: 30px;
-}
+
+
 .contact-form {
   position: relative;
 }
-.contact-form .form-group {
-  position: relative;
-  margin-bottom: 20px;
-}
+
+
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
   position: relative;
   display: block;
   width: 100%;
-  height: 60px;
-  color: #222;
-  font-size: 14px;
+  height: 7vh;
+  color: #ffffff;
+  font-size: 80%;
   line-height: 38px;
   padding: 10px 30px;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  border: 1px solid #494949;
+  background-color: #6d6d6d;
   transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+ 
 }
+.contact-form input[type="text"],
+.contact-form input[type="email"]{
+  border-top-right-radius: 6% 24%;
+  border-bottom-right-radius: 6% 24%;
+  border-top-left-radius: 6% 24%;
+  border-bottom-left-radius: 6% 24%;
+}
+.contact-form textarea{
+  width: 100%;
+  border-top-right-radius: 6% 12%;
+  border-bottom-right-radius: 6% 12%;
+  border-top-left-radius: 6% 12%;
+  border-bottom-left-radius: 6% 12%;
+}
+
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
@@ -120,27 +93,52 @@ ul {
 
 
 .contact-form textarea {
-  height: 250px;
+  height: 25vh;
   resize: none;
 }
+.form-group1 {
+  position: relative;
+  margin-right: 2%;
+}
+.form-group2 {
+  position: relative;
+  margin-left: 2%;
+}
+.form-group1 input::placeholder,
+.form-group2 input::placeholder,
+.contact-form textarea::placeholder{
+  color: rgb(235, 235, 235);
+  font-family: bevietnamlight;
+}
+.columngrid{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50% 1fr;
+  margin-bottom: 1.5vh;
+  position: relative;
+}
 .contact-form .theme-btn {
-  font-size: 16px;
+  font-size: 2vh;
   font-weight: 700;
-  margin-top: 10px;
-  text-transform: capitalize;
-  padding: 16px 39px;
-  border: 2px solid rgba(14,14,14);
+  font-family: bevietnamdefault;
+  padding: 3.5% 8%;
+  border: 2px solid rgb(220, 125, 0);
   font-family: Arimo, sans-serif;
-  background: rgba(14,14,14);
+  background: rgb(220, 125, 0);
   display: inline-block;
   position: relative;
-  line-height: 24px;
   cursor: pointer;
-  color: #fff;
+  color: #000000;
+  border-top-right-radius: 10% 24%;
+  border-bottom-right-radius: 10% 24%;
+  border-top-left-radius: 10% 24%;
+  border-bottom-left-radius: 10% 24%;
+  margin-top: 3%;
+  left: 1%;
 }
 .contact-form .theme-btn:hover {
-  color: rgba(14,14,14);
-  border-color: rgba(14,14,14);
+  color: rgb(220, 125, 0);
+  border-color: rgb(220, 125, 0);
   background: 0 0;
 }
 .contact-form input.error,
@@ -158,45 +156,79 @@ ul {
   color: red;
   font-weight: 500;
 }
-.social-icon-four {
-  position: relative;
-}
-.social-icon-four li {
-  position: relative;
-  margin-right: 18px;
-  display: inline-block;
-}
-.social-icon-four li.follow {
-  color: #fff;
-  font-weight: 600;
-  font-size: 24px;
-  display: block;
-  margin-bottom: 20px;
-}
-.social-icon-four li a {
-  position: relative;
-  font-size: 20px;
-  color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.social-icon-four li a:hover {
-  color: #222;
-}
 
 .form-checker{
   display: none;
 }
 
 
-.contactmaps {
-  text-align: center;
+.credentialgrid{
+  display: grid;
+  position: relative;
+  margin-top: 5%;
+  left: 15%;
+  grid-template-columns: 50% 50% 1fr;
+  width: 60%;
+ 
+}
+.credentialheading{
+  position: relative;
+  text-align: left;
+  color: rgb(148, 148, 148);
+  font-family: bevietnamdefault;
+  font-size: 2vh;
+  
+}
+.credentialcontent{
+  position: relative;
+  text-align: left;
+  color: rgb(230, 230, 230);
+  margin-top: 1%;
+  font-family: bevietnamlight;
+  font-size: 2vh;
   
 }
 
-.list-info p{
-  color: darkorange;
+.content2, .heading2{
+  text-align: right;
+}
+
+@media (max-width:1000px) {
+  .contact-page-section{
+    grid-template-columns: 0% 100% 1fr;
+  }
+  .contactheading{
+    margin-top: 25%;
+    left: 10%;
+  }
+  .formcontainer{
+    margin-top: 10%;
+    max-width: 80%;
+    left: 10%;
+  }
+  .columngrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group1{
+    margin-right: 0%;
+    margin-bottom: 1.5vh;
+  }
+  .form-group2{
+    margin-left: 0%;
+  }
+  .contact-form textarea {
+    height: 16vh;
+  }
+  .credentialgrid{
+    display: flex;
+    flex-direction: column;
+  }
+  .content2, .heading2{
+    
+    text-align: left;
+  }
+  .heading2{
+    margin-top: 5%;
+  }
 }
