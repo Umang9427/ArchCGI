@@ -2379,8 +2379,8 @@ main {
   
   position: relative;
   border-radius: 0.5em;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: rgba(200, 200, 200, 0.1) 0px 5px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: rgba(200, 200, 200, 0.0) 0px 5px 15px;
   margin: 0vw;
   padding: 4vh;
   width: 95%;
@@ -2391,9 +2391,9 @@ main {
 }
 
 .single-testimonial-item p {
-  font-family: bevietnamthin;
+  font-family: bevietnamlight;
   font-size: 2vh;
-  color: rgba(230,230,230);
+  color: rgb(161, 161, 161);
   font-weight: 400;
 }
 
