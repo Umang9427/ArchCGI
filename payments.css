@@ -1,0 +1,72 @@
+body{
+    font-family: bevietnamlight;
+}
+.firstheading{
+    position: relative;
+    left: 15%;
+    font-size: 4.5vh;
+    margin-top: 15vh;
+    letter-spacing: 0.1em;
+}
+
+.pricetoolcontainer {
+    position: relative;
+    left: 15%;
+    width: 60vw;
+    min-width: 250px;
+    margin-top: 5vh;
+  }
+
+  .formgrid{
+    display: grid;
+    grid-template-columns: 50% 50% 1fr;
+  }
+  .increment-decrement-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .increment-decrement-container button {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: latolight;
+    font-weight: 600;
+    font-size: 2.5vh;
+    letter-spacing: 0.05em;
+  }
+  
+  select, input {
+    width: 100%;
+    font-size: 2vh;
+    padding: 0.6em;
+    border: 1px solid #ccc;
+    border-top-right-radius: 2% 16%;
+    border-top-left-radius: 2% 16%;
+    border-bottom-right-radius: 2% 16%;
+    border-bottom-left-radius: 2% 16%;
+  }
+  
+  .projecttypecontainer, .scalecontainer{
+    width: 90%;
+  }
+  
+  .quantitycontainer, .scalecontainer{
+    margin-top: 3vh;
+  }
+
+  #checkbutton{
+    margin-top: 3vh;
+  }
+
+  #priceDisplay {
+    margin-top: 4vh;
+    text-align: center;
+    font-weight: bold;
+  }
