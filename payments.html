@@ -172,6 +172,51 @@
       </div>
   
     </div>
+
+    <h2 class="addons">Add-Ons</h2>
+    <div class="formgrid">
+      <div class="extraRevisionsContainer">
+        <label for="extraRevisions">Number of Revisions</label>
+          <div class="increment-decrement-container">
+            <button type="button" onclick="decrementNumberOfRevisions()">-</button>
+            <input type="number" id="extraRevisions" min="3" value="3">
+            <button type="button" onclick="incrementNumberOfRevisions()">+</button>
+          </div>
+      </div>
+      <div class="walkthroughContainer">
+        <label for="walkthrough">Walkthrough (In Seconds)</label>
+          <div class="increment-decrement-container">
+            <button type="button" onclick="decrementWalkthroughTime()">-</button>
+            <input type="number" id="walkthrough" min="0" value="0">
+            <button type="button" onclick="incrementWalkthroughTime()">+</button>
+          </div>
+      </div>
+    </div>  
+
+    <div class="formgrid">
+      <div class="dimensionscontainer">
+        <h3 class="dimensionsheading">Final 2D Dimensions</h2>
+        <div class="dimensionsradio">
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="answer" value="yes" checked="" onclick="calculatePrice()">
+          
+          <label for="no">No</label>
+          <input type="radio" id="no" name="answer" value="no" checked="checked" onclick="calculatePrice()"> 
+        </div>
+      </div>
+
+      <div class="optionsContainer">
+        <label for="options">Extra Design Options</label>
+          <div class="increment-decrement-container">
+            <button type="button" onclick="decrementOptions()">-</button>
+            <input type="number" id="options" min="0" value="0">
+            <button type="button" onclick="incrementOptions()">+</button>
+          </div>
+      </div>
+    </div>  
+
+
+
     <button id="checkbutton">Check</button>
     
     <div id="priceDisplay">

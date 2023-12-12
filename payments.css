@@ -33,7 +33,7 @@ body{
     cursor: pointer;
   }
 
-  label {
+  label, .dimensionsheading {
     display: block;
     margin-bottom: 5px;
     font-family: latolight;
@@ -53,8 +53,26 @@ body{
     border-bottom-left-radius: 2% 16%;
   }
   
-  .projecttypecontainer, .scalecontainer{
+  .dimensionscontainer{
     width: 90%;
+  }
+  .dimensionsradio{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dimensionscontainer label{
+    position: relative;
+  }
+  .dimensionscontainer input[type="radio"]{
+    width: 5%;
+    aspect-ratio: 1/1;
+  }
+
+  .projecttypecontainer, .scalecontainer, .extraRevisionsContainer{
+   position: relative;
+    width: 90%;
+  
   }
   
   .quantitycontainer, .scalecontainer{
