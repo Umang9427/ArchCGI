@@ -399,7 +399,7 @@ nav {
   /*Please take a note of this color. It is slight different from footer*/
   backdrop-filter: blur(200px);
   overflow-x: hidden;
-  transition: 0.7s;
+  transition: 0.4s;
   max-height: 100vh;
 }
 

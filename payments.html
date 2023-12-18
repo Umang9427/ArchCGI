@@ -70,7 +70,7 @@
     <ul class="top">
       <li id="logo" style="padding: 10px;">
         <a href="./index.html" alt="Redirect to Main page">
-          <img src="img/ArchCGI_ICON.png" title="Official ArchCGI logo" alt="logo" width="auto" height="auto"
+          <img src="img/image.png" title="Official ArchCGI logo" alt="logo" width="auto" height="auto"
             loading="eager">
         </a>
       </li>
@@ -155,18 +155,18 @@
         <div id="exteriorDetails" style="display: none;">
           <label for="numberOfStories">Number of Storeys</label>
               <div class="increment-decrement-container">
-                <button type="button" onclick="decrementNumberOfStories()">-</button>
+                <button type="button" class="minus" onclick="decrementNumberOfStories()">-</button>
                 <input type="number" id="numberOfStories" min="1" value="1" onchange="calculatePrice()">
-                <button type="button" onclick="incrementNumberOfStories()">+</button>
+                <button type="button" class="plus" onclick="incrementNumberOfStories()">+</button>
               </div>
         </div>
 
         <div id="interiorDetails" style="display: none;">
           <label for="numberOfRooms">Number of Rooms</label>
             <div class="increment-decrement-container">
-              <button type="button" onclick="decrementNumberOfRooms()">-</button>
+              <button type="button" class="minus" onclick="decrementNumberOfRooms()">-</button>
               <input type="number" id="numberOfRooms" min="1" value="1" onchange="calculatePrice()">
-              <button type="button" onclick="incrementNumberOfRooms()">+</button>
+              <button type="button" class="plus" onclick="incrementNumberOfRooms()">+</button>
             </div>
         </div>
       </div>
@@ -178,17 +178,17 @@
       <div class="extraRevisionsContainer">
         <label for="extraRevisions">Number of Revisions</label>
           <div class="increment-decrement-container">
-            <button type="button" onclick="decrementNumberOfRevisions()">-</button>
+            <button type="button" class="minus" onclick="decrementNumberOfRevisions()">-</button>
             <input type="number" id="extraRevisions" min="3" value="3">
-            <button type="button" onclick="incrementNumberOfRevisions()">+</button>
+            <button type="button" class="plus" onclick="incrementNumberOfRevisions()">+</button>
           </div>
       </div>
       <div class="walkthroughContainer">
         <label for="walkthrough">Walkthrough (In Seconds)</label>
           <div class="increment-decrement-container">
-            <button type="button" onclick="decrementWalkthroughTime()">-</button>
+            <button type="button" class="minus" onclick="decrementWalkthroughTime()">-</button>
             <input type="number" id="walkthrough" min="0" value="0">
-            <button type="button" onclick="incrementWalkthroughTime()">+</button>
+            <button type="button" class="plus" onclick="incrementWalkthroughTime()">+</button>
           </div>
       </div>
     </div>  
@@ -200,7 +200,7 @@
           <label for="yes">Yes</label>
           <input type="radio" id="yes" name="answer" value="yes" checked="" onclick="calculatePrice()">
           
-          <label for="no">No</label>
+          <label for="no" class="no">No</label>
           <input type="radio" id="no" name="answer" value="no" checked="checked" onclick="calculatePrice()"> 
         </div>
       </div>
@@ -208,20 +208,22 @@
       <div class="optionsContainer">
         <label for="options">Extra Design Options</label>
           <div class="increment-decrement-container">
-            <button type="button" onclick="decrementOptions()">-</button>
+            <button type="button" class="minus" onclick="decrementOptions()">-</button>
             <input type="number" id="options" min="0" value="0">
-            <button type="button" onclick="incrementOptions()">+</button>
+            <button type="button" class="plus" onclick="incrementOptions()">+</button>
           </div>
       </div>
     </div>  
 
 
 
-    <button id="checkbutton">Check</button>
+    
     
     <div id="priceDisplay">
-      <p>Estimated Price: <span id="estimatedPrice"></span></p>
+      <p>Estimated Price: &nbsp; <span id="estimatedPrice"></span></p>
     </div>
+
+    <button id="paybutton">Place Order</button>
   </div>
   
 </body>
@@ -230,4 +232,7 @@
 
 <script src="index.js"></script>
 <script src="payments.js"></script>
+
+<script async src="https://pay.google.com/gp/p/js/pay.js"
+  onload="onGooglePayLoaded()"></script>
 </html>
