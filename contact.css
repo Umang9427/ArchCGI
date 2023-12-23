@@ -6,9 +6,7 @@ html, body{
 }
 
 
-.ham{
-  filter: invert(90%);
-}
+
 
 .contact-page-section {
   position: relative;

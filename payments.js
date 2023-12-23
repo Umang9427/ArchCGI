@@ -11,12 +11,19 @@ const projectScale = document.getElementById('projectscale');
 const radioYes = document.getElementById('yes');
 const numberOfOptions = document.getElementById('options');
 
-let basePrice = 9500.00;
+let basePrice = 150.00;
 projectType.addEventListener('change', updatePrice);
 currency.addEventListener('change', changeBasePrice);
 projectScale.addEventListener('change', changeBasePrice);
 
 
+
+//------------------On pressing enter call function calculatePrice-------------------------
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    calculatePrice(); // Call your function on Enter
+  }
+});
 
 
 //Switch between Rooms and Storeys quantity based on project type
@@ -236,89 +243,3 @@ function incrementOptions() {
 
 
 
-
-
-
-
-
-
-
-
-
-//----------------------Google Pay Payment Method---------------------------
-let googlePayClient;
-
-const tokenizationSpecification = {
-  type: 'PAYMENT_GATEWAY',
-  parameters: {
-    gateway: 'example',
-    gatewayMerchantId: 'gatewayMerchantId'
-  }
-};
-const cardPaymentMethod = {
-  type: 'CARD',
-  tokenizationSpecification: tokenizationSpecification,
-  parameters: {
-    allowedCardNetworks: ['VISA', 'MASTERCARD'],
-    allowedAuthMethods: ['PAN_ONLY', 'CRYPTOGRAM_3DS']
-  }
-};
-const googlePayConfiguration ={
-  apiVersion: 2,
-  apiVersionMinor: 0,
-  allowedPaymentMethods: [cardPaymentMethod],
-
-};
-function  onGooglePayLoaded(){
-
-  googlePayClient = new google.payments.api.PaymentsClient({
-    environment: 'TEST',
-
-  });
-
-  googlePayClient.isReadyToPay(googlePayConfiguration)
-    .then(response => {
-      if (response.result){
-        createAndAddButton();
-      } else{
-        //The User cannot pay. Offer another payment method
-      }
-    })
-    .catch (error => console.error('isReadyToPay error: ', error));
-}
-
-function createAndAddButton(){
-  const googlePayButton = googlePayClient.createButton({
-    onClick: onGooglePayButtonClicked
-  });
-
-  document.getElementById('paybutton').appendChild(googlePayButton);
-}
-
-function onGooglePayButtonClicked() {
-  const paymentDataRequest = {...googlePayConfiguration};
-  paymentDataRequest.merchantInfo = {
-    merchantId: 'BCR2DN4T3HJ3XR2W',
-    merchantName: 'ArchCGI'
-  };
-  paymentDataRequest.transactionInfo = {
-    totalPriceStatus: 'FINAL',
-    totalPrice: estimatedPrice,
-    currencyCode: 'EUR',
-    countryCode: 'IN'
-  };
-
-  googlePayClient.loadPaymentData(paymentDataRequest)
-   .then(paymentData => processPaymentData(paymentData))
-   .catch(error => console.error('loadPaymentsData error: ', error));
-}
-
-function processPaymentData(){
-  fetch(ordersEndpointURL, {
-    method: 'POST',
-    header: {
-      'Content-Type': 'application/json'
-    },
-    body: paymentData
-  })
-}

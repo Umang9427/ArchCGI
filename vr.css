@@ -1,3 +1,8 @@
+.ham{
+  filter: invert(0%)
+          drop-shadow(0em 0em 0.2em rgba(200, 200, 200, 0.5));
+}
+
 .vrheading{
     display: flex;
     text-align: center;

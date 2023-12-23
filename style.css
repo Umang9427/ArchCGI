@@ -401,24 +401,47 @@ nav {
   overflow-x: hidden;
   transition: 0.4s;
   max-height: 100vh;
+ 
 }
 
+
+.overlay a:hover,
+.overlay a:focus {
+  /*navtext hover*/
+  color: darkorange;
+  cursor: pointer;
+  
+  
+}
 .overlay-content {
   position: relative;
   top: 14%;
   width: 100%;
   text-align: center;
   font-family: bevietnamdefault;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .overlay-content2 {
   position: relative;
   top: 15%;
   text-align: center;
-  font-family: bevietnamlight;
-  font-weight: 500;
+  font-family: bevietnamdefault;
+  font-weight: 400;
+  
 }
+
+
+
+.overlay-content a, .overlay-content2 a{
+  transition: transform 0.15s ease-in-out;
+}
+
+.overlay-content a:hover, .overlay-content2 a:hover{
+  transform: scale(1.15);
+}
+
+
 
 .overlay .closebtn {
   position: absolute;
@@ -430,10 +453,9 @@ nav {
 .navtext {
   padding: 8px;
   text-decoration: none;
-  font-size: 8vh;
+  font-size: 6vh;
   color: black;
   display: block;
-  transition: 0.3s;
   letter-spacing: 0.1em;
 }
 
@@ -441,11 +463,11 @@ nav {
   padding: 0 40px 0 40px;
   text-decoration: none;
   font-size: 5vh;
-  font-weight: 200;
+  display: inline-block;
   color: black;
-  transition: 0.3s;
   letter-spacing: 0.1em;
 }
+
 
 .navdivider {
   position: relative;
@@ -453,18 +475,19 @@ nav {
   font-size: 6vh;
   margin-top: 8vh;
   font-weight: 700;
-  color: rgb(208, 114, 0);
+  color: rgb(239, 132, 0);
+  filter: drop-shadow(0em 0em 0.1em rgba(0,0,0,0.4));
 }
 
 @media screen and (max-width: 1000px) {
   .navtext2 {
-    font-size: 4vh;
+    font-size: 3.5vh;
     padding: 0 15px 0 15px;
     letter-spacing: 1px;
   }
 
   .navtext {
-    font-size: 5vh;
+    font-size: 4.5vh;
     letter-spacing: 1px;
   }
 
@@ -474,19 +497,6 @@ nav {
   }
 }
 
-.overlay-exterior {
-  position: absolute;
-  top: 90%;
-  left: 2%;
-  width: 100%;
-}
-
-.overlay-interior {
-  position: absolute;
-  top: 90%;
-  left: 85%;
-  width: 100%;
-}
 
 /*-------------------------- Hamburger --------------------*/
 .ham {
@@ -499,6 +509,8 @@ nav {
   background-clip: padding-box;
   padding: 5px;
   transform: scale(1.4);
+  filter: invert(100%)
+          drop-shadow(0em 0em 0.2em rgba(0, 0, 0, 0.5));
 }
 
 @media screen and (max-width: 1000px) {
@@ -532,12 +544,7 @@ nav {
 }
 
 /*------------------------- End of hamburger ---------------------------------*/
-.overlay a:hover,
-.overlay a:focus {
-  /*navtext hover*/
-  color: orange;
-  cursor: pointer;
-}
+
 
 ul.top li {
   list-style: none;
@@ -1338,7 +1345,7 @@ main {
 
 
 .filltranslatecontainer{
-  background-color: rgba(100, 100, 100);
+  background-color: rgba(80, 80, 80);
   /* THis section compensates extra space created from translate in catalogue section*/
 }
 
@@ -1371,10 +1378,12 @@ main {
   opacity: 1;
 }
 .thirdrightsection img{
-  margin-top: 16vh;
+  margin-top: 10vh;
   width: 100%;
-  transform: translateX(-3vw);
+  transform: translateX(-2vw);
   opacity: 0.;
+  filter: drop-shadow(0.1em 0.1em 2em rgba(200, 200, 200, 0.25)); /* Adjust values as needed */
+
 }
 
 @media (max-width: 1000px) {
@@ -1589,7 +1598,7 @@ main {
 
 /*----------------------------------- Catalogue Section----------------------------------*/
 .cataloguecontainer{
-  background-color: rgba(100,100,100);
+  background-color: rgba(80,80,80);
   position: relative;
   transform: translateY(-8vh);
   min-height: 8vh;
@@ -1610,6 +1619,8 @@ main {
   margin-left: 15%;
   z-index: 2;
 }
+
+
 .fourthrightsection{
   margin-right: 20%;
   z-index: 1;
@@ -1621,6 +1632,8 @@ main {
   
   margin-top: 12%;
   opacity: 1;
+ filter: drop-shadow(0.1em 0.1em 1.5em rgba(0, 0, 0, 0.4)); /* Adjust values as needed */
+  
 }
 
 
@@ -1645,7 +1658,7 @@ main {
   font-size: 5vh;
   font-weight: 500;
   letter-spacing: 0.2em;
-  color: rgb(232, 128, 0);
+  color: rgb(220, 220, 220);
 }
 
 
@@ -1675,29 +1688,46 @@ main {
 .promisecolumn p{
   text-align: justify;
   text-justify: inter-word;
+  margin-top: 5%;
+  color: rgba(10,10,10);
 }
 .promisecard img{
-  
+ 
   position: relative;
   max-width: 90%;
   margin: auto;
 }
 
-.promisecontainer .promisecolumn:nth-child(1) img{
-  max-width: 80%;
-}
-
-.promisecontainer .promisecolumn:nth-child(2) img{
-  max-width: 80%;
-}
 
 .promisecard h3{
   position: relative;
   font-family: bevietnamdefault;
   font-weight: 300;
   font-size: 3.5vh;
-  color: rgb(204, 204, 204);
+  color: rgb(206, 120, 15);
 }
+
+.promisecontainer .promisecolumn:nth-child(1) img{
+  max-width: 80%;
+  color: black;
+  filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(30deg);
+  
+}
+
+.promisecontainer .promisecolumn:nth-child(2) img{
+  max-width: 80%;
+  filter: invert(80%) sepia(0%) saturate(0%) hue-rotate(30deg);
+}
+
+
+.promisecontainer .promisecolumn:nth-child(3) img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(30deg);
+}
+
+.promisecontainer .promisecolumn:nth-child(4) img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(30deg);
+}
+
 
 .promisesvg{
   max-width: 100%;
@@ -2491,7 +2521,7 @@ main {
 
 .motto svg {
   float: left;
-  fill: darkorange;
+  fill: rgb(224, 123, 0);
   margin-right: 15px;
 }
 
@@ -2609,6 +2639,7 @@ main {
 
 .owl-carousel1 img {
   max-height: 6vw;
+  filter: grayscale(100%) brightness(150%);
 }
 
 .owl-carousel1 .owl-nav {
@@ -2834,7 +2865,7 @@ main {
 /*------------------------------------------------------ Bottom Section -----------------------------------------------------------*/
 
 .bottomsection{
-  background-color: rgb(100, 100, 100);
+  background-color: rgb(80, 80, 80);
   border-radius: 3vw 3vw 0vw 0;
   padding-bottom: 5vh;
 }
@@ -2930,14 +2961,16 @@ main {
   margin-top: 1vh;
 }
 
-.footersocialsection h4{ 
-  text-align: center;
-}
-.footersocialsection a{ 
-  
+.footersocialsection{
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+
+
+
 .footersection span{
   text-align: right;
   align-items: right;
@@ -2956,11 +2989,13 @@ main {
   text-align: right;
   
 }
-.footerquicksection a{
+.footerquicksection a {
  
   align-items: right;
   justify-content: right;
 }
+
+
 
 
 
@@ -3277,7 +3312,7 @@ main {
   .navtext {
     padding: 8px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 6vh;
     color: black;
     display: block;
     transition: 0.3s;
@@ -3296,7 +3331,7 @@ main {
   .overlay a:hover,
   .overlay a:focus {
     /*navtext hover*/
-    color: orange;
+    color: darkorange;
   }
 
   .overlay .closebtn {
@@ -3364,13 +3399,6 @@ main {
     padding-top: 30px;
   }
 
-  .overlay-exterior {
-    display: none;
-  }
-
-  .overlay-interior {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -3399,3 +3427,5 @@ main {
   background-color: darkorange;
   box-shadow: inset 2px 2px 5px 0 rgba(133, 133, 133, 0.4);
 }
+
+
