@@ -16,7 +16,7 @@
   letter-spacing: 2px;
 }
 .gallery {
-    image-rendering: pixelated;
+    image-rendering: inherit;
     margin: 10px;
     -moz-column-gap: 10px;
          column-gap: 10px;
@@ -260,8 +260,9 @@
   .pswp__caption__center{
     width: 100vw;
     bottom: 1vh; 
+    
     font-weight: 500;
-    font-family: latoregular;
+    font-family: bevietnamlight;
     display: flex;
     position: relative;
     transform: scale(1.5);
