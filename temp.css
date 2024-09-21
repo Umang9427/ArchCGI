@@ -1,78 +1,70 @@
 
-
-.auroracontainer {
+.processcontainer{
   width: 100vw;
   height: 100vh;
-  filter: blur(50px);
-  background: radial-gradient(farthest-corner at top, rgb(134, 73, 0), black, black);
-  overflow: hidden;
-  animation: bg 10s alternate infinite both;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(20,20,20);
+  display: block;
+}
+.processtep{
   position: relative;
+  left: 10vw;
+  width: 100%;
 }
 
-@keyframes bg {
-  from {
-    background-position: 50em;
-    background-size: 50em;
-  }
-  to {
-    background-position: -50em;
-    background-size: 150em;
-  }
-}
-.a {
-  height: 50rem;
-  width: 50rem;
+.processcircle{
+  position: relative;
+  background-color: rgba(205,205,205);
+  width: 3vw;
+  height: 3vw;
   border-radius: 50%;
+  transform: translateX(-5vw);
+  display: flex; /* For centering alignment */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+}
+
+.processminicircle{
+  position: relative;
+  width: 1.85vw;
+  height: 1.85vw;
+  border-radius: 50%;
+  background-color: darkorange;
+  display: flex; /* For centering alignment */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  overflow: hidden;
+}
+
+.processnumber{
   position: absolute;
-}
-.auroracontainer .a._1 {
-  animation: ap-1 7s alternate infinite both cubic-bezier(1, 0.1, 0.58, 1);
-  background: radial-gradient(black, black);
-  z-index: 1;
-}
-.auroracontainer .a._2 {
-  animation: ap-2 4s alternate infinite both cubic-bezier(1, 0.8, -0.1, 1);
-  background: radial-gradient(rgb(134, 73, 0), rgb(134, 73, 0));
-  z-index: 2;
-}
-.auroracontainer .a._3 {
-  animation: ap-3 6s alternate infinite both;
-  background: radial-gradient(black, black);
-  z-index: 4;
+  color: rgba(240,240,240);
+  font-size: 2.5vh;
+  top: 50%;
+  transform: translateY(-50%); /* Offset to counteract positioning */
+  text-align: center; /* Center text horizontally */
+
 }
 
-@keyframes ap-1 {
-  from {
-    left: -5px;
-  }
-  to {
-    left: 8em;
-  }
-}
-@keyframes ap-2 {
-  from {
-    left: -1.625em;
-    top: -16em;
-  }
-  to {
-    left: 0.0238095238em;
-    top: 24px;
-  }
-}
-@keyframes ap-3 {
-  from {
-    left: 120em;
-    top: -36em;
-  }
-  to {
-    left: -140em;
-    top: -3em;
-  }
+.verticalsvg{
+  position: absolute;
+  height: 9vh;
+  width: auto;
+  transform: rotate(90deg);
+  margin-top: 15vh;
+  opacity: 0.8;
 }
 
 
+.stepdetails{
+  position: relative;
+  
+}
+.processtitle{
+  color: darkorange;
+}
+
+.processdescription{
+  color: rgba(205,205,205);
+  
+}
 
